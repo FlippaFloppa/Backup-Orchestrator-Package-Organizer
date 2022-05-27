@@ -1,0 +1,32 @@
+﻿@page "/login"
+
+<div class="col-xl-4 d-flex p-3">
+        <RadzenCard Style="width: 100%;">
+            <div class="row">
+                <div class="column">
+                    <h2 class="mb-4">Simple login</h2>
+                </div>
+                <div class="column">
+                    <RadzenImage Path="\images\bopo_icon.png" Style="width: 30%; margin: 3rem;" />  
+                </div>
+            </div>
+            
+            <RadzenTemplateForm Data=@("SimpleLogin") Action="http://www.google.com">
+                <RadzenLogin AllowRegister="false" AllowResetPassword="false" Login=@(args => OnLogin(args, "Simple login")) />
+            </RadzenTemplateForm>
+        </RadzenCard>
+</div>
+                
+
+@code{
+
+    string userName = "admin";
+    string password = "admin";
+
+    void OnLogin(LoginArgs args, string name)
+    {
+        
+    }
+
+
+}

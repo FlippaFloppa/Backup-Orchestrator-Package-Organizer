@@ -1,0 +1,21 @@
+@page "/login"
+    @code {
+    void OnLogin()
+    {
+    Console.WriteLine("Login");
+    }
+        void OnRegister()
+    {
+    Console.WriteLine("Registration");
+    }
+    }
+    <div class="col-xl-4 p-3">
+        <RadzenCard>
+            <h2 class="mb-4">Login with register</h2>
+            <RadzenTemplateForm Data=@("LoginWithRegister")>
+            <RadzenLogin AllowResetPassword="false" 
+                            Login=@(args => OnLogin()) 
+                            Register=@(args => OnRegister()) />
+            </RadzenTemplateForm>
+        </RadzenCard>
+    </div>

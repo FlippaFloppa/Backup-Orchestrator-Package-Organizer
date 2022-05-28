@@ -1,23 +1,50 @@
-@page "/login"
-    @code {
-    void OnLogin()
-    {
-    Console.WriteLine("Login");
-    }
-        void OnRegister()
-    {
-    Console.WriteLine("Registration");
-    }
-    }   
-    
-        <div class="col-lg-6 col-xl-4 offset-lg-3 offset-xl-4">
+@page "/"
+
+
+
+    <div class="col-lg-6 col-xl-4 offset-lg-3 offset-xl-4" style="margin: 6rem;align-content:center;">
         <RadzenCard >
-            <RadzenImage Path="images/bopo.svg" Style="width: 70%; margin: 3rem;" />
-            <h2 class="mb-4">Login with register</h2>
-            <RadzenTemplateForm Data=@("LoginWithRegister")>
-            <RadzenLogin AllowResetPassword="false" 
-                            Login=@(args => OnLogin()) 
-                            Register=@(args => OnRegister()) />
-            </RadzenTemplateForm>
+            <RadzenImage Path="images/bopo.svg" Style="width: 80%; margin: 3rem; align-content:center;padding-left: 2rem;padding-right: 2rem" />
+            <h1 class="mb-4" style="text-align:center">Login</h1>
+
+            <RadzenFieldset>
+                    <div class="row mb-3">
+                        <div class="col-md-4" style="align-self: center;">
+                            <RadzenLabel Text="Email" />
+                        </div>
+                        <div class="col">
+                            <RadzenTextBox style="display: block" Name="Email"  Class="w-100"  Placeholder="goblino@example.com"/>
+                            <RadzenRequiredValidator Component="Email" Text="Email is required"  Style="position: absolute" />
+                            <RadzenEmailValidator Component="Email" Text="Provide a valid email address"  Style="position: absolute" />
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4" style="align-self: center;">
+                            <RadzenLabel Text="Password" />
+                        </div>
+                        <div class="col">
+                            <RadzenPassword Placeholder="helloWorld123" Class="w-100" />
+                        </div>
+                    </div>
+                  <RadzenButton ButtonType="ButtonType.Submit" Text="Submit"></RadzenButton>
+                  <RadzenButton  ButtonStyle="ButtonStyle.Light">
+                <span class="rz-button-text">Button with content</span>
+                <RadzenImage Path="images/radzen-nuget.png" Style="width: 20px; height: 20px; margin-left: 8px;" />
+            </RadzenButton>
+            </RadzenFieldset>
+            
         </RadzenCard>
     </div>
+
+
+    @code {
+
+        void OnLogin(){
+            Console.WriteLine("Login");
+        }
+        void OnRegister()
+        {
+            Console.WriteLine("Registration");
+        }
+    }   
+    

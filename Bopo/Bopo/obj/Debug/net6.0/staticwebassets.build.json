@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ercK7s7wmzKtBRtoPzYy16NcSTBq96h/1RVzoeGKcVc=",
+  "Hash": "cD5C6gV+KLnDo8uRNj7G9oKyKVzE9atiDi2u3h29w+g=",
   "Source": "Bopo",
   "BasePath": "_content/Bopo",
   "Mode": "Default",
@@ -831,6 +831,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Bopo.tiff"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\login_icon.png",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "images/login_icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\login_icon.png"
     }
   ]
 }

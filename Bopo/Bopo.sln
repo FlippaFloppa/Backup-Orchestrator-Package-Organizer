@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bopo", "Bopo\Bopo.csproj", "{FED3813D-D3F3-49C3-8681-25F1EC106B1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FED3813D-D3F3-49C3-8681-25F1EC106B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED3813D-D3F3-49C3-8681-25F1EC106B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED3813D-D3F3-49C3-8681-25F1EC106B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED3813D-D3F3-49C3-8681-25F1EC106B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D124CEEB-18A1-4627-BD25-33EE72F5CA75}
+	EndGlobalSection
+EndGlobal

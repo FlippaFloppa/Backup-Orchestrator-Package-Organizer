@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj": {}
+    "C:\\Workspace\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj": {
+    "C:\\Workspace\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj",
+        "projectUniqueName": "C:\\Workspace\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj",
         "projectName": "Bopo",
-        "projectPath": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj",
-        "packagesPath": "C:\\Users\\lollo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\",
+        "projectPath": "C:\\Workspace\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj",
+        "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

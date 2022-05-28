@@ -35,6 +35,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Workspace/Ingegneria-del-Software/Bopo/Bopo/Pages/Registration.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Workspace/Ingegneria-del-Software/Bopo/Bopo/Shared/EventConsole.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEV2ZW50Q29uc29sZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

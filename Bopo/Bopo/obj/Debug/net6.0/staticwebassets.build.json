@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mVatuhx3UvUzKtwOmRtuovtpiybnV6BpELEwrXLe3Fg=",
+  "Hash": "HmMVEuKixzrFRaa1vfjz8vXgaNj3WdBQCN1RPP8uoJs=",
   "Source": "Bopo",
   "BasePath": "_content/Bopo",
   "Mode": "Default",
@@ -510,6 +510,23 @@
       "OriginalItemSpec": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/obj/Debug/net6.0/scopedcss/projectbundle/Bopo.bundle.scp.css"
     },
     {
+      "Identity": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/.DS_Store",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/",
+      "BasePath": "_content/Bopo",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
       "Identity": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/css/bootstrap/bootstrap.min.css",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
@@ -731,12 +748,12 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/images/Bopo.jpg",
+      "Identity": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/images/Bopo.ai",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/",
       "BasePath": "_content/Bopo",
-      "RelativePath": "images/Bopo.jpg",
+      "RelativePath": "images/Bopo.ai",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -745,7 +762,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/Bopo.jpg"
+      "OriginalItemSpec": "wwwroot/images/Bopo.ai"
+    },
+    {
+      "Identity": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/images/bopo.jpg",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "images/bopo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/bopo.jpg"
     },
     {
       "Identity": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/images/Bopo.png",
@@ -763,6 +797,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/Bopo.png"
+    },
+    {
+      "Identity": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/images/bopo.svg",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "images/bopo.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/bopo.svg"
+    },
+    {
+      "Identity": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/images/Bopo.tiff",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/wwwroot/",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "images/Bopo.tiff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Bopo.tiff"
     }
   ]
 }

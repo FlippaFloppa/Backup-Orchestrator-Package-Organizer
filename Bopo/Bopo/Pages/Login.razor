@@ -8,11 +8,12 @@
     {
     Console.WriteLine("Registration");
     }
-    }
-    <div class="col-xl-4 p-3">
-        <RadzenCard>
+    }   
+    
+        <div class="col-lg-6 col-xl-4 offset-lg-3 offset-xl-4">
+        <RadzenCard >
+            <RadzenImage Path="images/bopo.svg" Style="width: 70%; margin: 3rem;" />
             <h2 class="mb-4">Login with register</h2>
-            <RadzenImage Path="images/Bopo.png" />
             <RadzenTemplateForm Data=@("LoginWithRegister")>
             <RadzenLogin AllowResetPassword="false" 
                             Login=@(args => OnLogin()) 

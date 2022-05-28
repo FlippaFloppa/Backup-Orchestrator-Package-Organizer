@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lrd/lLsK8CdCA1m6bvyBnXPqlbpaHwOYOmLYDj96Vcg=",
+  "Hash": "UOBqfo1zQtOTYhlhPkw+CHH2tYA8SK4dWaiLt7YnneM=",
   "Source": "Bopo",
   "BasePath": "_content/Bopo",
   "Mode": "Default",
@@ -831,6 +831,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Bopo.tiff"
+    },
+    {
+      "Identity": "C:\\Workspace\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\github_icon.png",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Workspace\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "images/github_icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\github_icon.png"
     },
     {
       "Identity": "C:\\Workspace\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\login_icon.png",

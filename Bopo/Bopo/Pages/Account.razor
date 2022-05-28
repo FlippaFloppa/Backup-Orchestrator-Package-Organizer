@@ -2,18 +2,85 @@
 
     <Menu/>
 
-    <div class="row">
-        <div class="col-xl-6">
-            <h3 class="mt-3">Image from application assets</h3>
-            <RadzenImage Path="images/bopo.svg" Style="width: 60%; margin: 3rem;" />
-        </div>
-        <div class="col-xl-6">
-            <h3 class="mt-3">Image from url</h3>
-            <RadzenImage Path="https://www.radzen.com/assets/hero-40b90af93c7bda2d44608c74e2b8eeb6785e273e02340ec44583d097b5dfb896.png" Style="width: 100%;">
-            </RadzenImage>
-        </div>
-    </div>
+<div class=" col-xl-4 offset-lg-3 offset-xl-4">
+<RadzenCard Style="border-radius:1.4rem;margin-bottom: 40px">
+                <div class="d-flex flex-row">
+                    <RadzenImage Path="/images/bopo.svg" Style="width: 150px; height: 150px;" />
+                    <h1 style="align-self:safe center;margin-left: 50px;font-size:50px">Gestione Account</h1>
+                </div>
+</RadzenCard>
 
+</div>
+            <RadzenCard class=" col-xl-4 offset-lg-5 offset-xl-4" Style="border-radius: 1.4rem;margin-bottom: 40px">
+                    <div class="row mb-3">
+                        <div class="col-md-3" style="align-self: center;">
+                            <RadzenLabel Text="Inserisci Email" />
+                        </div>
+                        <div class="col">
+                            <RadzenTextBox style="display: block" Name="Email"  Class="w-100"  Placeholder="goblino@example.com"/>
+                            <RadzenRequiredValidator Component="Email" Text="Email is required"  Style="position: absolute" />
+                            <RadzenEmailValidator Component="Email" Text="Provide a valid email address"  Style="position: absolute" />
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-3" style="align-self: center;">
+                            <RadzenLabel Text="Nuova Password" />
+                        </div>
+                        <div class="col">
+                            <RadzenPassword Placeholder="helloWorld123" Class="w-100" />
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-3" style="align-self: center;">
+                            <RadzenLabel Text="Ripeti Nuova Password" />
+                        </div>
+                        <div class="col">
+                            <RadzenPassword Placeholder="helloWorld123" Class="w-100" />
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-3" style="align-self: center;">
+                            <RadzenLabel Text="Inserisci Nickname*" />
+                        </div>
+                        <div class="col">
+                            <RadzenPassword Placeholder="helloWorld123" Class="w-100" />
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        
+                  <RadzenButton  ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" Click=@(OnClick)  style="align-self:center;display: block;width: 100%;">
+                    <span class="rz-button-text">Log in</span>
+                    <RadzenImage Path="images/login_icon.png" Style="width: 20px; height: 20px; margin-left: 8px;" />
+                  </RadzenButton>
+                    </div>
+                    <div class="row mb-1">
+                    <div class="col-md-8">
+                    Non sei ancora registrato? <a href="/registration">Clicca qui!</a>
+                    </div>
+                    </div>
+             </RadzenCard>
+<div class=" col-xl-4 offset-lg-3 offset-xl-4">
+<RadzenCard Style="border-radius:1.4rem;">
+                <div class="d-flex flex-row">
+                    <h1 style="align-self:safe center;margin-left: 0px;font-size:20px">Gestione Account</h1>
+                            <div style="align-self:safe rigth;margin-left: 230px;font-size:20px">
+                        <RadzenButton Click=@(args => OnClick()) Text="Cancella" Icon="report" ButtonStyle="ButtonStyle.Danger"  />
+                            </div>
+                </div>
+</RadzenCard>
+
+</div>
 @code {
 
-}
+    void OnLogin(){
+        Console.WriteLine("Login");
+    }
+    void OnRegister()
+    {
+        Console.WriteLine("Registration");
+    }
+    void OnClick()
+    {
+        
+    }
+}   

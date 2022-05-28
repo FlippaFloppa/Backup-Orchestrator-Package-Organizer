@@ -1,0 +1,567 @@
+\phantomsection
+\section*{Scenari}
+\addcontentsline{toc}{section}{Scenari}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{Registrazione}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{Registrazione}\\
+\hline
+
+\textbf{Descrizione} & L'utente si registra al servizio di Storage\\
+\hline
+\textbf{Attori} & Utente\\
+\hline
+\textbf{Relazioni} & \\
+\hline
+\textbf{Precondizioni} & L'utente non è registrato\\
+\hline
+\textbf{Postcondizioni} & \begin{tabular}{@{}l@{}} L'utente viene registrato nel sistema e gli viene allocato lo spazio di \\ archiviazione predefinito. Necessaria approvazione da parte dell'amministratore\end{tabular} \\
+\hline
+\textbf{Scenario principale} &
+\begin{tabular}{@{}l@{}}
+1) Si presenta all' utente una interfaccia per la registrazione dell' account\\  
+2) L'utente inserisce le credenziali per la creazione dell' account\\
+3) Il sistema controlla che l'utente non sia già registrato\\
+4) La richiesta deve essere approvata dall'Amministratore
+\end{tabular} \\
+\hline
+\textbf{Scenari alternativi} &
+\begin{tabular}{@{}l@{}}
+Scenario A: L'utente è già registrato \\
+\quad 1) L'utente viene notificato dal servizio dell' errore\\
+\quad 2) L'utente cambia username e riprova la registrazione\\
+Scenario B: L'amministratore rifiuta la richiesta \\
+\quad 1) L'utente non può accedere al servizio\\
+\end{tabular} \\
+\hline
+\textbf{Requisiti non funzionali} & Interfaccia utente intuitiva\\
+\hline
+\textbf{Punti aperti} & \\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{Autenticazione}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{Autenticazione}\\
+\hline
+
+\textbf{Descrizione} & L'Utente effettua il login nel sistema\\
+\hline
+\textbf{Attori} & Utente, Amministratore, Amministratore di gruppo\\
+\hline
+\textbf{Relazioni} &\begin{tabular}{@{}l@{}} AreaPersonale, AreaGruppi, GestioneUtenti,\\ GestioneRichieste, GestioneGruppo\end{tabular} \\ 
+\hline
+\textbf{Precondizioni} & \begin{tabular}{@{}l@{}} L'Utente / Amministratore deve essere registrato nel sistema\end{tabular} \\
+\hline
+\textbf{Postcondizioni} & \\
+\hline
+\textbf{Scenario principale} &
+\begin{tabular}{@{}l@{}}
+1) Si presenta all'Utente / Amministratore un'interfaccia \\per l'autenticazione dell'account\\
+2) L'Utente / Amministratore fornisce le credenziali \\
+3) Il sistema effettua le opportune verifiche e, in caso di \\ approvazione, presenta la maschera dell'area pesonale
+\end{tabular} \\
+\hline
+\textbf{Scenari alternativi} & 
+\begin{tabular}{@{}l@{}}
+Scenario A: Credenziali errate\\
+\quad - Viene presentata nuovamente la maschera di Login
+\end{tabular}\\
+\hline
+\textbf{Requisiti non funzionali} & Interfaccia utente intuitiva \\
+\hline
+\textbf{Punti aperti} & \\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{GestioneUtenti}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneUtenti}\\
+\hline
+
+\textbf{Descrizione} & Sezione per gestire gli utenti registrati\\
+\hline
+\textbf{Attori} & Amministratore\\
+\hline
+\textbf{Relazioni} & Autenticazione, GestioneAccount\\
+\hline
+\textbf{Precondizioni} &\\
+\hline
+\textbf{Postcondizioni} & \\
+\hline
+\textbf{Scenario principale} & \begin{tabular}{@{}l@{}} 
+1) L'amministratore si autentica usando l'apposita pagina\\
+2) L'amministratore si sposta sulla sezione dedicata alla moderazione degli utenti\\
+3) Il sistema mostra la lista degli utenti registrati\\
+4) L'amministratore può decidere effettuare le seguenti operazioni:\\
+\quad - Eliminare un utente\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & Pannello di amministrazione intuitivo\\
+\hline
+\textbf{Punti aperti} & \begin{tabular}{@{}l@{}} 
+Altre operazioni eseguibili dall'amministratore:\\
+\quad - Modificare la quantità di memoria disponibile per l'utente\\
+\end{tabular}\\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.5 cm}
+
+
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{GestioneRichieste}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneRichieste}\\
+\hline
+
+\textbf{Descrizione} & Gestisce le richieste degli utenti e dei gruppi\\
+\hline
+\textbf{Attori} & Amministratore\\
+\hline
+\textbf{Relazioni} & Autenticazione\\
+\hline
+\textbf{Precondizioni} &\\
+\hline
+\textbf{Postcondizioni} &\begin{tabular}{@{}l@{}} \end{tabular} \\
+\hline
+\textbf{Scenario principale} & \begin{tabular}{@{}l@{}} 
+1) L'amministratore si autentica usando l'apposita pagina\\
+2) L'amministratore si sposta sulla sezione dedicata alla moderazione\\
+3) L'amministratore viene notificato delle richieste degli utenti e dei gruppi\\
+4) L'amministratore può decidere effettuare le seguenti operazioni:\\
+\quad - Accettare le richieste\\
+\quad - Rifiutare le richieste\\
+5) L'utente o il gruppo riceverà la risposta in base alla scelta dell'amministratore\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & Pannello di amministrazione intuitivo\\
+\hline
+\textbf{Punti aperti} & L'amministratore non può gestire la richiesta al momento, si introduce lo stato "pendente"\\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{GestioneGruppi}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneGruppi}\\
+\hline
+\textbf{Descrizione} & Sezione per gestire i gruppi degli utenti registrati\\
+\hline
+\textbf{Attori} & Amministratore\\
+\hline
+\textbf{Relazioni} & Autenticazione\\
+\hline
+\textbf{Precondizioni} &\\
+\hline
+\textbf{Postcondizioni} & \\
+\hline
+\textbf{Scenario principale} & \begin{tabular}{@{}l@{}} 
+1) L'amministratore si autentica usando l'apposita pagina\\
+2) L'amministratore si sposta sulla sezione dedicata alla moderazione dei gruppi\\
+3) Il sistema mostra la lista dei gruppi registrati\\
+4) L'amministratore può decidere effettuare le seguenti operazioni:\\
+\quad - Eliminare un gruppo\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & Pannello di amministrazione intuitivo\\
+\hline
+\textbf{Punti aperti} & \begin{tabular}{@{}l@{}} 
+Altre operazioni eseguibili dall'amministratore:\\
+\quad - Modificare la quantità di memoria disponibile per il gruppo\\
+\end{tabular}\\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{AreaPersonale}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{AreaPersonale}\\
+\hline
+
+\textbf{Descrizione} & Area Personale dell'utente\\
+\hline
+\textbf{Attori} & Utente\\
+\hline
+\textbf{Relazioni} & Autenticazione, GestioneAccount, GestioneViste, GestioneFile\\
+\hline
+\textbf{Precondizioni} &\\
+\hline
+\textbf{Postcondizioni} & \\
+\hline
+\textbf{Scenario principale} & 
+\begin{tabular}{@{}l@{}} 
+1) L'utente si autentica\\
+2) All'utente viene presentata la pagina dell'area personale.\\
+3) L'utente potrà spostarsi su tre diverse sezioni:\\
+\quad - Gestione Account\\
+\quad - Gestione File personali\\
+\quad - Gestione Viste\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & Interfaccia utente intuitiva\\
+\hline
+\textbf{Punti aperti} & \\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{GestioneAccount}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneAccount}\\
+\hline
+
+\textbf{Descrizione} & Gestione dell'account personale dell'utente\\
+\hline
+\textbf{Attori} & Utente\\
+\hline
+\textbf{Relazioni} & AreaPersonale\\
+\hline
+\textbf{Precondizioni} & L'utente si è autenticato\\
+\hline
+\textbf{Postcondizioni} & \\
+\hline
+\textbf{Scenario principale} & \begin{tabular}{@{}l@{}}
+1) L'utente si sposta sulla sezione dedicata alla gestione dell'account personale\\
+2) L'utente ha a disposizione le seguenti operazioni:\\
+\quad - Modifica nickname\\
+\quad - Modifica password\\
+\quad - Eliminazione dell'account\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & \\
+\hline
+\textbf{Punti aperti} & L'utente può modificare l'username\\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{GestioneViste}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneViste}\\
+\hline
+
+\textbf{Descrizione} & Sezione in cui l'utente modifica le viste\\
+\hline
+\textbf{Attori} & Utente\\
+\hline
+\textbf{Relazioni} & AreaPersonale, GestioneFile\\
+\hline
+\textbf{Precondizioni} & L'utente si è autenticato\\
+\hline
+\textbf{Postcondizioni} &\\
+\hline
+\textbf{Scenario principale} &
+\begin{tabular}{@{}l@{}} 
+1) L'utente si sposta sulla sezione dedicata alle viste\\
+2) Il sistema presenta all'utente la lista di viste salvate ed un editor di viste\\
+3) L'utente può:\\
+\quad - Creare una nuova vista\\
+\quad - Modificare una vista\\
+\quad - Eliminare una vista\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} &
+\begin{tabular}{@{}l@{}} 
+Scenario A: Raggiunto il limite massimo di viste\\
+\quad - È possibile modificare ed eliminare le viste, ma non crearne di nuove\\
+\end{tabular}\\
+\hline
+\textbf{Requisiti non funzionali} & \\
+\hline
+\textbf{Punti aperti} & Editor grafico delle viste\\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{GestioneFile}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneFile}\\
+\hline
+
+\textbf{Descrizione} & Sezione in cui l'utente allo spazio di archiviazione personale\\
+\hline
+\textbf{Attori} & Utente\\
+\hline
+\textbf{Relazioni} & AreaPersonale, GestioneViste, AreaGruppi, GestioneGruppo\\
+\hline
+\textbf{Precondizioni} & L'utente si è autenticato\\
+\hline
+\textbf{Postcondizioni} &\\
+\hline
+\textbf{Scenario principale} &
+\begin{tabular}{@{}l@{}} 
+1) L'utente si sposta sulla sezione dedicata allo storage\\
+2) Il sistema presenta all'utente il file manager dei file personali archiviati \\nel sistema\\
+3) L'utente può:\\
+\quad - Visualizzare i file/cartelle che ha caricato\\
+\quad - Caricare uno o più file/cartelle\\
+\quad - Scaricare un file/cartella\\
+\quad - Eliminare file/cartelle\\
+\quad - Modificare la visualizzazione dei file selezionando la vista opportuna\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} &
+\begin{tabular}{@{}l@{}} 
+Scenario A: Raggiunto il limite massimo di memoria di archiviazione\\
+\quad - Non è possibile caricare nuovi file/cartelle\\
+\end{tabular}\\
+\hline
+\textbf{Requisiti non funzionali} & 
+\begin{tabular}{@{}l@{}} 
+- Velocità nel caricare/scaricare file\\
+- Organizzazione del file manager ampiamente personalizzabile\\
+- Possibilità di cambiare le view in modo rapido\\
+- Utilizzo efficace del servizio anche in assenza di una connessione veloce\\
+\end{tabular}\\
+\hline
+\textbf{Punti aperti} & Anteprima file\\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{AreaGruppi}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{AreaGruppi}\\
+\hline
+
+\textbf{Descrizione} & Sezione dedicata ai gruppi di più utenti\\
+\hline
+\textbf{Attori} & Utente\\
+\hline
+\textbf{Relazioni} & Autenticazione, Gruppo\\
+\hline
+\textbf{Precondizioni} & L'utente si è autenticato\\
+\hline
+\textbf{Postcondizioni} & \\
+\hline
+\textbf{Scenario principale} &
+\begin{tabular}{@{}l@{}}
+1) L'utente si sposta sulla sezione dedicata ai gruppi\\
+2) Viene mostrata la lista dei gruppi registrati nel sistema\\
+3) L'utente può:\\
+\quad - Iscriversi ad un gruppo, necessaria password\\
+\quad - Creare un gruppo, la richiesta deve essere approvata da un amministratore\\
+\quad - Esplorare un gruppo\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & \\
+\hline
+\textbf{Punti aperti} & \\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{Gruppo}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{Gruppo}\\
+\hline
+
+\textbf{Descrizione} & Pagina del gruppo\\
+\hline
+\textbf{Attori} & Utente, Amministratore Gruppo\\
+\hline
+\textbf{Relazioni} & AreaGruppi, GestioneGruppo, GestioneFile\\
+\hline
+\textbf{Precondizioni} & L'utente si è autenticato\\
+\hline
+\textbf{Postcondizioni} & \\
+\hline
+\textbf{Scenario principale} &
+\begin{tabular}{@{}l@{}}
+1) L'utente entra nella sezione dedicata ad un gruppo\\
+2) L'utente può:\\
+\quad - Visualizzare la lista degli utenti iscritti al gruppo\\
+\quad - Eseguire operazioni sui file del gruppo\\
+\quad - Uscire dal gruppo\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & \\
+\hline
+\textbf{Punti aperti} & \\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{GestioneGruppo}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneGruppo}\\
+\hline
+
+\textbf{Descrizione} & Pagina di amministrazione del gruppo\\
+\hline
+\textbf{Attori} & Amministratore Gruppo\\
+\hline
+\textbf{Relazioni} & Gruppo, Autenticazione\\
+\hline
+\textbf{Precondizioni} & \\
+\hline
+\textbf{Postcondizioni} & \\
+\hline
+\textbf{Scenario principale} &
+\begin{tabular}{@{}l@{}}
+1) L'amministratore del gruppo si autentica\\
+2) L'amministratore del gruppo accede alla sezione del gruppo\\ di cui è amministratore\\
+2) L'amministratore del gruppo può:\\
+\quad - Visualizzare la lista degli utenti iscritti al gruppo\\
+\quad - Aggiungere un utente al gruppo\\
+\quad - Rimuovere un utente dal gruppo\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & \\
+\hline
+\textbf{Punti aperti} & \\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}

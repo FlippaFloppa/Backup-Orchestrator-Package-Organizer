@@ -1,0 +1,960 @@
+\phantomsection
+\section*{Analisi delle Funzionalità}
+\addcontentsline{toc}{section}{Analisi delle Funzionalità}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{Tabella delle Funzionalità}
+\thispagestyle{empty}
+
+\rowcolors{2}{white!0!}{white!0!}
+
+\begin{adjustwidth}{-1cm}{0cm}
+
+\resizebox{1.2\textwidth}{!}{
+\begin{tabular}{ |c|p{4cm}|c|c|  }
+\hline
+\rowcolor{darktangerine!60}\multicolumn{4}{|c|}{\huge\textbf{Tabella delle Funzionalità}} \\
+\hline
+\rowcolor{darktangerine!50!}\LARGE\textbf{Funzionalità} & \multicolumn{1}{c|}{\LARGE\textbf{Tipo}} & 
+\LARGE\textbf{Complessità} & \LARGE\textbf{Requisiti}\\
+\hline
+\hline
+\rowcolor{cyan!10!}
+\textbf{Registrazione} & Memorizzazione dati & Semplice & R1F \\ \hline
+\rowcolor{cyan!10!}
+\textbf{Autenticazione} & Interazione con l'esterno, Gestione dati & Semplice & R2F \\ \hline
+\rowcolor{red!20!}
+\textbf{GestioneUtenti} & Gestione dati, interazione con l’esterno & Semplice & R5F \\ \hline
+\rowcolor{orange!20!}
+\textbf{GestioneRichieste} & Gestione dati, interazione con l’esterno & Semplice &  R5F \\ \hline  
+\rowcolor{yellow!20!}
+\textbf{GestioneGruppi} & Gestione dati, interazione con l’esterno & Semplice & R5F \\ \hline  
+\rowcolor{darktangerine!10!}
+\textbf{VisualizzaLog} & Interazione con l’esterno & Semplice & R12F \\ \hline  
+\rowcolor{yellow!20!}
+\textbf{CreazioneBackup} & Memorizzazione dati & Semplice & R8NF \\ \hline
+\rowcolor{blue!20!}
+\textbf{AreaPersonale} & Memorizzazione dati, Gestione dati, interazione con l’esterno & Complesso & R3F, R9F\\ 
+\rowcolor{cyan!30!} \hline
+\textbf{GestioneAccount} & Memorizzazione dati, Gestione dati, interazione con l’esterno & Complesso & R10F \\
+\rowcolor{cyan!20!}
+\textbf{CambioCredenziali} & Memorizzazione dati, Gestione dati, interazione con l’esterno & Semplice & R10F \\
+\rowcolor{cyan!20!}
+\textbf{RimozioneAccount} & Gestione dati, interazione con l’esterno & Semplice & R10F \\ 
+\rowcolor{cyan!20!}
+\textbf{VisualizzaInformazioni} & Interazione con l’esterno & Semplice & R10F \\ \hline
+
+
+\end{tabular}}
+\end{adjustwidth}
+\pagebreak
+
+
+\begin{adjustwidth}{-1cm}{0cm}
+\resizebox{1.2\textwidth}{!}{
+\begin{tabular}{ |l|p{4cm}|l|l| }
+
+\hline
+\rowcolor{red!25!}
+\textbf{GestioneViste} & Memorizzazione dati, Gestione dati, interazione con l’esterno & Complesso & R9F \\
+\rowcolor{orange!20!}
+\textbf{CreazioneVista} & Memorizzazione dati, interazione con l’esterno & Semplice & R9F \\
+\rowcolor{orange!20!}
+\textbf{RimozioneVista} & Gestione dati, interazione con l’esterno & Semplice & R9F \\
+\rowcolor{orange!20!}
+\textbf{PersonalizzaVista} & Memorizzazione dati, Gestione dati, interazione con l’esterno & Semplice & R9F \\\hline
+
+\rowcolor{green!25!}
+\textbf{GestioneFile} & Memorizzazione dati, gestione dati, interazione con l’esterno & Complesso & R3F, R4F \\ 
+\rowcolor{lime!20!}
+\textbf{CaricaFile} & Memorizzazione dati, interazione con l’esterno & Semplice & R3F, R4F \\ 
+\rowcolor{lime!20!}
+\textbf{ScaricaFile} & Gestione dati, interazione con l’esterno & Semplice & R3F, R4F \\ 
+\rowcolor{lime!20!}
+\textbf{EliminaFile} & Gestione dati, interazione con l’esterno & Semplice & R3F, R4F \\ 
+\hline
+
+\rowcolor{violet!20!}
+\textbf{AreaGruppi} & Gestione dati, interazione con l’esterno & Complesso & R6F, R7F, R8F \\ 
+\rowcolor{magenta!20!} \hline
+\textbf{CreaGruppo} & Memorizzazione dati, interazione con l’esterno & Semplice & R6F, R7F, R8F \\
+\rowcolor{magenta!20!} \hline
+\textbf{IscrizioneGruppo} & Gestione dati, interazione con l’esterno & Semplice & R6F, R7F, R8F \\
+\hline
+
+\rowcolor{magenta!20!}
+\textbf{EsploraGruppo} & Memorizzazione dati, Gestione dati, interazione con l’esterno & Complesso & R8F \\ 
+\rowcolor{pink!30!}
+\textbf{VisualizzaUtenti} & Interazione con l’esterno & Semplice & R6F, R7F, R8F \\
+\rowcolor{pink!30!}
+\textbf{GestioneFileGruppo} & Memorizzazione dati, Gestione dati, interazione con l’esterno & Semplice & R6F, R7F, R8F \\
+\rowcolor{pink!30!}
+\textbf{UscitaGruppo} & Gestione dati, interazione con l’esterno & Semplice & R6F, R7F, R8F \\
+\hline
+
+\rowcolor{magenta!20!}
+\textbf{GestioneGruppo} & Memorizzazione dati, gestione dati, interazione con l’esterno & Complesso & R5F, R6F \\ 
+\rowcolor{pink!30!}
+\textbf{GestioneUtentiGruppo} & Gestione dati, interazione con l’esterno & Semplice & R6F, R7F, R8F \\
+\hline
+
+\end{tabular}
+}
+
+\end{adjustwidth}
+
+
+%---------------------------------------------------------------------------------
+\phantomsection
+\subsection*{Tabelle di Informazione/Flusso}
+\addcontentsline{toc}{subsection}{Tabelle di Informazione/Flusso}
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{Registrazione}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{Registrazione}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+Nickname & Semplice & Alto & Input &  Non più di 32 caratteri\\
+\hline
+Username & Semplice & Alto & Input &  Non più di 32 caratteri\\
+\hline
+Password & Semplice & Molto Alto & Input &  Non meno di 6 caratteri, non più di 128 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+%--------
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{Autenticazione}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{Autenticazione}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+Username & Semplice & Alto & Input &  Non più di 32 caratteri\\
+\hline
+Password & Semplice & Molto Alto & Input &  Non meno di 6 caratteri, non più di 128 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+%--------
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{GestioneUtenti}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{GestioneUtenti}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+Utente & Composto & Alto & Output &  \\
+\hline
+\textbf{Composto da:} & & & & \\
+Nickname & Semplice & Basso & Output &  Non più di 32 caratteri\\
+Username & Semplice & Medio & Output &  Non più di 32 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+%--------
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{GestioneRichieste}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{GestioneRichieste}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+RichiestaUtente & Composto & Alto & Output &  \\
+\hline
+\textbf{Composto da:} & & & & \\
+Username & Semplice & Medio & Output &  Non più di 32 caratteri\\
+Timestamp & Semplice & Basso & Output & Esattamente 23 caratteri\\
+\hline
+
+RichiestaGruppo & Composto & Medio & Output &  \\
+\hline
+\textbf{Composto da:} & & & & \\
+NomeGruppo & Semplice & Basso & Output &  Non più di 32 caratteri\\
+NomeProprietario & Semplice & Medio & Output &  Non più di 32 caratteri\\
+Timestamp & Semplice & Basso & Output & Esattamente 23 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+%--------
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{GestioneGruppi}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{GestioneGruppi}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+Gruppo & Composto & Alto & Output &  \\
+\hline
+\textbf{Composto da:} & & & & \\
+NomeGruppo & Semplice & Basso & Output &  Non più di 32 caratteri\\
+Descrizione & Semplice & Basso & Output &  Non più di 256 caratteri\\
+NumeroPartecipanti & Semplice & Medio & Output &  Non più di 16 partecipanti\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+%--------
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{VisualizzaLog}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{VisualizzaLog}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+ResocontoLog & Composto & Alto & Output &  \\
+\hline
+\textbf{Composto da:} & & & & \\
+Timestamp & Semplice & Basso & Output & Esattamente 23 caratteri\\
+EventoLog & Semplice & Alto & Output &  Non più di 256 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{CambioCredenziali}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{CambioCredenziali}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+Nickname & Semplice & Alto & Output &  Non più di 32 caratteri\\
+\hline
+Username & Semplice & Alto & Output &  Non più di 32 caratteri\\
+\hline
+NuovoNickname & Semplice & Alto & Input &  Non più di 32 caratteri\\
+\hline
+NuovoUsername & Semplice & Alto & Input &  Non più di 32 caratteri\\
+\hline
+NuovaPassword & Semplice & Alto & Input &  Non meno di 6 caratteri, non più di 128 caratteri\\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{RimozioneAccount}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{RimozioneAccount}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+Password & Semplice & Molto Alto & Input &  Non meno di 6 caratteri, non più di 128 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{VisualizzaInformazioni}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{VisualizzaInformazioni}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+Nickname & Semplice & Basso & Output &  Non più di 32 caratteri\\
+Username & Semplice & Basso & Output &  Non più di 32 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{CreazioneVista}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{CreazioneVista}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+NomeVista & Semplice & Basso & Input & Non più di 32 caratteri\\
+StileVista & Semplice & Basso & Input & \\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{RimozioneVista}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{RimozioneVista}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+NomeVista & Semplice & Basso & Input & Non più di 32 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{PersonalizzaVista}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{PersonalizzaVista}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+NomeVista & Semplice & Basso & Input & Non più di 32 caratteri\\
+StileVista & Semplice & Basso & Input & \\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{GestioneFile}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{GestioneFile}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+File & Composto & Molto Alto & Input &\\
+\hline
+\textbf{Composto da:} & & & & \\
+NomeFile & Semplice & Basso & Input/Output & Non più di 32 caratteri\\
+DimensioneFile & Semplice & Basso & Input/Output & Non più di 1 GB\\
+ContenutoFile & Semplice & Molto Alto & Input/Output &\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{AreaGruppi}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{AreaGruppi}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+ListaGruppi & Composto & Alto & Output &\\
+\hline
+NomeGruppo & Semplice & Basso & Output &  Non più di 32 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{CreaGruppo}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{CreaGruppo}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+NomeGruppo & Semplice & Basso & Input &  Non più di 32 caratteri\\
+Descrizione & Semplice & Basso & Input &  Non più di 256 caratteri\\
+Password & Semplice & Alto & Input &  Non meno di 6 caratteri, non più di 128 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{IscrizioneGruppo}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{IscrizioneGruppo}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+NomeGruppo & Semplice & Basso & Input &  Non più di 32 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{VisualizzaUtenti}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{VisualizzaUtenti}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+ListaUtenti & Semplice & Basso & Output &\\
+\hline
+\textbf{Composto da:} & & & & \\
+Utente & Composto & Alto & Output &  \\
+\hline
+\textbf{Composto da:} & & & & \\
+Nickname & Semplice & Basso & Output &  Non più di 32 caratteri\\
+Username & Semplice & Medio & Output &  Non più di 32 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{GestioneFileGruppo}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{GestioneFileGruppo}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+AggiungiFileGruppo & Composto & Alto & Input &\\
+\textbf{Composto da:} & & & & \\
+File & Composto & Molto Alto & Input &\\
+\hline
+\textbf{Composto da:} & & & & \\
+NomeFile & Semplice & Basso & Input & Non più di 32 caratteri\\
+DimensioneFile & Semplice & Basso & Input & Non più di 1 GB\\
+ContenutoFile & Semplice & Molto Alto & Input &\\
+\hline
+RimuoviFileGruppo & Composto & Alto & Input &\\
+\textbf{Composto da:} & & & & \\
+File & Composto & Molto Alto & Input &\\
+\hline
+\textbf{Composto da:} & & & & \\
+NomeFile & Semplice & Basso & Input/Output & Non più di 32 caratteri\\
+DimensioneFile & Semplice & Basso & Input/Output & Non più di 1 GB\\
+ContenutoFile & Semplice & Molto Alto & Input/Output &\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{UscitaGruppo}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{UscitaGruppo}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+NomeGruppo & Semplice & Basso & Input &  Non più di 32 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsubsection}{GestioneUtentiGruppo}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |p{4cm}|c|p{2.7cm}|p{2.5cm}|p{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{GestioneUtentiGruppo}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
+AggiungiUtenteGruppo & Composto & Alto & Input &\\
+\textbf{Composto da:} & & & & \\
+\hline
+\textbf{Composto da:} & & & & \\
+Nickname & Semplice & Basso & Output &  Non più di 32 caratteri\\
+Username & Semplice & Medio & Output &  Non più di 32 caratteri\\
+\hline
+RimuoviUtenteGruppo & Composto & Alto & Input &\\
+\textbf{Composto da:} & & & & \\
+\hline
+\textbf{Composto da:} & & & & \\
+Nickname & Semplice & Basso & Output &  Non più di 32 caratteri\\
+Username & Semplice & Medio & Output &  Non più di 32 caratteri\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\pagebreak
+
+
+
+
+
+
+
+
+
+
+\phantomsection
+\subsection*{Analisi dei Vincoli}
+\addcontentsline{toc}{subsection}{Analisi dei Vincoli}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |p{3cm}|p{2cm}|p{3.5cm}|p{3.5cm}|  }
+\hline
+\rowcolor{denim!70}\multicolumn{4}{|c|}{\Large\textbf{Tabella dei Vincoli}} \\
+\hline
+\rowcolor{denim!50}\Large\textbf{Requisito} & \Large\textbf{Categorie} & \Large\textbf{Impatto} & \Large\textbf{Funzionalità} \\
+\hline
+Interfaccia intuitiva & Usabilità & Cercare di migliorare & AreaPersonale \\
+\hline
+Velocità caricamento file & Tempo di risposta & Cercare di migliorare & GestioneFile \\
+\hline
+Pannello di amministrazione intuitivo & Usabilità & Cercare di migliorare & GestioneUtenti, GestioneRichieste, GestioneGruppi, VisualizzaLog \\
+\hline
+Utilizzo efficace del servizio anche in assenza di una connessione veloce. & Usabilità. Tempo di risposta & Cercare di migliorare & Registrazione, Autenticazione, GestioneFile, GestioneAccount \\
+\hline
+Il sistema deve essere in grado di effettuare un ripristino veloce in caso di attacco. & Sicurezza & Peggiorano tempo di risposta, migliora la privacy dei dati & CreazioneBackup \\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+
+
+
+\phantomsection
+\subsection*{Analisi delle Interazioni}
+\addcontentsline{toc}{subsection}{Analisi delle Interazioni}
+
+\rowcolors{2}{orange!7!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{4cm}|p{4cm}|p{3.5cm}| }
+\hline
+\rowcolor{ferrarired!70}\multicolumn{3}{|c|}{\Large\textbf{Tabella delle Maschere}} \\
+\hline
+\rowcolor{ferrarired!45}\Large\textbf{Maschera} & \Large\textbf{Informazioni} & \Large\textbf{Funzionalità} \\
+\hline
+
+View Registrazione & Nickname, Username, Password & Registrazione \\
+
+View Login & Username, Password & Autenticazione \\
+
+\hline
+
+%----- AMMINISTRAZIONE
+
+View Gestione Utenti & Lista Utenti registrati, pulsante per rimuovere l'Utente & GestioneUtenti \\
+
+View Gestione Gruppi & Lista dei Gruppi registrati, pulsante per rimuovere il Gruppo & GestioneGruppi \\
+
+View Gestione Richieste & Lista richieste di registrazione di Utenti, lista di richieste di creazione gruppi, pulsanti per accettare/rifiutare la richiesta & GestioneRichieste \\
+
+View Visualizza Log & Lista dei file di Log & VisualizzaLog \\
+
+\hline
+
+%----- UTENTE
+View Gestione File & Lista dei file visualizzabili, possibilità di caricare un file, scaricare un file, eliminare un file & GestioneFile \\
+
+
+
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\pagebreak
+
+
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{4cm}|p{4cm}|p{3.5cm}| }
+\hline
+View Gestione Viste & Possibilità di creare una vista, eliminare una vista, riferimento all'editor delle viste & CreazioneVista, RimozioneVista, PersonalizzaVista\\
+
+View Editor Viste & Possibilità di caricare un file di configurazione per la vista, editor grafico vista & PersonalizzaVista, CreazioneVista \\
+
+View Gestione Account & Visualizza Nickname, Username, spazio di archiviazione rimanente, Sezione per modificare Nickname e Password, pulsante per rimuovere l'account & CambioCredenziali, RimozioneAccount \\
+
+\hline
+
+View Lista Gruppi & Lista dei gruppi registrati nel sistema, pulsante per esplorare il gruppo, pulsante per creare un nuovo gruppo & AreaGruppo, CreaGruppo \\
+
+View Gruppo & Se non iscritto mostra un pulsante per iscriversi al gruppo, se iscritto mostra un riferimento al gestore file di gruppo ed alla lista degli utenti ed un pulsante per abbandonare. & IscrizioneGruppo, VisualizzaUtenti, GestioneFileGruppo, UscitaGruppo \\
+
+View Lista Utenti Gruppo & Lista degli utenti iscritti al gruppo, se l'utente è amministratore del gruppo mostra un pulsante per rimuovere un utente dal gruppo & VisualizzaUtenti, GestioneUtentiGruppo \\
+
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\pagebreak
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{Tabella Sistemi Esterni}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |p{2cm}|p{2.5cm}|p{3.5cm}|p{3.5cm}|  }
+\hline
+\rowcolor{chromeyellow!80}\multicolumn{4}{|c|}{\Large\textbf{Tabella Sistemi Esterni}} \\
+\hline
+\rowcolor{chromeyellow!50}\Large\textbf{Sistema} & \Large\textbf{Descrizione} & \Large\textbf{Protocollo di Interazione} & \Large\textbf{Livello di Sicurezza} \\
+\hline
+Storage & Sistema di memoria & L'amministratore fornisce lo spazio di archiviazione sul Server & Alto livello, i dischi contengono le informazioni dei file \\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{2cm}
+
+
+
+\section*{Analisi Ruoli e Responsabilità}
+\phantomsection
+\addcontentsline{toc}{section}{Analisi Ruoli e Responsabilità}
+
+\rowcolors{2}{orange!7!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |p{2.5cm}|p{3cm}|p{4cm}|p{3cm}|p{3cm}|  }
+\hline
+\rowcolor{cerise!75}\multicolumn{5}{|c|}{\Large\textbf{Tabella Ruoli}} \\
+\hline
+\rowcolor{cerise!50}\Large\textbf{Ruolo} & \Large\textbf{Responsabilità} & \Large\textbf{Maschere} & \Large\textbf{Riservatezza}  & \Large\textbf{Numerosità} \\
+\hline
+Utente & Garantire la privacy della propria password & View Registrazione, View Login, Home Utente, View Gestione File, View Gestione Viste, View Editor Viste, View Gestione Account, View Lista Gruppi, View Lista Utenti , View Gruppo & Richiesto grado di riservatezza medio/basso & Numero gestito dell' amministratore di sistema, limitato nella configurazione del sistema \\
+
+Amministratore Gruppo & Gestione del proprio gruppo e delle informazioni relative ad esso &  View Registrazione, View Login, Home Utente, View Gestione File, View Gestione Viste, View Editor Viste, View Gestione Account, View Lista Gruppi, View Lista Utenti , View Gruppo & Richiesto grado di riservatezza medio & Numero gestito dell' amministratore di sistema\\
+
+Amministratore & Gestione delle informazioni relative agli utenti e ai gruppi e lettura dei log di sistema & View Login, Home Amministrazione, View Gestione Utenti, View Gestione Gruppi, View Gestione Richieste, View Visualizza Log, View Lista Gruppi, View Lista Utenti Gruppo & Richiesto grado di riservatezza molto alto  & Unica persona \\
+
+
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\pagebreak
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{Utente: Tabella Ruolo-Informazioni}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-0.5cm}{0cm}
+\resizebox{1.1\textwidth}{!}{
+\begin{tabular}{ |l|c|  }
+\hline
+\rowcolor{electriccrimson!65}\multicolumn{2}{|c|}{\Large\textbf{Utente: Tabella Ruolo-Informazioni}} \\
+\hline
+\rowcolor{electriccrimson!50}\Large\textbf{Informazione} & \Large\textbf{Tipo di Accesso} \\
+\hline
+Nickname & Lettura/Scrittura \\
+Username & Lettura/Scrittura \\
+Password & Scrittura \\
+Configurazione Vista & Lettura/Scrittura \\
+Informazioni inerenti al gruppo & Lettura \\
+File & Lettura/Scrittura \\
+
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.8cm}
+
+\phantomsection
+\addcontentsline{toc}{subsection}{AmministratoreGruppo: Tabella Ruolo-Informazioni}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-0.5cm}{0cm}
+\resizebox{1.1\textwidth}{!}{
+\begin{tabular}{ |l|c|  }
+\hline
+\rowcolor{electriccrimson!65!}\multicolumn{2}{|c|}{\Large\textbf{AmministratoreGruppo: Tabella Ruolo-Informazioni}} \\
+\hline
+\rowcolor{electriccrimson!50!}\Large\textbf{Informazione} & \Large\textbf{Tipo di Accesso} \\
+\hline
+Nickname Utente & Lettura/Scrittura \\
+Username Utente & Lettura/Scrittura \\
+Password Utente & Scrittura \\
+Configurazione Vista & Lettura/Scrittura \\
+Configurazione Gruppo & Lettura/Scrittura \\
+Informazioni inerenti al gruppo & Lettura \\
+File & Lettura/Scrittura \\
+
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.8cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{Amministratore: Tabella Ruolo-Informazioni}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-0.5cm}{0cm}
+\resizebox{1.1\textwidth}{!}{
+\begin{tabular}{ |l|c|  }
+\hline
+\rowcolor{electriccrimson!65}\multicolumn{2}{|c|}{\Large\textbf{Amministratore: Tabella Ruolo-Informazioni}} \\
+\hline
+\rowcolor{electriccrimson!50}\Large\textbf{Informazione} & \Large\textbf{Tipo di Accesso} \\
+\hline
+Username & Lettura/Scrittura \\
+Password & Scrittura \\
+Configurazione Utenti & Lettura/Scrittura \\
+Configurazione Gruppi & Lettura/Scrittura \\
+Log & Lettura \\
+
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.8cm}
+
+
+\section*{Scomposizione del Problema}
+\phantomsection
+\addcontentsline{toc}{section}{Tabella Scomposizione Funzionalità}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-0.5cm}{0cm}
+\resizebox{1.1\textwidth}{!}{
+\begin{tabular}{ |p{4cm}|p{4.5cm}|  }
+\hline
+\rowcolor{lapislazuli!70}\multicolumn{2}{|c|}{\Large\textbf{Tabella Scomposizione Funzionalità}} \\
+\hline
+\rowcolor{lapislazuli!50}\Large\textbf{Funzionalità} & \Large\textbf{Scomposizione} \\
+
+\hline
+GestioneAccount & CambioCredenziali, RimozioneAccount, VisualizzaInformazioni \\
+\hline
+GestioneViste & CreazioneVista, RimozioneVista, PersonalizzaVista \\
+\hline
+GestioneFile & CaricaFile, ScaricaFile, EliminaFile \\
+\hline
+AreaGruppi & CreaGruppo, IscrizioneGruppo, Gruppo, GestioneGruppo \\
+\hline
+EsploraGruppo & VisualizzaUtenti, GestioneFileGruppo, UscitaGruppo \\
+\hline
+GestioneGruppo & GestioneUtentiGruppo, GestioneFileGruppo \\
+
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\pagebreak
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{GestioneViste: Tabella Sotto-Funzionalità}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |p{4.5cm}|p{4.5cm}|p{3.5cm}|p{3.5cm}|  }
+\hline
+\rowcolor{chromeyellow!80}\multicolumn{4}{|c|}{\Large\textbf{GestioneViste: Tabella Sotto-Funzionalità}} \\
+\hline
+\rowcolor{chromeyellow!50}\Large\textbf{Sotto-funzionalità} & \Large\textbf{Sotto-funzionalità} & \Large\textbf{Legame} & \Large\textbf{Informazioni} \\
+\hline
+CreazioneVista & RimozioneVista & Non è possibile eliminare una vista se prima non è stata creata & NomeVista\\
+\hline
+CreazioneVista & PersonalizzaVista & Non è possibile personalizzare una vista se prima non è stata creata & NomeVista\\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{2cm}
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{GestioneFile: Tabella Sotto-Funzionalità}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |p{4.5cm}|p{4.5cm}|p{3.5cm}|p{3.5cm}|  }
+\hline
+\rowcolor{chromeyellow!80}\multicolumn{4}{|c|}{\Large\textbf{GestioneFile: Tabella Sotto-Funzionalità}} \\
+\hline
+\rowcolor{chromeyellow!50}\Large\textbf{Sotto-funzionalità} & \Large\textbf{Sotto-funzionalità} & \Large\textbf{Legame} & \Large\textbf{Informazioni} \\
+\hline
+EliminaFile & ScaricaFile & I File devono esistere per essere scaricati o eliminati & NomeFile\\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{2cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{AreaGruppi : Tabella Sotto-Funzionalità}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |p{4.5cm}|p{4.5cm}|p{3.5cm}|p{3.5cm}|  }
+\hline
+\rowcolor{chromeyellow!80}\multicolumn{4}{|c|}{\Large\textbf{AreaGruppi : Tabella Sotto-Funzionalità}} \\
+\hline
+\rowcolor{chromeyellow!50}\Large\textbf{Sotto-funzionalità} & \Large\textbf{Sotto-funzionalità} & \Large\textbf{Legame} & \Large\textbf{Informazioni} \\
+\hline
+CreaGruppo & IscrizioneGruppo & Non è possibile iscriversi ad un gruppo se prima non è stato creato & NomeGruppo\\
+\hline
+EsploraGruppo & IscrizioneGruppo & Non è possibile esplorare un gruppo se prima non ci si è iscritti al gruppo & NomeGruppo\\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\pagebreak

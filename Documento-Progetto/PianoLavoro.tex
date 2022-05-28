@@ -1,0 +1,93 @@
+\phantomsection
+\section*{Piano di Lavoro}
+\addcontentsline{toc}{section}{Piano di Lavoro}
+\vspace{0.5cm}
+
+Si è deciso di dividere sviluppo e progetto tra i vari membri nel seguente modo: 
+\\ \\
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-0.5cm}{0cm}
+\resizebox{1.1\textwidth}{!}{
+\begin{tabular}{ |l|c|c| }
+\hline
+\rowcolor{purple!25}\Large\textbf{Package} & \Large\textbf{Progetto} & \Large\textbf{Sviluppo} \\
+\hline
+InterfacciaRegistrazione & Nanni Cirulli, Venerandi, Di Fazio & Venerandi, Di Fazio\\
+\hline
+InterfacciaAutenticazione & Nanni Cirulli, Venerandi, Di Fazio & Venerandi, Di Fazio\\
+\hline
+InterfacciaAreaPersonale & Nanni Cirulli, Venerandi, Di Fazio & Nanni Cirulli\\
+\hline
+InterfacciaAreaGruppi & Nanni Cirulli, Venerandi, Di Fazio & Venerandi\\
+\hline
+InterfacciaGruppo & Nanni Cirulli, Venerandi, Di Fazio &  Venerandi\\
+\hline
+InterfacciaLog & Nanni Cirulli, Venerandi, Di Fazio &  Nanni Cirulli\\
+\hline
+InterfacciaAmministratore & Nanni Cirulli, Venerandi, Di Fazio &  Di Fazio\\
+\hline
+Registrazione & Nanni Cirulli, Venerandi, Di Fazio &  Venerandi, Di Fazio\\
+\hline
+Autenticazione & Nanni Cirulli, Venerandi, Di Fazio &  Venerandi, Di Fazio\\
+\hline
+GestioneViste & Nanni Cirulli, Venerandi, Di Fazio &  Nanni Cirulli, Di Fazio\\
+\hline
+GestioneFile & Nanni Cirulli, Venerandi, Di Fazio &  Nanni Cirulli, Di Fazio\\
+\hline
+GestioneAccount & Nanni Cirulli, Venerandi, Di Fazio &  Di Fazio\\
+\hline
+Log & Nanni Cirulli, Venerandi, Di Fazio &  Nanni Cirulli\\
+\hline
+AreaGruppi & Nanni Cirulli, Venerandi, Di Fazio &  Nanni Cirulli, Venerandi \\
+\hline
+GestioneGruppo & Nanni Cirulli, Venerandi, Di Fazio &  Venerandi, Di Fazio\\
+\hline
+EsploraGruppo & Nanni Cirulli, Venerandi, Di Fazio &  Di Fazio\\
+\hline
+GestioneUtenti & Nanni Cirulli, Venerandi, Di Fazio &  Venerandi, Di Fazio\\
+\hline
+GestioneGruppi & Nanni Cirulli, Venerandi, Di Fazio &  Venerandi, Nanni Cirulli\\
+\hline
+GestioneRichieste & Nanni Cirulli, Venerandi, Di Fazio &  Nanni Cirulli, Venerandi, Di Fazio\\
+\hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.8cm}
+
+
+\pagebreak
+\phantomsection
+\subsection*{Prototipo}
+\addcontentsline{toc}{subsection}{Prototipo}
+\vspace{0.5cm}
+
+Il prototipo prevederà la possibilità di registrarsi e autenticarsi, di gestire il pannello come amministratore e di utilizzare l'Area Personale per accedere alla sezione di Gestione File, dove sarà possibile caricare i file. Nell' interfaccia delle viste sarà invece possibile predisporre i file secondo una delle viste selezionate.
+
+\phantomsection
+\subsection*{Sviluppi Futuri}
+\addcontentsline{toc}{subsection}{Sviluppi Futuri}
+\vspace{0.5cm}
+
+Nelle versioni successive dell' applicazione si potrà avere un numero maggiore di viste preimpostate, una gestione dell' account completa con più funzionalità e l'amministratore di gruppo avranno dei pannelli di gestione completi.
+
+
+\pagebreak
+\phantomsection
+\subsection*{Piano del collaudo}
+\addcontentsline{toc}{subsection}{Piano del collaudo}
+\vspace{0.5cm}
+
+Per gestire lo sviluppo dell' applicazione sono stati predisposti alcuni test per analizzare il comportamento di componenti specifici del sistema. Nelle pagine successive vengono riportati parte dei test effettuati sul sistema. 
+
+\inputminted
+[
+frame=lines,
+framesep=2mm,
+baselinestretch=1.2,
+bgcolor=opal!20!,
+fontsize=\footnotesize,
+linenos
+]
+{csharp}{code/test.cs}

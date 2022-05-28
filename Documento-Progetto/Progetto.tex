@@ -1,0 +1,138 @@
+\documentclass[a4paper,11pt,oneside]{book}
+\usepackage{alphabeta}
+
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{adjustbox}
+\usepackage{changepage}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{titlesec}
+\usepackage{longtable}
+
+\usepackage{minted}
+\usemintedstyle{manni}
+
+\titleformat{\chapter}[display]
+{\normalfont\Huge\bfseries}
+{\thesection.}{0.5em}{}
+\titleformat{\section}[display]
+{\normalfont\huge\bfseries}
+{\thesection.}{0.5em}{}
+\titleformat{\subsection}[display]
+{\normalfont\Large\bfseries}
+{\thesection.}{0.5em}{}
+
+%---------------------------------
+% COLORI
+
+\definecolor{bondiblue}{rgb}{0.0, 0.58, 0.71}
+\definecolor{awesome}{rgb}{1.0, 0.13, 0.32}
+\definecolor{darkspringgreen}{rgb}{0.09, 0.45, 0.27}
+\definecolor{darktangerine}{rgb}{1.0, 0.66, 0.07}
+\definecolor{emerald}{rgb}{0.31, 0.78, 0.47}
+\definecolor{ferrarired}{rgb}{1.0, 0.11, 0.0}
+\definecolor{denim}{rgb}{0.08, 0.38, 0.74}
+\definecolor{cerise}{rgb}{0.87, 0.19, 0.39}
+\definecolor{chromeyellow}{rgb}{1.0, 0.65, 0.0}
+\definecolor{electriccrimson}{rgb}{1.0, 0.0, 0.25}
+\definecolor{lapislazuli}{rgb}{0.15, 0.38, 0.61}
+\definecolor{opal}{rgb}{0.66,0.76,0.74}
+
+%---------------------------------
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=red,
+    pdftitle={BOPO},
+    pdfpagemode=FullScreen,
+    }
+
+
+\geometry{a4paper,top=3cm,bottom=3cm,left=3.5cm,right=3.5cm}
+\linespread{1}
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{20pt}
+\renewcommand{\arraystretch}{1.8}
+\renewcommand{\contentsname}{Indice}
+ 
+\pagestyle{empty}
+
+\begin{document}
+
+\thispagestyle{empty}
+\vspace{2cm}
+
+\begin{center}                                                            
+    \vspace{5mm}
+    {\LARGE UNIVERSIT\`A DI BOLOGNA} \\                       
+      \vspace{2cm}
+\end{center}
+\begin{center}
+  \includegraphics[scale=0.1]{figs/bopo.png}
+  \vspace{1 cm}
+\LARGE\textbf{\\Backup Orchestrator \\Package Organizer} \\                       
+\end{center}
+
+\begin{flushleft}
+    \vspace{3cm}
+      {\Large{Sviluppato da:}}\\
+      \vspace{3mm}
+      \textbf{\@ Daniele Nanni Cirulli}\\
+      \vspace{1mm}
+      \textbf{\@ Lorenzo Venerandi}\\
+      \vspace{1mm}
+      \textbf{\@ Patrick Di Fazio}\\
+\end{flushleft}        %capoverso allineato a destra
+\begin{center}
+\vfill
+      {\large Anno accademico \@2021/2022} \\
+\end{center}
+
+\newpage
+\tableofcontents
+
+\input{Abstract}
+\pagebreak
+
+\input{AnalisiRequisiti}
+\pagebreak
+
+\input{Vocabolario}
+\pagebreak
+
+\input{TabellaRequisiti}
+\pagebreak
+
+\phantomsection
+\section*{Casi d'uso}
+\addcontentsline{toc}{section}{Casi d'uso}
+\begin{adjustwidth}{-2cm}{0cm}
+\includegraphics[scale=0.9]{casi d'uso/Casi d'uso-Casi d'uso.drawio.pdf}
+\end{adjustwidth}
+
+\input{Scenari}
+\pagebreak
+
+\input{AnalisiRischio}
+\pagebreak
+
+\chapter*{Analisi del Problema}
+\addcontentsline{toc}{chapter}{Analisi del Probelma}
+
+\input{AnalisiFunzionalita}
+
+\input{AnalisiDominio}
+
+\pagebreak
+\input{PianoLavoro}
+
+\input{Progettazione}
+
+\end{document}

@@ -1,0 +1,178 @@
+\section*{Analisi del Dominio}
+\phantomsection
+\addcontentsline{toc}{section}{Analisi del Dominio}
+
+\subsection*{Modello del Dominio}
+
+\subsubsection*{Struttura Account}
+\phantomsection
+\addcontentsline{toc}{subsection}{Modello del Dominio: Struttura Account}
+\vspace{0.5cm}
+Questo è il diagramma delle classi del dominio relativo alla struttura degli Account ed alle relazione con gli Attori. \\
+Sia Utente che Amministratore estendono Account, in quanto hanno in comune le credenziali di accesso \verb|username| e \verb|password|, omessa per ragioni di sicurezza.\\
+Inoltre Amministratore Gruppo estende Utente con cardinalità 0..n - 1, in quanto un solo Utente può essere amministratore di più gruppi.
+
+\vspace{0.5cm}
+\begin{adjustwidth}{-2cm}{0cm}
+\includegraphics[scale=1]{dominio/Dominio-Struttura Account.drawio.pdf}
+\end{adjustwidth}
+
+%------------------------
+\pagebreak
+\subsubsection*{Area Personale}
+\phantomsection
+\addcontentsline{toc}{subsection}{Modello del Dominio: Area Personale}
+\vspace{0.5cm}
+La sezione Area Personale ha come attore l'Utente, il quale usa GestioneFile, GestioneViste, GestioneAccount. Il numero di Viste è limitato a 5, mentre non c'è un limite nel numero di File che è legato solo allo spazio disponibile residuo dell'Utente.
+\vspace{0.5cm}
+
+\begin{adjustwidth}{-2cm}{0cm}
+\includegraphics[scale=0.9]{dominio/Dominio-Area Personale.drawio.pdf}
+\end{adjustwidth}
+
+
+%-----------------
+\pagebreak
+\subsubsection*{Area Gruppi}
+\phantomsection
+\addcontentsline{toc}{subsection}{Modello del Dominio: Area Gruppi}
+\vspace{0.5cm}
+Nell' Area Gruppi l'Utente ha a disposizione i metodi per gestire all'interno dei gruppi le proprie risorse e viste. L'Utente dispone anche dei metodi per aggiornare la sua configurazione dell'account tramite GestioneAccount, il quale espone anche lo spazio rimanente.
+\vspace{0.5cm}
+
+\begin{adjustwidth}{-2cm}{0cm}
+\includegraphics[scale=1]{dominio/Dominio-Area Gruppi.drawio.pdf}
+\end{adjustwidth}
+
+%-----------------
+\pagebreak
+\subsubsection*{Amministrazione}
+\phantomsection
+\addcontentsline{toc}{subsection}{Modello del Dominio: Amministrazione}
+\vspace{0.5cm}
+
+Nella sezione Amministratore, si dispongono i metodi per gestire le richieste.\linebreak \textbf{gestisciRichiestaUtente()} e \textbf{gestisciRichiestaGruppo()} servono per accettare o rifiutare le richieste "in attesa". L'Amministratore può anche eliminare Utenti e Gruppi.Le operazioni sono tracciate registrando nei Logs ogni richiesta.
+
+\vspace{0.5cm}
+\begin{adjustwidth}{-2.5cm}{0cm}
+\includegraphics[scale=0.9]{dominio/Dominio-Amministrazione.drawio.pdf}
+\end{adjustwidth}
+\pagebreak
+
+%------------------
+\phantomsection
+\addcontentsline{toc}{section}{Architettura Logica: Struttura}
+\includepdf[pages={1}]{classi/Package-Package.drawio.pdf}
+%-------------------
+
+\subsection*{Diagrammi delle Classi}
+
+\phantomsection
+\subsubsection*{Diagramma delle Classi: Autenticazione}
+\addcontentsline{toc}{subsection}{Diagramma delle Classi: Autenticazione}
+\vspace{1cm}
+Il metodo \verb|registraUtente| inserisce la richiesta di registrazione nella \\\verb|listaRichiesteRegistrazione| della classe \verb|GestioneAmministrazioneController|.\\
+L' operazione portata a termine quando l'Amministratore accetta la richiesta.
+\vspace{2cm}
+\begin{adjustwidth}{-2.5cm}{0cm}
+\includegraphics[scale=0.7]{classi/Package-Classi-Autenticazione.drawio.pdf}
+\end{adjustwidth}
+
+
+
+\phantomsection
+\subsubsection*{Diagramma delle Classi: Amministrazione}
+\addcontentsline{toc}{subsection}{Diagramma delle Classi: Amministrazione}
+\vspace{0.5cm}
+
+\begin{adjustwidth}{-2.5cm}{0cm}
+\includegraphics[scale=0.8]{classi/Package-Classi-Amministrazione.drawio.pdf}
+\end{adjustwidth}
+\vspace{0.5cm}
+
+
+
+
+\phantomsection
+\subsubsection*{Diagramma delle Classi: Utente}
+\addcontentsline{toc}{subsection}{Diagramma delle Classi: Utente}
+\vspace{0.5cm}
+
+
+\vspace{0.5cm}
+\begin{adjustwidth}{-3.5cm}{0cm}
+\includegraphics[scale=0.7]{classi/Package-Classi-Utente.drawio.pdf}
+\end{adjustwidth}
+
+
+
+
+\phantomsection
+\subsubsection*{Diagramma delle Classi: Gruppi}
+\addcontentsline{toc}{subsection}{Diagramma delle Classi: Gruppi}
+\vspace{0.5cm}
+
+
+\vspace{0.5cm}
+\begin{adjustwidth}{-2.5cm}{0cm}
+\includegraphics[scale=0.75]{classi/Package-Classi-Gruppi.drawio.pdf}
+\end{adjustwidth}
+
+
+
+%------------------------------------------
+
+
+\phantomsection
+\section*{Architettura Logica: Interazione}
+\addcontentsline{toc}{section}{Architettura Logica: Interazione}
+\vspace{0.5cm}
+
+
+\phantomsection
+\subsection*{Diagramma di sequenza : Registrazione}
+\addcontentsline{toc}{subsection}{Diagramma di sequenza : Registrazione}
+\vspace{0.5cm}
+
+\begin{adjustwidth}{-0.5cm}{0cm}
+\includegraphics[scale=0.9]{interazione/Package-Interazione-Registrazione.drawio.pdf}
+\end{adjustwidth}
+
+\phantomsection
+\subsection*{Diagramma di sequenza : Autenticazione}
+\addcontentsline{toc}{subsection}{Diagramma di sequenza : Autenticazione}
+\vspace{0.5cm}
+
+\begin{adjustwidth}{-0.5cm}{0cm}
+\includegraphics[scale=0.9]{interazione/Package-Interazione-Autenticazione.drawio.pdf}
+\end{adjustwidth}
+
+
+\phantomsection
+\subsection*{Diagramma di sequenza : Gestione Amministratore}
+\addcontentsline{toc}{subsection}{Diagramma di sequenza : Gestione Amministratore}
+\vspace{0.5cm}
+
+\vspace{0.5cm}
+\begin{adjustwidth}{-1cm}{0cm}
+\includegraphics[scale=0.8]{interazione/Package-Interazione-GestioneAmministratore.drawio.pdf}
+\end{adjustwidth}
+
+\phantomsection
+\subsubsection*{Diagramma di sequenza : Area Personale\-Viste}
+\addcontentsline{toc}{subsection}{Diagramma di sequenza : Area Personale\-Viste}
+\vspace{0.5cm}
+
+\begin{adjustwidth}{-2.5cm}{0cm}
+\includegraphics[scale=0.8]{interazione/Package-Interazione-AreaPersonale.drawio.pdf}
+\end{adjustwidth}
+
+
+\phantomsection
+\subsubsection*{Diagramma di sequenza : Area Gruppi}
+\addcontentsline{toc}{subsection}{Diagramma di sequenza : Area Gruppi}
+\vspace{0.5cm}
+
+\begin{adjustwidth}{-2.5cm}{0cm}
+\includegraphics[scale=0.8]{interazione/Package-Interazione-AreaGruppi.drawio.pdf}
+\end{adjustwidth}

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KdDgmuV5MwMvB8AhfMaXL8lbYsCeJuAJ/VU+XdtuO7Xrn6c81KKtipR/hivRP3ftDdjoFdL+T0jI8Gwg6Et+gQ==",
+  "dgSpecHash": "wzNRaJKNJ7/7IdazvvDY/4WZMAd3uwGgKUHAhSeXJXbI5vZkZvJ/cAJwmY95Ka1ZSRIHCk5qziUo0UYot7+bsg==",
   "success": true,
   "projectFilePath": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "C:\\Users\\lollo\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\lollo\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\lollo\\.nuget\\packages\\microsoft.jsinterop\\5.0.0\\microsoft.jsinterop.5.0.0.nupkg.sha512",
+    "C:\\Users\\lollo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\radzen.blazor.3.18.12.nupkg.sha512",
     "C:\\Users\\lollo\\.nuget\\packages\\system.io.pipelines\\5.0.0\\system.io.pipelines.5.0.0.nupkg.sha512",
     "C:\\Users\\lollo\\.nuget\\packages\\system.linq.dynamic.core\\1.2.12\\system.linq.dynamic.core.1.2.12.nupkg.sha512"

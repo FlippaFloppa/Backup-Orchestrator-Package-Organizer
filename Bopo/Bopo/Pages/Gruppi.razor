@@ -1,15 +1,109 @@
 ﻿@page "/gruppi"
 
-    <Menu/>
+@using Radzen
+@using System.Collections.Generic;
 
-    <div class="row">
-        <div class="col-xl-6">
-            <h3 class="mt-3">Image from url</h3>
-            <RadzenImage Path="https://www.radzen.com/assets/hero-40b90af93c7bda2d44608c74e2b8eeb6785e273e02340ec44583d097b5dfb896.png" Style="width: 100%;">
-            </RadzenImage>
+<Menu></Menu>
+
+<div class=" col-xl-4 offset-lg-3 offset-xl-4">
+<RadzenCard Style="border-radius:1.4rem;">
+                <div class="d-flex flex-row">
+                    <RadzenImage Path="/images/bopo.svg" Style="width: 150px; height: 150px;" />
+                    <h1 style="align-self:safe center;margin-left: 40px;font-size:50px">Area Gruppi</h1>
+                </div>
+</RadzenCard>
+</div>
+
+<div class="container">
+    <div class="row py-5">
+        <div class="col">
+            <RadzenCard Style="border-radius:1.2rem;">
+
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@listaGruppi" TItem="Gruppo" PageSize="5" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
+                    <Template Context="gruppo">
+                        <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;border-radius:1.2rem;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 p-3 group-name">
+                                            @(gruppo.nome)
+                                    </div>
+                                    <div class="col-lg-7 p-3">
+                                        <h5 class="mb-0">Partecipanti</h5>
+                                         <p class="mb-sm-2 mb-lg-0">@(gruppo.partecipanti)</p>
+                                    </div>
+                                    <div class="col-lg-2 p-3">
+                                        <RadzenButton Text="Esplora" ButtonStyle="ButtonStyle.Success"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </RadzenCard>
+                    </Template>
+                </RadzenDataList>
+
+            </RadzenCard>
         </div>
     </div>
+</div>
+
+<style>
+.group-name {
+    min-height: 72px;
+    color: #EEEEEE;
+    background-color: #646FD4;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+}
+</style>
 
 @code {
 
+    class Gruppo : IEquatable<Gruppo>{
+
+        public String nome { get; set; }
+
+        public int partecipanti { get; set; }
+
+        public Gruppo(String nome,int part)
+        {
+            this.nome = nome;
+            this.partecipanti = part;
+        }
+
+        public override string ToString()
+        {
+            return "nome: " + nome + "   num: " + partecipanti;
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj == null) return false;
+            Gruppo objAsPart = obj as Gruppo;
+            if (objAsPart == null) return false;
+            else return Equals(objAsPart);
+        }
+        public override int GetHashCode()
+        {
+            return nome.GetHashCode();
+        }
+        public bool Equals(Gruppo other)
+        {
+            if (other == null) return false;
+            return (this.nome.Equals(other.nome));
+        }
+    }
+
+    List<Gruppo> listaGruppi = new List<Gruppo>();
+
+    protected override void OnInitialized()
+    {
+        listaGruppi.Add(new Gruppo("gang", 10));
+        listaGruppi.Add(new Gruppo("pale", 10));
+        listaGruppi.Add(new Gruppo("gang", 106));
+        listaGruppi.Add(new Gruppo("bang", 150));
+        listaGruppi.Add(new Gruppo("gang", 10));
+        listaGruppi.Add(new Gruppo("pale", 10));
+        listaGruppi.Add(new Gruppo("gang", 106));
+        listaGruppi.Add(new Gruppo("bang", 150));
+    }
 }

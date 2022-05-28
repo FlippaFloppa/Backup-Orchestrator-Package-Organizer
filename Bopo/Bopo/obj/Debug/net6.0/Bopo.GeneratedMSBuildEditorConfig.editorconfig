@@ -8,53 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Bopo
 build_property.RootNamespace = Bopo
-build_property.ProjectDir = C:\Users\lollo\Documents\GitHub\Progetto-Ingegneria-del-Software\Bopo\Bopo\
+build_property.ProjectDir = /Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lollo\Documents\GitHub\Progetto-Ingegneria-del-Software\Bopo\Bopo
+build_property.MSBuildProjectDirectory = /Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/App.razor]
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Pages/Menu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/_Imports.razor]
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Shared/EventConsole.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0V2ZW50Q29uc29sZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-a5eaetfdh3
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-lrctnn8xj4
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-9gystqiqph
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-t4hapnvdsb
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/Pages/_Host.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lollo/Documents/GitHub/Progetto-Ingegneria-del-Software/Bopo/Bopo/Pages/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+[/Users/patrickdifazio/ING_Software/Ingegneria-del-Software/Bopo/Bopo/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

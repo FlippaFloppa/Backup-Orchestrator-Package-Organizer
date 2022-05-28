@@ -79,7 +79,6 @@ C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\obj\Debug\net6
 C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\obj\Debug\net6.0\scopedcss\bundle\Bopo.styles.css
 C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\obj\Debug\net6.0\scopedcss\projectbundle\Bopo.bundle.scp.css
 C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\obj\Debug\net6.0\Bopo.csproj.CopyComplete

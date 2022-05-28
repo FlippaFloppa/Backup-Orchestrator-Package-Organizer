@@ -27,7 +27,7 @@
                                 <RadzenPassword style="display: block;" Name="Password" @bind-Value="@model.Password" Class="w-100" />
                                 <RadzenRequiredValidator Component="Password" Text="Enter password" Popup="@popup" Style="position: absolute" />
                             </div>
-                        </div>
+            </div>
                         <div class="row mb-4">
                             <div class="col-md-4" style="align-self: center;">
                                 <RadzenLabel Text="Repeat Password" />
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <RadzenButton ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" Click=@(OnClick) style="align-self: center; display: block; width: 100%;">
-                            <span class="rz-button-text">Registrer</span>
+                            <span class="rz-button-text">Register</span>
                             <RadzenImage Path="images/login_icon.png" Style="width: 20px; height: 20px; margin-left: 8px;" />
                         </RadzenButton>
 

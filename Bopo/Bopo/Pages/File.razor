@@ -16,19 +16,33 @@
 
 <div class="row my-5">
     <div class="col-lg-6 offset-lg-3">
-        <RadzenCard>
-            <RadzenTree Data=@entries Expand=@LoadFiles Style="width: 100%; height: 300px">
+            <div class="row mb-3">
+                <div class="col-md-6" style="align-self: center;">
+        <RadzenCard Style="width: 100%; height: 500px;border-radius: 1.4rem;">
+            <RadzenTree Data=@entries Expand=@LoadFiles >
                 <RadzenTreeLevel Text=@GetTextForNode Template=@FileOrFolderTemplate />
             </RadzenTree>
+
         </RadzenCard>
+                </div>
+                <div class="col">
+        <RadzenCard Style="width: 100%; height: 500px;border-radius: 1.4rem;">
+                    <h4 class="mb-4" >Carica un file</h4>
+                    <RadzenButton  Style="margin-bottom: 20px" Text="Upload" Click=@(args => upload.Upload()) class="d-block mt-7" ButtonStyle="ButtonStyle.Success" Icon="file_upload"/>
+                    <RadzenUpload Style="margin-bottom: 20px" @ref="upload" Auto="false" Multiple="true" Url="upload/multiple" Change=@(args => OnChange(args, "Manual Upload"))
+                            Progress=@(args => OnProgress(args, "Manual Upload")) class="w-300" />
+        </RadzenCard>
+                </div>
+            </div>
     </div>
 </div>
+
 
 @code {
     IEnumerable<string> entries;
     protected override void OnInitialized()
-    {
-        entries = Directory.GetDirectories(HostEnvironment.ContentRootPath)
+    {   
+        entries = Directory.GetDirectories(HostEnvironment.WebRootPath+"/storage")
                            .Where(entry =>
                            {
                                var name = Path.GetFileName(entry);
@@ -63,4 +77,53 @@
         builder.CloseComponent();
         builder.AddContent(3, context.Text);
     };
+        EventConsole console;
+        RadzenUpload upload;
+
+    int progress;
+    bool showProgress;
+    bool showComplete;
+
+    void CompleteUpload()
+    {
+        showProgress = false;
+        showComplete = true;
+    }
+
+    void TrackProgress(UploadProgressArgs args)
+    {
+        showProgress = true;
+        showComplete = false;
+        progress = args.Progress;
+    }
+
+    int customParameter = 1;
+
+    void OnChange(UploadChangeEventArgs args, string name)
+    {
+        foreach (var file in args.Files)
+        {
+            console.Log($"File: {file.Name} / {file.Size} bytes");
+        }
+
+        console.Log($"{name} changed");
+    }
+
+    void OnProgress(UploadProgressArgs args, string name)
+    {
+        console.Log($"{args.Progress}% '{name}' / {args.Loaded} of {args.Total} bytes.");
+
+        if (args.Progress == 100)
+        {
+            foreach (var file in args.Files)
+            {
+                console.Log($"Uploaded: {file.Name} / {file.Size} bytes");
+            }
+        }
+    }
+
+    void OnComplete(UploadCompleteEventArgs args)
+    {
+        console.Log($"Server response: {args.RawResponse}");
+    }
 }

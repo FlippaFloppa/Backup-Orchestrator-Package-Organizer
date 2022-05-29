@@ -27,7 +27,7 @@
                                 <RadzenLabel Text="Password" />
                             </div>
                             <div class="col">
-                                <RadzenPassword style="display: block;" Name="Password" @bind-Value="@model.Password" Class="w-100" />
+                                <RadzenPassword Placeholder="**************" style="display: block;" Name="Password" @bind-Value="@model.Password" Class="w-100" />
                                 <RadzenRequiredValidator Component="Password" Text="Enter password" Popup="@popup" Style="position: absolute" />
                             </div>
             </div>
@@ -36,7 +36,7 @@
                                 <RadzenLabel Text="Repeat Password" />
                             </div>
                             <div class="col">
-                                <RadzenPassword style="display: block;" Name="RepeatPassword" @bind-Value="@model.RepeatPassword" Class="w-100" />
+                                <RadzenPassword Placeholder="**************" style="display: block;" Name="RepeatPassword" @bind-Value="@model.RepeatPassword" Class="w-100" />
                                 <RadzenRequiredValidator Component="RepeatPassword" Text="Repeat your password" Popup="@popup" Style="position: absolute" />
                                 <RadzenCompareValidator
                                     Visible="@(!string.IsNullOrEmpty(model.RepeatPassword))"

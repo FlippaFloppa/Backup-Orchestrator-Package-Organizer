@@ -28,15 +28,15 @@ Il pannello di amministrazione intuitivo permetterà all'amministratore di opera
 \phantomsection
 \subsection*{Scelta dell' Architettura}
 \addcontentsline{toc}{subsection}{Scelta dell' Architettura}
-Per l'architettura del sistema si è optato per un sistema Client/Server che si appoggia su un Database. Le connessioni tra i vari livelli saranno cirfate.
+Per l'architettura del sistema si è optato per un sistema Client/Server che si appoggia ad un Database. Le connessioni tra i vari livelli saranno cifrate.
 \vspace{0.5cm}
 \phantomsection
 \subsection*{L1 - Client}
 \addcontentsline{toc}{subsection}{L1 - Client}
-Il Client utilizzerà una connessione TLS che sarà fondamentale in tutte le operazioperni di interazione con il server e per lo scambio dei file che avverrà tra i due.
+Il Client utilizzerà una connessione TLS che sarà fondamentale in tutte le operazioni di interazione con il server e per lo scambio dei file che avverrà tra i due.
 Per aggiungere un ulteriore livello di sicurezza, negli sviluppi futuri dell' applicazione si potrebbe aggiungere una cifratura dei file lato server.
 \\
-Il Client Utente sarà potenzialmente anche Client AmministratoreGruppo e sarà poi presente un Cient Amministratore separato.
+Il Client Utente sarà potenzialmente anche Client AmministratoreGruppo e sarà poi presente un Client Amministratore separato.
 \vspace{0.5cm}
 
 \phantomsection
@@ -53,7 +53,7 @@ Sul sistema sarà presente
 \phantomsection
 \subsection*{L3 - Database}
 \addcontentsline{toc}{subsection}{L3 - Database}
-Per la gestione della persistenza dei dati degli Utenti e dell' Amministratore e per salvare gli ID dei file, viene utilizzata una connessione sicura TLS già supportata dal database e in più verrà aggiunto un SALT che garantirà una maggiore sicurezza nel caso degli attacchi a dizionario.
+Per la gestione della persistenza dei dati degli Utenti e dell' Amministratore e per salvare gli ID dei file, viene utilizzata una connessione sicura TLS già supportata dal database e in più verrà aggiunto un SALT che garantirà una maggiore sicurezza nel caso di attacchi a dizionario.
 Il Database - Server sarà installabile in modo disaccoppiato al sistema, in modo da poter utilizzare anche eventualmente un sistema Cloud o un sistema esterno per salvare i dati.
 \\
 Il database sarà disposto su tre server: un database memorizzerà i dati degli utilizzatori del sistema, un altro database memorizzerà i LOG e sarà accessibile dall'Amministratore per il monitoraggio del sistema e l'ultimo database manterrà la struttura ad albero dei file con i relativi ID.
@@ -208,7 +208,7 @@ I Controller usano LogController per registrare ogni operazione come Log. A diff
 \addcontentsline{toc}{subsection}{Broker}
 Nel caso dell' applicazione web, il Broker può essere incorporato nel server web.
 \\Così facendo possiamo delegare a quest'ultimo la capacità di gestire le richieste di connessione, catturando le sessioni dei clienti connessi e delegando a sua volta al Controller le operazioni necessarie per eseguire la registrazione e l'autenticazione.\\
-Il Broker si interpone tra Client e Server e interagisce fin dalla prima connessione al servizio da parte dell' utente. Potrà inoltre gestire molte richieste da molti utenti in parallelo, rendendo l'applicativo accessibile contemporaneamente nelle fasi di autenticazione.
+Il Broker si interpone tra Client e Server e interagisce fin dalla prima connessione dell'utente al servizio. Potrà inoltre gestire molteplici richieste provenienti da numerosi utenti in parallelo, rendendo l'applicativo accessibile contemporaneamente nelle fasi di autenticazione.
 Nel nostro caso specifico, il Broker è incorporato nel framework Dotnet. 
 \vspace{0.5cm}
 
@@ -216,11 +216,11 @@ Nel nostro caso specifico, il Broker è incorporato nel framework Dotnet.
 
 \subsection*{View di Registrazione e Autenticazione}
 \phantomsection
+\addcontentsline{toc}{subsection}{View di Registrazione e Autenticazione}
 \begin{adjustwidth}{-2cm}{0cm}
 \includegraphics[scale=0.8]{progettazione/Progettazione-Interfacce Disponibili Registrazione_Autenticazione.drawio.pdf}
 \end{adjustwidth}
 \vspace{0.5cm}
-\addcontentsline{toc}{subsection}{View di Registrazione e Autenticazione}
 \vspace{0.5cm}
 
 
@@ -228,30 +228,98 @@ Nel nostro caso specifico, il Broker è incorporato nel framework Dotnet.
 
 \subsection*{View rese disponibili all' Utente}
 \phantomsection
+\addcontentsline{toc}{subsection}{View Utente}
 \begin{adjustwidth}{-2cm}{0cm}
 \includegraphics[scale=0.9]{progettazione/Progettazione-Interfacce Disponibili all' Utente.drawio.pdf}
 \end{adjustwidth}
 \vspace{0.5cm}
-\addcontentsline{toc}{subsection}{View Utente}
 \vspace{0.5cm}
 
 
 \subsection*{View rese disponibili ai Gruppi}
 \phantomsection
+\addcontentsline{toc}{subsection}{View Amministratore di Gruppo}
 \begin{adjustwidth}{-3cm}{0cm}
 \includegraphics[scale=0.9]{progettazione/Progettazione-Interfacce Disponibili ai Gruppi.drawio.pdf}
 \end{adjustwidth}
-\addcontentsline{toc}{subsection}{View Amministratore di Gruppo}
 \vspace{0.5cm}
 
 
 \subsection*{View rese disponibili all' Amministratore}
 \phantomsection
+\addcontentsline{toc}{subsection}{View Amministratore}
 \begin{adjustwidth}{-2.5cm}{0cm}
 \includegraphics[scale=0.9]{progettazione/Progettazione-Interfacce Disponibili all' Amministratore.drawio.pdf}
 \end{adjustwidth}
-\addcontentsline{toc}{subsection}{View Amministratore}
 \vspace{0.5cm}
+
+
+
+%----------------------------
+
+\section*{Interfacce Applicazione}
+\phantomsection
+\addcontentsline{toc}{section}{Interfacce Applicazione}
+\vspace{0.5cm}
+
+\subsection*{Autenticazione}
+\phantomsection
+\addcontentsline{toc}{subsection}{Autenticazione}
+
+\vspace{3cm}
+
+\begin{adjustwidth}{-0.5cm}{0cm}
+\includegraphics[scale=0.8]{figs/login.png}
+\end{adjustwidth}
+\pagecolor{background}\afterpage{\nopagecolor}
+
+
+
+\subsection*{Registrazione}
+\phantomsection
+\addcontentsline{toc}{subsection}{Registrazione}
+\vspace{3cm}
+\begin{adjustwidth}{-0.5cm}{0cm}
+\includegraphics[scale=0.85]{figs/registrazione.png}
+\end{adjustwidth}
+\pagecolor{background}\afterpage{\nopagecolor}
+
+
+\subsection*{Gestione Account}
+\phantomsection
+\addcontentsline{toc}{subsection}{Gestione Account}
+\vspace{3cm}
+\begin{adjustwidth}{-1.5cm}{0cm}
+\includegraphics[scale=0.8]{figs/gestione_account.png}
+\end{adjustwidth}
+\pagecolor{background}\afterpage{\nopagecolor}
+
+
+
+\subsection*{Gestione File}
+\phantomsection
+\addcontentsline{toc}{subsection}{Gestione File}
+\vspace{3cm}
+\begin{adjustwidth}{-4cm}{0cm}
+\includegraphics[scale=0.8]{figs/gestione_file.png}
+\end{adjustwidth}
+\pagecolor{background}\afterpage{\nopagecolor}
+
+
+\subsection*{Gruppi}
+\phantomsection
+\addcontentsline{toc}{subsection}{Gruppi}
+\vspace{3cm}
+\begin{adjustwidth}{-3cm}{0cm}
+\includegraphics[scale=0.75]{figs/gruppi.png}
+\end{adjustwidth}
+\pagecolor{background}\afterpage{\nopagecolor}
+
+%--------------------------------
+
+
+
+
 
 
 \section*{Diagramma di dettaglio: Interazione}
@@ -314,6 +382,7 @@ L'Amministratore ha il ruolo di accettare la coda di richieste provenienti dagli
 \subsection*{Diagramma di Sequenza: Interazione Log}
 \phantomsection
 \addcontentsline{toc}{subsection}{Diagramma di Sequenza: Interazione Log}
+\vspace{1.5cm}
 \begin{adjustwidth}{0cm}{0cm}
 \includegraphics[scale=1]{progettazione/Diagramma-Sequenza-Interazione-Log.drawio.pdf}
 \end{adjustwidth}
@@ -367,6 +436,25 @@ Ogni entry rispetta questo formato:\\
     Timestamp   & Evento che ha generato il Log & Contenuto del Log \\
     \hline
     \end{tabular}
+    
+    
+    
+\pagebreak
+\section*{Progettazione Collaudo}
+\phantomsection
+\addcontentsline{toc}{section}{Progettazione Collaudo}
+\vspace{1cm}
+
+\inputminted
+[
+frame=lines,
+framesep=2mm,
+baselinestretch=1.2,
+bgcolor=opal!20!,
+fontsize=\footnotesize,
+linenos
+]
+{csharp}{code/collaudo.cs}
 %----------------------------------------
 
 

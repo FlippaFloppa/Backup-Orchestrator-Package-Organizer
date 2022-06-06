@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nWsX4IyEmUXR25+UOqTt/ZXPxFNsQzlDD9znLbSb7LM=",
+  "Hash": "/ZKQ5cdhxjAwZ6Z4uwmeCotqF5hucy+uzoWhalpSFqg=",
   "Source": "Bopo",
   "BasePath": "_content/Bopo",
   "Mode": "Default",
@@ -16,23 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark.css",
-      "SourceId": "Radzen.Blazor",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
-      "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/dark.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark.css"
-    },
     {
       "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark-base.css",
       "SourceId": "Radzen.Blazor",
@@ -51,12 +34,12 @@
       "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark-base.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default.css",
+      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/default.css",
+      "RelativePath": "css/dark.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +48,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default.css"
+      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark.css"
     },
     {
       "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default-base.css",
@@ -85,12 +68,12 @@
       "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default-base.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic.css",
+      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/humanistic.css",
+      "RelativePath": "css/default.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,7 +82,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic.css"
+      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default.css"
     },
     {
       "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic-base.css",
@@ -119,12 +102,12 @@
       "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic-base.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software.css",
+      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/software.css",
+      "RelativePath": "css/humanistic.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +116,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software.css"
+      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic.css"
     },
     {
       "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software-base.css",
@@ -153,12 +136,12 @@
       "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software-base.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard.css",
+      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/standard.css",
+      "RelativePath": "css/software.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,7 +150,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard.css"
+      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software.css"
     },
     {
       "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard-base.css",
@@ -185,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/standard.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard.css"
     },
     {
       "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\MaterialIcons-Regular.woff",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\Radzen.Blazor.js"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\win-x64\\scopedcss\\bundle\\Bopo.styles.css",
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\scopedcss\\bundle\\Bopo.styles.css",
       "SourceId": "Bopo",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\win-x64\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "Bopo.styles.css",
       "AssetKind": "All",
@@ -490,13 +490,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\win-x64\\scopedcss\\bundle\\Bopo.styles.css"
+      "OriginalItemSpec": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\scopedcss\\bundle\\Bopo.styles.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\win-x64\\scopedcss\\projectbundle\\Bopo.bundle.scp.css",
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Bopo.bundle.scp.css",
       "SourceId": "Bopo",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\win-x64\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "Bopo.bundle.scp.css",
       "AssetKind": "All",
@@ -507,7 +507,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\win-x64\\scopedcss\\projectbundle\\Bopo.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Bopo.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\.DS_Store",
@@ -559,6 +559,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "css/open-iconic/FONT-LICENSE",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
@@ -661,23 +678,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "Bopo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
-      "BasePath": "_content/Bopo",
-      "RelativePath": "css/open-iconic/FONT-LICENSE",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
       "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
@@ -850,6 +850,23 @@
       "OriginalItemSpec": "wwwroot\\images\\github_icon.png"
     },
     {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\join_icon.png",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "images/join_icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\join_icon.png"
+    },
+    {
       "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\login_icon.png",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
@@ -865,6 +882,176 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\login_icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\Documenti\\notes.txt",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/Documenti/notes.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\Documenti\\notes.txt"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\Documenti\\README.md",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/Documenti/README.md",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\Documenti\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\Documenti\\toDo.txt",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/Documenti/toDo.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\Documenti\\toDo.txt"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\Media\\audio.mp3",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/Media/audio.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\Media\\audio.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\Media\\bologna.jpg",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/Media/bologna.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\Media\\bologna.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\report.txt",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/report.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\report.txt"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\Uni\\Analisi 2\\esami_svolti.pdf",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/Uni/Analisi 2/esami_svolti.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\Uni\\Analisi 2\\esami_svolti.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\Uni\\Analisi 2\\esercizi.pdf",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/Uni/Analisi 2/esercizi.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\Uni\\Analisi 2\\esercizi.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\Uni\\Ingegneria del software\\ingegneria-del-software.pdf",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/Uni/Ingegneria del software/ingegneria-del-software.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\Uni\\Ingegneria del software\\ingegneria-del-software.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\Uni\\tirocinio.tex",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/Uni/tirocinio.tex",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\Uni\\tirocinio.tex"
     }
   ]
 }

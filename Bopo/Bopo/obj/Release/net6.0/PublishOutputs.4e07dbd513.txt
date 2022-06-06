@@ -1,0 +1,9 @@
+C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\bin\Release\net6.0\publish\Bopo.exe
+C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\bin\Release\net6.0\publish\appsettings.json
+C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\bin\Release\net6.0\publish\Bopo.dll
+C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\bin\Release\net6.0\publish\Bopo.deps.json
+C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\bin\Release\net6.0\publish\Bopo.runtimeconfig.json
+C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\bin\Release\net6.0\publish\Bopo.pdb
+C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\bin\Release\net6.0\publish\Radzen.Blazor.dll
+C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\bin\Release\net6.0\publish\System.Linq.Dynamic.Core.dll

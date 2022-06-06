@@ -23,6 +23,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/File.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/Gruppi.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3J1cHBpLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -37,6 +41,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/Registration.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/Viste.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Shared/EventConsole.razor]

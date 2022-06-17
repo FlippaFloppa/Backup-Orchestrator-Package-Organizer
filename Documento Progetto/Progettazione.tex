@@ -1,3 +1,4 @@
+
 \chapter*{Progettazione}
 \addcontentsline{toc}{chapter}{Progettazione}
 \phantomsection
@@ -17,14 +18,25 @@ Nell' Analisi del problema sono emersi dei requisiti non funzionali che impongon
 \item Organizzazione del file manager ampiamente personalizzabile.
 \item Possibilità di cambiare la view in modo rapido.
 \item Utilizzo efficace del servizio anche in assenza di una connessione veloce.
-\item Pannello di amministrazione intuitivo
+\item Pannello di amministrazione intuitivo.
 \end{enumerate}
-
 \\
-L'interfaccia utente deve permettere di far capire immediatamente all'utente le funzionalità disponibili per caricare e scaricare file, inoltre deve essere fornito un sistema facile e veloce per modificare le varie viste. L'utilizzo veloce è garantito anche in assenza di una connessione veloce, perché le operazioni sulle viste verranno svolte principalmente lato client.\\
+\\
+L'interfaccia utente deve permettere di far capire immediatamente all'utente le funzionalità disponibili per caricare e scaricare file, inoltre deve essere fornito un sistema facile e veloce per modificare le varie viste. L'utilizzo è garantito anche in assenza di una connessione veloce, perché le operazioni sulle viste verranno svolte principalmente lato client.\\
 Il pannello di amministrazione intuitivo permetterà all'amministratore di operare velocemente nel sistema, agendo tempestivamente sugli utenti che svolgono azioni indesiderate.
 
 
+\phantomsection
+\subsection*{Scelte Tecnologiche}
+\addcontentsline{toc}{subsection}{Scelte Tecnologiche}
+
+L'applicazione viene sviluppata come applicazione web, in modo da essere accessibile da molti dispositivi che supportano le tecnologie web moderne e abbiano a disposizione un web browser.
+\\
+Per l'installazione può essere utilizzato un metodo "a container" che faciliterà il deploy, oltre che a rendere più chiusa l'applicazione verso il sistema principale.
+
+\vspace{0.5cm}
+
+\pagebreak
 \phantomsection
 \subsection*{Scelta dell' Architettura}
 \addcontentsline{toc}{subsection}{Scelta dell' Architettura}
@@ -33,8 +45,8 @@ Per l'architettura del sistema si è optato per un sistema Client/Server che si 
 \phantomsection
 \subsection*{L1 - Client}
 \addcontentsline{toc}{subsection}{L1 - Client}
-Il Client utilizzerà una connessione TLS che sarà fondamentale in tutte le operazioni di interazione con il server e per lo scambio dei file che avverrà tra i due.
-Per aggiungere un ulteriore livello di sicurezza, negli sviluppi futuri dell' applicazione si potrebbe aggiungere una cifratura dei file lato server.
+Il Client utilizzerà una connessione TLS che sarà fondamentale in tutte le operazioni di interazione con il Server e per lo scambio dei file che avverrà tra i due.
+Per aggiungere un ulteriore livello di sicurezza, negli sviluppi futuri dell' applicazione si potrebbe aggiungere una cifratura dei file lato Server.
 \\
 Il Client Utente sarà potenzialmente anche Client AmministratoreGruppo e sarà poi presente un Client Amministratore separato.
 \vspace{0.5cm}
@@ -48,28 +60,18 @@ Sul sistema sarà presente
 \item Un Server per la gestione degli Utenti
 \item Un Server per la gestione dei Gruppi
 \item Un Server per la gestione degli Amministratori
-\item Un Server per la gestione dei File
 \end{itemize}
 \phantomsection
-\subsection*{L3 - Database}
+\subsection*{L3 - Database e Storage}
 \addcontentsline{toc}{subsection}{L3 - Database}
-Per la gestione della persistenza dei dati degli Utenti e dell' Amministratore e per salvare gli ID dei file, viene utilizzata una connessione sicura TLS già supportata dal database e in più verrà aggiunto un SALT che garantirà una maggiore sicurezza nel caso di attacchi a dizionario.
+Per la gestione dei dati degli Utenti e dell' Amministratore e per salvare gli ID dei file, viene utilizzata una connessione sicura TLS già supportata dal database e in più verrà aggiunto un SALT che garantirà una maggiore sicurezza nel caso di attacchi a dizionario.
 Il Database - Server sarà installabile in modo disaccoppiato al sistema, in modo da poter utilizzare anche eventualmente un sistema Cloud o un sistema esterno per salvare i dati.
 \\
-Il database sarà disposto su tre server: un database memorizzerà i dati degli utilizzatori del sistema, un altro database memorizzerà i LOG e sarà accessibile dall'Amministratore per il monitoraggio del sistema e l'ultimo database manterrà la struttura ad albero dei file con i relativi ID.
-Questo disaccoppiamento è utile per non avere un "Single Point of Failure" che può avvenire tramite un guasto all'unico sistema di persistenza, ad esempio non sarebbe tollerabile un disservizio al database degli utenti causato da un malfunzionamento del database dei LOG.
+Oltre al Database ci saranno due sistemi per la memorizzazione fisica dei dati. Un sistema per memorizzare i Log e un altro per lo storage dei dati comprendente i File e le viste salvate degli Utenti e i File dei Gruppi.
+I Log saranno accessibili dall'Amministratore per il monitoraggio del sistema.
+\\
 \\
 L'interfacciamento fra l'applicativo e i DBMS avverrà secondo la metodologia \verb|forza bruta|, utilizzando dei metodi CRUD.
-
-\vspace{0.5cm}
-
-\phantomsection
-\subsection*{Scelte Tecnologiche}
-\addcontentsline{toc}{subsection}{Scelte Tecnologiche}
-
-L'applicazione viene sviluppata come applicazione web, in modo da essere accessibile da molti dispositivi che supportano le tecnologie web moderne e abbiano a disposizione un web browser.
-\\
-Per l'installazione può essere utilizzato un metodo "a container" che faciliterà il deploy, oltre che a rendere più chiusa l'applicazione verso il sistema principale.
 
 \vspace{0.5cm}
 
@@ -91,7 +93,7 @@ Di seguito è riportata l’Architettura del Sistema organizzata attraverso un d
 \addcontentsline{toc}{subsection}{Diagramma dei componenti}
 Di seguito è riportato il diagramma dei componenti di sistema.
 \vspace{2cm}
-\begin{adjustwidth}{1cm}{0cm}
+\begin{adjustwidth}{0.5cm}{0cm}
 \includegraphics[scale=0.9]{progettazione/Progettazione-Diagramma Componenti.drawio.pdf}
 \end{adjustwidth}
 \vspace{1cm}
@@ -116,8 +118,8 @@ Di seguito è riportato il diagramma dei componenti di sistema.
 \phantomsection
 \addcontentsline{toc}{subsection}{Dominio: Amministrazione}
 \vspace{0.5cm}
-\begin{adjustwidth}{-3.5cm}{0cm}
-\includegraphics[scale=0.9]{progettazione/Progettazione-Amministrazione.drawio.pdf}
+\begin{adjustwidth}{-2cm}{0cm}
+\includegraphics[scale=1]{progettazione/Progettazione-Amministrazione.drawio.pdf}
 \end{adjustwidth}
 \vspace{1cm}
 
@@ -129,8 +131,6 @@ Di seguito è riportato il diagramma dei componenti di sistema.
 \includegraphics[scale=0.8]{progettazione/Progettazione-Area Personale.drawio.pdf}
 \end{adjustwidth}
 \vspace{1cm}
-È stato deciso di creare una classe per i File, con un'istanza della classe per ogni File caricato dall'Utente.\\
-Questo può essere oneroso per il Server in quanto occupa più memoria, però garantisce una migliore esperienza per l'Utente dato che l'accesso più facile all'alberatura dei file consente una navigazione più immediata.\\
 
 \subsection*{Dominio: Area Gruppi}
 \phantomsection
@@ -177,7 +177,6 @@ Questo può essere oneroso per il Server in quanto occupa più memoria, però ga
 \end{adjustwidth}
 \vspace{0.5cm}
 
-\\
 I Controller usano LogController per registrare ogni operazione come Log. A differenza delle altre classi, l'Amministratore può leggere i Log scritti dagli altri controller mediante VisualizzaLog.\\
 \vspace{2cm}
 
@@ -201,8 +200,6 @@ I Controller usano LogController per registrare ogni operazione come Log. A diff
 \vspace{0.5cm}
 
 
-
-\pagebreak
 \subsection*{Broker}
 \phantomsection
 \addcontentsline{toc}{subsection}{Broker}
@@ -213,7 +210,7 @@ Nel nostro caso specifico, il Broker è incorporato nel framework Dotnet.
 \vspace{0.5cm}
 
 
-
+\pagebreak
 \subsection*{View di Registrazione e Autenticazione}
 \phantomsection
 \addcontentsline{toc}{subsection}{View di Registrazione e Autenticazione}
@@ -332,49 +329,41 @@ Nel nostro caso specifico, il Broker è incorporato nel framework Dotnet.
 \subsection*{Diagramma di Sequenza: Registrazione}
 \phantomsection
 \addcontentsline{toc}{subsection}{Diagramma di Sequenza: Registrazione}
-\vspace{2cm}
+\vspace{0.5cm}
 \begin{adjustwidth}{-2cm}{0cm}
 \includegraphics[scale=0.9]{progettazione/Diagramma-Sequenza-Interazione-Registrazione.drawio.pdf}
 \end{adjustwidth}
 \vspace{0.5cm}
-Nella fase di registrazione, l'Utente non interroga direttamente il database. La richiesta deve essere approvata in primo luogo dall' Amministratore, il quale avrà i metodi delegati alla connessione e interrogazione del database dei dati degli Utenti.
-Ogni tentativo di autenticazione viene registrato in un altro database che mantiene in modo persistente i Log di sistema.
+Nella fase di registrazione l'Utente non viene aggiunto immediatamente nel database.\\ La richiesta deve essere approvata in primo luogo dall' Amministratore, il quale avrà i metodi delegati alla connessione e interrogazione del database dei dati degli Utenti.
+Ogni tentativo di autenticazione viene registrato su disco, in modo da mantenere persistenti i Log di sistema.
 
 \subsection*{Diagramma di Sequenza: Autenticazione}
 \phantomsection
 \addcontentsline{toc}{subsection}{Diagramma di Sequenza: Autenticazione}
-\vspace{2cm}
-\begin{adjustwidth}{-2cm}{0cm}
+\vspace{0.5cm}
+\begin{adjustwidth}{-1cm}{0cm}
 \includegraphics[scale=0.9]{progettazione/Diagramma-Sequenza-Interazione-Autenticazione.drawio.pdf}
 \end{adjustwidth}
 \vspace{0.5cm}
-La fase di autenticazione inserisce i log nel database della persistenza in ogni tentativo di autenticazione. Nel Login si interroga invece il database dei dati degli Utenti.
+La fase di autenticazione inserisce i Log ad ogni tentativo di autenticazione. Nel Login si interroga invece il Database dei dati degli Utenti.
 
+\vspace{2cm}
 \subsection*{Diagramma di Sequenza: Gestione Amministratore}
 \phantomsection
 \addcontentsline{toc}{subsection}{Diagramma di Sequenza: Gestione Amministratore}
-\begin{adjustwidth}{-1cm}{0cm}
-\includegraphics[scale=0.75]{progettazione/Diagramma-Sequenza-Interazione-GestioneAmministratore.drawio.pdf}
+L'Amministratore ha il ruolo di accettare la coda di richieste provenienti dagli Utenti e dai Gruppi. Si distinguono in questa fase le richieste dell' Utente da quelle del Gruppo. Dopo l'accettazione di una delle due richieste, si raggiungerà lo stesso database Utente/Gruppo in cui verranno registrate le nuove informazioni scatenate dalla richiesta.
+\begin{adjustwidth}{-2cm}{0cm}
+\includegraphics[scale=0.7]{progettazione/Diagramma-Sequenza-Interazione-GestioneAmministratore.drawio.pdf}
 \end{adjustwidth}
 \vspace{0.5cm}
-L'Amministratore ha il ruolo di accettare la coda di richieste provenienti dagli Utenti e dai Gruppi. Si distinguono in questa fase le richieste dell' Utente da quelle del Gruppo. Dopo l'accettazione di una delle due richieste, si raggiungerà lo stesso database Utente/Gruppo in cui verranno registrate le nuove informazioni scatenate dalla richiesta.
 
 
-
+\vspace{2cm}
 \subsection*{Diagramma di Sequenza: Interazione Area Personale\-Viste}
 \phantomsection
 \addcontentsline{toc}{subsection}{Diagramma di Sequenza: Interazione Area Personale\-Viste}
-\begin{adjustwidth}{-2.5cm}{0cm}
-\includegraphics[scale=0.8]{progettazione/Diagramma-Sequenza-Interazione-Viste.drawio.pdf}
-\end{adjustwidth}
-\vspace{0.5cm}
-
-
-\subsection*{Diagramma di Sequenza: Interazione Area Gruppi}
-\phantomsection
-\addcontentsline{toc}{subsection}{Diagramma di Sequenza: Interazione Area Gruppi}
 \begin{adjustwidth}{-1.5cm}{0cm}
-\includegraphics[scale=0.95]{progettazione/Diagramma-Sequenza-Interazione-AreaGruppi.drawio.pdf}
+\includegraphics[scale=0.9]{progettazione/Diagramma-Sequenza-Interazione-Viste.drawio.pdf}
 \end{adjustwidth}
 \vspace{0.5cm}
 
@@ -396,9 +385,6 @@ L'Amministratore ha il ruolo di accettare la coda di richieste provenienti dagli
 \section*{Progettazione Persistenza}
 \phantomsection
 \addcontentsline{toc}{section}{Progettazione Persistenza}
-\vspace{1cm}
-La persistenza del \verb|DatabaseUtentiGruppi| verrà implementata utilizzando un DBMS, in particolare MariaDB.
-\vspace{0.5cm}
 \subsection*{Diagramma Entity-Relation}
 \phantomsection
 \addcontentsline{toc}{subsection}{Diagramma E-R}
@@ -410,12 +396,12 @@ La persistenza del \verb|DatabaseUtentiGruppi| verrà implementata utilizzando u
 
 
 \vspace{1cm}
-\subsection*{Persistenza File}
+\subsection*{Struttura Storage}
 \phantomsection
-\addcontentsline{toc}{subsection}{Persistenza File}
+\addcontentsline{toc}{subsection}{Struttura Storage}
 \vspace{0.5cm}
 \begin{adjustwidth}{-1cm}{0cm}
-\includegraphics[scale=1]{deployment/Diagramma-Sequenza-File.drawio.pdf}
+\includegraphics[scale=1]{progettazione/Diagramma-Sequenza-File.drawio.pdf}
 \end{adjustwidth}
 \vspace{0.5cm}
 
@@ -425,7 +411,7 @@ La persistenza del \verb|DatabaseUtentiGruppi| verrà implementata utilizzando u
 
 
 \subsection*{Formato Log}
-I file di Log vengono memorizzati giornalmente attraverso il DatabaseLog. Ogni giorno viene generato un nuovo file così da tener traccia degli accessi al sistema e degli eventi.\\
+I file di Log vengono memorizzati giornalmente.Ogni giorno viene generato un nuovo file così da tener traccia degli accessi al sistema e degli eventi.\\
 \\
 Ogni entry rispetta questo formato:\\
 
@@ -460,15 +446,16 @@ linenos
 
 \pagebreak
 \section*{Deployment}
+\vspace{1cm}
+Per l'installazione dell' applicazione si richiede di avere predisposto i Server con il framework Dotnet, in modo da sfruttare il servizio Broker ".NET ASP".
 \phantomsection
 \addcontentsline{toc}{section}{Deployment}
 \subsection*{Artefatti}
-\vspace{1cm}
 \phantomsection
 \addcontentsline{toc}{subsection}{Artefatti}
 \vspace{0.5cm}
-\begin{adjustwidth}{0cm}{0cm}
-\includegraphics[scale=1]{deployment/Diagramma-Sequenza-Artefatti.drawio.pdf}
+\begin{adjustwidth}{-2cm}{0cm}
+\includegraphics[scale=0.8]{deployment/Diagramma-Sequenza-Artefatti.drawio.pdf}
 \end{adjustwidth}
 
 \vspace{1cm}
@@ -476,6 +463,6 @@ linenos
 \phantomsection
 \addcontentsline{toc}{subsection}{Deploy}
 \vspace{0.5cm}
-\begin{adjustwidth}{-3cm}{0cm}
-\includegraphics[scale=0.8]{deployment/Diagramma-Sequenza-Deploy.drawio.pdf}
+\begin{adjustwidth}{-0.5cm}{0cm}
+\includegraphics[scale=1]{deployment/Diagramma-Sequenza-Deploy.drawio.pdf}
 \end{adjustwidth}

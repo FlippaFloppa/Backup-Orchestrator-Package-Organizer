@@ -13,34 +13,32 @@
 \rowcolor{red!25}\large\textbf{Titolo} & \large{Registrazione}\\
 \hline
 
-\textbf{Descrizione} & L'utente si registra al servizio di Storage\\
+\textbf{Descrizione} & L'Utente si registra\\
 \hline
 \textbf{Attori} & Utente\\
 \hline
 \textbf{Relazioni} & \\
 \hline
-\textbf{Precondizioni} & L'utente non è registrato\\
+\textbf{Precondizioni} & \\
 \hline
-\textbf{Postcondizioni} & \begin{tabular}{@{}l@{}} L'utente viene registrato nel sistema e gli viene allocato lo spazio di \\ archiviazione predefinito. Necessaria approvazione da parte dell'amministratore\end{tabular} \\
+\textbf{Postcondizioni} & \begin{tabular}{@{}l@{}} L'Utente viene registrato nel sistema e gli viene allocato lo spazio di \\ archiviazione predefinito. Necessaria approvazione da parte dell'Amministratore\end{tabular} \\
 \hline
 \textbf{Scenario principale} &
 \begin{tabular}{@{}l@{}}
-1) Si presenta all' utente un'interfaccia per la registrazione dell' account\\  
-2) L'utente inserisce le credenziali per la creazione dell' account\\
-3) Il sistema controlla che l'utente non sia già registrato\\
-4) La richiesta deve essere approvata dall'Amministratore
+1) Si presenta all' Utente un'interfaccia per la registrazione dell' account\\  
+2) L'Utente inserisce le credenziali per la creazione dell' account\\
+3) Il sistema controlla che l'Utente non sia già registrato\\
+4) La richiesta viene memorizzata nel sistema.
 \end{tabular} \\
 \hline
 \textbf{Scenari alternativi} &
 \begin{tabular}{@{}l@{}}
-Scenario A: L'utente è già registrato \\
-\quad 1) L'utente viene notificato dal servizio dell' errore\\
-\quad 2) L'utente cambia username e riprova la registrazione\\
-Scenario B: L'amministratore rifiuta la richiesta \\
-\quad 1) L'utente non può accedere al servizio\\
+Scenario A: L'username scelto è già registrato: \\
+\quad 1) L'Utente viene notificato dal servizio dell' errore\\
+\quad 2) L'Utente cambia username e riprova la registrazione\\
 \end{tabular} \\
 \hline
-\textbf{Requisiti non funzionali} & Interfaccia utente intuitiva\\
+\textbf{Requisiti non funzionali} & Interfaccia Utente intuitiva\\
 \hline
 \textbf{Punti aperti} & \\
 \hline
@@ -64,9 +62,9 @@ Scenario B: L'amministratore rifiuta la richiesta \\
 
 \textbf{Descrizione} & L'Utente effettua il login nel sistema\\
 \hline
-\textbf{Attori} & Utente, Amministratore, Amministratore di gruppo\\
+\textbf{Attori} & Utente, Amministratore, Amministratore Gruppo\\
 \hline
-\textbf{Relazioni} &\begin{tabular}{@{}l@{}} AreaPersonale, AreaGruppi, GestioneUtenti,\\ GestioneRichieste, GestioneGruppo\end{tabular} \\ 
+\textbf{Relazioni} &\begin{tabular}{@{}l@{}} AreaPersonale, AreaGruppi, GestioneUtenti,\\ GestioneRichieste, GestioneGruppi, GestioneGruppo\end{tabular} \\ 
 \hline
 \textbf{Precondizioni} & \begin{tabular}{@{}l@{}} L'Utente / Amministratore deve essere registrato nel sistema\end{tabular} \\
 \hline
@@ -111,18 +109,18 @@ Scenario A: Credenziali errate\\
 \hline
 \textbf{Attori} & Amministratore\\
 \hline
-\textbf{Relazioni} & Autenticazione, GestioneAccount\\
+\textbf{Relazioni} & Autenticazione\\
 \hline
 \textbf{Precondizioni} &\\
 \hline
 \textbf{Postcondizioni} & \\
 \hline
 \textbf{Scenario principale} & \begin{tabular}{@{}l@{}} 
-1) L'amministratore si autentica usando l'apposita pagina\\
-2) L'amministratore si sposta sulla sezione dedicata alla moderazione degli utenti\\
+1) Autenticazione\\
+2) L'Amministratore si sposta sulla sezione dedicata alla moderazione degli utenti\\
 3) Il sistema mostra la lista degli utenti registrati\\
-4) L'amministratore può decidere di effettuare le seguenti operazioni:\\
-\quad - Eliminare un utente\\
+4) L'Amministratore può decidere di effettuare le seguenti operazioni:\\
+\quad - Eliminare un Utente\\
 \end{tabular}\\
 \hline
 \textbf{Scenari alternativi} & \\
@@ -130,8 +128,8 @@ Scenario A: Credenziali errate\\
 \textbf{Requisiti non funzionali} & Pannello di amministrazione intuitivo\\
 \hline
 \textbf{Punti aperti} & \begin{tabular}{@{}l@{}} 
-Altre operazioni eseguibili dall'amministratore:\\
-\quad - Modificare la quantità di memoria disponibile per l'utente\\
+Altre operazioni eseguibili dall'Amministratore:\\
+\quad - Modificare la quantità di memoria disponibile per l'Utente\\
 \end{tabular}\\
 \hline
 
@@ -140,52 +138,6 @@ Altre operazioni eseguibili dall'amministratore:\\
 \end{adjustwidth}
 \vspace{0.5 cm}
 
-
-
-
-
-\phantomsection
-\addcontentsline{toc}{subsection}{GestioneRichieste}
-\rowcolors{2}{white!0!}{white!0!}
-\begin{adjustwidth}{0cm}{0cm}
-
-\resizebox{1\textwidth}{!}{
-\begin{tabular}{ |l|l|  }
-\hline
-\rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneRichieste}\\
-\hline
-
-\textbf{Descrizione} & Gestisce le richieste degli utenti e dei gruppi\\
-\hline
-\textbf{Attori} & Amministratore\\
-\hline
-\textbf{Relazioni} & Autenticazione\\
-\hline
-\textbf{Precondizioni} &\\
-\hline
-\textbf{Postcondizioni} &\begin{tabular}{@{}l@{}} \end{tabular} \\
-\hline
-\textbf{Scenario principale} & \begin{tabular}{@{}l@{}} 
-1) L'amministratore si autentica usando l'apposita pagina\\
-2) L'amministratore si sposta sulla sezione dedicata alla moderazione\\
-3) L'amministratore viene notificato delle richieste degli utenti e dei gruppi\\
-4) L'amministratore può decidere di effettuare le seguenti operazioni:\\
-\quad - Accettare le richieste\\
-\quad - Rifiutare le richieste\\
-5) L'utente o il gruppo riceverà la risposta in base alla scelta dell'amministratore\\
-\end{tabular}\\
-\hline
-\textbf{Scenari alternativi} & \\
-\hline
-\textbf{Requisiti non funzionali} & Pannello di amministrazione intuitivo\\
-\hline
-\textbf{Punti aperti} & L'amministratore non può gestire la richiesta al momento, si introduce lo stato "pendente"\\
-\hline
-
-\end{tabular}
-}
-\end{adjustwidth}
-\vspace{0.2cm}
 
 
 
@@ -211,10 +163,10 @@ Altre operazioni eseguibili dall'amministratore:\\
 \textbf{Postcondizioni} & \\
 \hline
 \textbf{Scenario principale} & \begin{tabular}{@{}l@{}} 
-1) L'amministratore si autentica usando l'apposita pagina\\
-2) L'amministratore si sposta sulla sezione dedicata alla moderazione dei gruppi\\
+1) Autenticazione\\
+2) L'Amministratore si sposta sulla sezione dedicata alla moderazione dei gruppi\\
 3) Il sistema mostra la lista dei gruppi registrati\\
-4) L'amministratore può decidere di effettuare le seguenti operazioni:\\
+4) L'Amministratore può decidere di effettuare le seguenti operazioni:\\
 \quad - Eliminare un gruppo\\
 \end{tabular}\\
 \hline
@@ -223,8 +175,8 @@ Altre operazioni eseguibili dall'amministratore:\\
 \textbf{Requisiti non funzionali} & Pannello di amministrazione intuitivo\\
 \hline
 \textbf{Punti aperti} & \begin{tabular}{@{}l@{}} 
-Altre operazioni eseguibili dall'amministratore:\\
-\quad - Modificare la quantità di memoria disponibile per il gruppo\\
+- L'Amministratore può modificare la quantità di memoria disponibile per\\ il gruppo.\\
+- L'Amministratore può garantire permessi sui file agli Utenti del gruppo.\\
 \end{tabular}\\
 \hline
 
@@ -232,6 +184,134 @@ Altre operazioni eseguibili dall'amministratore:\\
 }
 \end{adjustwidth}
 \vspace{0.2cm}
+
+
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{GestioneRichieste}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneRichieste}\\
+\hline
+
+\textbf{Descrizione} & Gestisce le richieste degli utenti e dei gruppi\\
+\hline
+\textbf{Attori} & Amministratore\\
+\hline
+\textbf{Relazioni} & Autenticazione, CreazioneGruppo, RegistrazioneUtente\\
+\hline
+\textbf{Precondizioni} &\\
+\hline
+\textbf{Postcondizioni} &\begin{tabular}{@{}l@{}} \end{tabular} \\
+\hline
+\textbf{Scenario principale} & \begin{tabular}{@{}l@{}} 
+1) Autenticazione\\
+2) L'Amministratore si sposta sulla sezione dedicata alla moderazione\\
+3) L'Amministratore può spostarsi sulle sezioni dedicate alla gestione\\
+\quad delle richieste di registrazione degli utenti o della creazione di gruppi\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & Pannello di amministrazione intuitivo\\
+\hline
+\textbf{Punti aperti} & \\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{RegistrazioneUtente}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{RegistrazioneUtente}\\
+\hline
+
+\textbf{Descrizione} & Gestisce le di registrazione degli Utenti\\
+\hline
+\textbf{Attori} & Amministratore\\
+\hline
+\textbf{Relazioni} & GestioneRichieste\\
+\hline
+\textbf{Precondizioni} &\\
+\hline
+\textbf{Postcondizioni} &\begin{tabular}{@{}l@{}} \end{tabular} \\
+\hline
+\textbf{Scenario principale} & \begin{tabular}{@{}l@{}} 
+1) L'Amministratore si è spostato sulla sezione per gestire le richieste di registrazione degli Utenti\\
+2) L'Amministratore può decidere di effettuare le seguenti operazioni:\\
+\quad - Accettare le richieste\\
+\quad - Rifiutare le richieste\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & Pannello di amministrazione intuitivo\\
+\hline
+\textbf{Punti aperti} & \\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
+
+\phantomsection
+\addcontentsline{toc}{subsection}{CreazioneGruppo}
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{0cm}{0cm}
+
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{ |l|l|  }
+\hline
+\rowcolor{red!25}\large\textbf{Titolo} & \large{CreazioneGruppo}\\
+\hline
+
+\textbf{Descrizione} & Gestisce le di creazione dei Gruppi\\
+\hline
+\textbf{Attori} & Amministratore\\
+\hline
+\textbf{Relazioni} & GestioneRichieste\\
+\hline
+\textbf{Precondizioni} &\\
+\hline
+\textbf{Postcondizioni} &\begin{tabular}{@{}l@{}} \end{tabular} \\
+\hline
+\textbf{Scenario principale} & \begin{tabular}{@{}l@{}} 
+1) L'Amministratore si è spostato sulla sezione per gestire le richieste di creazione dei Gruppi\\
+2) L'Amministratore può decidere di effettuare le seguenti operazioni:\\
+\quad - Accettare le richieste\\
+\quad - Rifiutare le richieste\\
+\end{tabular}\\
+\hline
+\textbf{Scenari alternativi} & \\
+\hline
+\textbf{Requisiti non funzionali} & Pannello di amministrazione intuitivo\\
+\hline
+\textbf{Punti aperti} & \\
+\hline
+
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.2cm}
+
 
 
 
@@ -246,7 +326,7 @@ Altre operazioni eseguibili dall'amministratore:\\
 \rowcolor{red!25}\large\textbf{Titolo} & \large{AreaPersonale}\\
 \hline
 
-\textbf{Descrizione} & Area Personale dell'utente\\
+\textbf{Descrizione} & Area Personale dell'Utente\\
 \hline
 \textbf{Attori} & Utente\\
 \hline
@@ -258,9 +338,9 @@ Altre operazioni eseguibili dall'amministratore:\\
 \hline
 \textbf{Scenario principale} & 
 \begin{tabular}{@{}l@{}} 
-1) L'utente si autentica\\
-2) All'utente viene presentata la pagina dell'area personale.\\
-3) L'utente potrà spostarsi su tre diverse sezioni:\\
+1) Autenticazione\\
+2) All'Utente viene presentata la pagina dell'area personale.\\
+3) L'Utente potrà spostarsi su tre diverse sezioni:\\
 \quad - Gestione Account\\
 \quad - Gestione File personali\\
 \quad - Gestione Viste\\
@@ -293,19 +373,19 @@ Altre operazioni eseguibili dall'amministratore:\\
 \rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneAccount}\\
 \hline
 
-\textbf{Descrizione} & Gestione dell'account personale dell'utente\\
+\textbf{Descrizione} & Gestione dell'account personale dell'Utente\\
 \hline
 \textbf{Attori} & Utente\\
 \hline
 \textbf{Relazioni} & AreaPersonale\\
 \hline
-\textbf{Precondizioni} & L'utente si è autenticato\\
+\textbf{Precondizioni} &\\
 \hline
 \textbf{Postcondizioni} & \\
 \hline
 \textbf{Scenario principale} & \begin{tabular}{@{}l@{}}
-1) L'utente si sposta sulla sezione dedicata alla gestione dell'account personale\\
-2) L'utente ha a disposizione le seguenti operazioni:\\
+1) L'Utente si sposta sulla sezione dedicata alla gestione dell'account personale\\
+2) L'Utente ha a disposizione le seguenti operazioni:\\
 \quad - Modifica nickname\\
 \quad - Modifica password\\
 \quad - Eliminazione dell'account\\
@@ -315,7 +395,7 @@ Altre operazioni eseguibili dall'amministratore:\\
 \hline
 \textbf{Requisiti non funzionali} & \\
 \hline
-\textbf{Punti aperti} & L'utente può modificare l'username\\
+\textbf{Punti aperti} & L'Utente può modificare l'username\\
 \hline
 
 \end{tabular}
@@ -336,21 +416,21 @@ Altre operazioni eseguibili dall'amministratore:\\
 \rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneViste}\\
 \hline
 
-\textbf{Descrizione} & Sezione in cui l'utente modifica le viste\\
+\textbf{Descrizione} & Sezione in cui l'Utente modifica le viste\\
 \hline
 \textbf{Attori} & Utente\\
 \hline
-\textbf{Relazioni} & AreaPersonale, GestioneFile\\
+\textbf{Relazioni} & AreaPersonale\\
 \hline
-\textbf{Precondizioni} & L'utente si è autenticato\\
+\textbf{Precondizioni} &\\
 \hline
 \textbf{Postcondizioni} &\\
 \hline
 \textbf{Scenario principale} &
 \begin{tabular}{@{}l@{}} 
-1) L'utente si sposta sulla sezione dedicata alle viste\\
-2) Il sistema presenta all'utente la lista di viste salvate ed un editor di viste\\
-3) L'utente può:\\
+1) L'Utente si sposta sulla sezione dedicata alle viste\\
+2) Il sistema presenta all'Utente la lista di viste salvate ed un editor di viste\\
+3) L'Utente può:\\
 \quad - Creare una nuova vista\\
 \quad - Modificare una vista\\
 \quad - Eliminare una vista\\
@@ -387,21 +467,21 @@ Scenario A: Raggiunto il limite massimo di viste\\
 \rowcolor{red!25}\large\textbf{Titolo} & \large{GestioneFile}\\
 \hline
 
-\textbf{Descrizione} & Sezione in cui l'utente allo spazio di archiviazione personale\\
+\textbf{Descrizione} & Sezione in cui l'Utente allo spazio di archiviazione personale\\
 \hline
 \textbf{Attori} & Utente\\
 \hline
-\textbf{Relazioni} & AreaPersonale, GestioneViste, AreaGruppi, GestioneGruppo\\
+\textbf{Relazioni} & AreaPersonale\\
 \hline
-\textbf{Precondizioni} & L'utente si è autenticato\\
+\textbf{Precondizioni} & \\
 \hline
 \textbf{Postcondizioni} &\\
 \hline
 \textbf{Scenario principale} &
 \begin{tabular}{@{}l@{}} 
-1) L'utente si sposta sulla sezione dedicata allo storage\\
-2) Il sistema presenta all'utente il file manager dei file personali archiviati \\nel sistema\\
-3) L'utente può:\\
+1) L'Utente si sposta sulla sezione dedicata allo storage\\
+2) Il sistema presenta all'Utente il file manager dei file personali archiviati \\nel sistema\\
+3) L'Utente può:\\
 \quad - Visualizzare i file/cartelle che ha caricato\\
 \quad - Caricare uno o più file/cartelle\\
 \quad - Scaricare un file/cartella\\
@@ -450,17 +530,18 @@ Scenario A: Raggiunto il limite massimo di memoria di archiviazione\\
 \hline
 \textbf{Relazioni} & Autenticazione, Gruppo\\
 \hline
-\textbf{Precondizioni} & L'utente si è autenticato\\
+\textbf{Precondizioni} & \\
 \hline
 \textbf{Postcondizioni} & \\
 \hline
 \textbf{Scenario principale} &
 \begin{tabular}{@{}l@{}}
-1) L'utente si sposta sulla sezione dedicata ai gruppi\\
-2) Viene mostrata la lista dei gruppi registrati nel sistema\\
-3) L'utente può:\\
+1) Autenticazione\\
+2) L'Utente si sposta sulla sezione dedicata ai gruppi\\
+3) Viene mostrata la lista dei gruppi registrati nel sistema\\
+4) L'Utente può:\\
 \quad - Iscriversi ad un gruppo, necessaria password\\
-\quad - Creare un gruppo, la richiesta deve essere approvata da un amministratore\\
+\quad - Creare un gruppo, la richiesta deve essere approvata da un Amministratore\\
 \quad - Esplorare un gruppo\\
 \end{tabular}\\
 \hline
@@ -491,18 +572,18 @@ Scenario A: Raggiunto il limite massimo di memoria di archiviazione\\
 
 \textbf{Descrizione} & Pagina del gruppo\\
 \hline
-\textbf{Attori} & Utente, Amministratore Gruppo\\
+\textbf{Attori} & Utente\\
 \hline
-\textbf{Relazioni} & AreaGruppi, GestioneGruppo, GestioneFile\\
+\textbf{Relazioni} & AreaGruppi\\
 \hline
-\textbf{Precondizioni} & L'utente si è autenticato\\
+\textbf{Precondizioni} & \\
 \hline
 \textbf{Postcondizioni} & \\
 \hline
 \textbf{Scenario principale} &
 \begin{tabular}{@{}l@{}}
-1) L'utente entra nella sezione dedicata ad un gruppo\\
-2) L'utente può:\\
+1) L'Utente entra nella sezione dedicata ad un gruppo\\
+2) L'Utente può:\\
 \quad - Visualizzare la lista degli utenti iscritti al gruppo\\
 \quad - Eseguire operazioni sui file del gruppo\\
 \quad - Uscire dal gruppo\\
@@ -538,7 +619,7 @@ Scenario A: Raggiunto il limite massimo di memoria di archiviazione\\
 \hline
 \textbf{Attori} & Amministratore Gruppo\\
 \hline
-\textbf{Relazioni} & Gruppo, Autenticazione\\
+\textbf{Relazioni} & Autenticazione\\
 \hline
 \textbf{Precondizioni} & \\
 \hline
@@ -546,12 +627,12 @@ Scenario A: Raggiunto il limite massimo di memoria di archiviazione\\
 \hline
 \textbf{Scenario principale} &
 \begin{tabular}{@{}l@{}}
-1) L'amministratore del gruppo si autentica\\
-2) L'amministratore del gruppo accede alla sezione del gruppo\\ di cui è amministratore\\
-2) L'amministratore del gruppo può:\\
+1) Autenticazione\\
+2) L'Amministratore del gruppo accede alla sezione del gruppo\\ di cui è Amministratore\\
+2) L'Amministratore del gruppo può:\\
 \quad - Visualizzare la lista degli utenti iscritti al gruppo\\
-\quad - Aggiungere un utente al gruppo\\
-\quad - Rimuovere un utente dal gruppo\\
+\quad - Aggiungere un Utente al gruppo\\
+\quad - Rimuovere un Utente dal gruppo\\
 \end{tabular}\\
 \hline
 \textbf{Scenari alternativi} & \\

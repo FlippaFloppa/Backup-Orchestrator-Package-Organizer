@@ -13,9 +13,9 @@
 \resizebox{1.2\textwidth}{!}{
 \begin{tabular}{ |c|p{4cm}|c|c|  }
 \hline
-\rowcolor{darktangerine!60}\multicolumn{4}{|c|}{\huge\textbf{Tabella delle Funzionalità}} \\
+\rowcolor{darkspringgreen!50}\multicolumn{4}{|c|}{\huge\textbf{Tabella delle Funzionalità}} \\
 \hline
-\rowcolor{darktangerine!50!}\LARGE\textbf{Funzionalità} & \multicolumn{1}{c|}{\LARGE\textbf{Tipo}} & 
+\rowcolor{emerald!50!}\LARGE\textbf{Funzionalità} & \multicolumn{1}{c|}{\LARGE\textbf{Tipo}} & 
 \LARGE\textbf{Complessità} & \LARGE\textbf{Requisiti}\\
 \hline
 \hline
@@ -23,16 +23,18 @@
 \textbf{Registrazione} & Memorizzazione dati & Semplice & R1F \\ \hline
 \rowcolor{cyan!10!}
 \textbf{Autenticazione} & Interazione con l'esterno, Gestione dati & Semplice & R2F \\ \hline
-\rowcolor{red!20!}
-\textbf{GestioneUtenti} & Gestione dati, interazione con l’esterno & Semplice & R5F \\ \hline
-\rowcolor{orange!20!}
-\textbf{GestioneRichieste} & Gestione dati, interazione con l’esterno & Semplice &  R5F \\ \hline  
-\rowcolor{yellow!20!}
+\rowcolor{ferrarired!33!}
+\textbf{GestioneUtenti} & Gestione dati, interazione con l’esterno & Complesso & R5F \\ \hline
+\rowcolor{ferrarired!33!}
+\textbf{GestioneRichieste} & Gestione dati, interazione con l’esterno & Semplice &  R5F \\ 
+\rowcolor{chromeyellow!30!}
+\textbf{RegistrazioneUtente} & Gestione dati, interazione con l’esterno & Semplice &  R5F \\ 
+\rowcolor{chromeyellow!30!}
+\textbf{CreazioneGruppo} & Gestione dati, interazione con l’esterno & Semplice &  R5F \\ \hline  
+\rowcolor{ferrarired!33!}
 \textbf{GestioneGruppi} & Gestione dati, interazione con l’esterno & Semplice & R5F \\ \hline  
-\rowcolor{darktangerine!10!}
+\rowcolor{ferrarired!33!}
 \textbf{VisualizzaLog} & Interazione con l’esterno & Semplice & R12F \\ \hline  
-\rowcolor{yellow!20!}
-\textbf{CreazioneBackup} & Memorizzazione dati & Semplice & R8NF \\ \hline
 \rowcolor{blue!20!}
 \textbf{AreaPersonale} & Memorizzazione dati, Gestione dati, interazione con l’esterno & Complesso & R3F, R9F\\ 
 \rowcolor{cyan!30!} \hline
@@ -64,16 +66,9 @@
 \rowcolor{orange!20!}
 \textbf{PersonalizzaVista} & Memorizzazione dati, Gestione dati, interazione con l’esterno & Semplice & R9F \\\hline
 
-\rowcolor{green!25!}
+\rowcolor{emerald!30!}
 \textbf{GestioneFile} & Memorizzazione dati, gestione dati, interazione con l’esterno & Complesso & R3F, R4F \\ 
-\rowcolor{lime!20!}
-\textbf{CaricaFile} & Memorizzazione dati, interazione con l’esterno & Semplice & R3F, R4F \\ 
-\rowcolor{lime!20!}
-\textbf{ScaricaFile} & Gestione dati, interazione con l’esterno & Semplice & R3F, R4F \\ 
-\rowcolor{lime!20!}
-\textbf{EliminaFile} & Gestione dati, interazione con l’esterno & Semplice & R3F, R4F \\ 
 \hline
-
 \rowcolor{violet!20!}
 \textbf{AreaGruppi} & Gestione dati, interazione con l’esterno & Complesso & R6F, R7F, R8F \\ 
 \rowcolor{magenta!20!} \hline
@@ -121,8 +116,6 @@
 \hline
 \rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
 protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
-\hline
-Nickname & Semplice & Alto & Input &  Non più di 32 caratteri\\
 \hline
 Username & Semplice & Alto & Input &  Non più di 32 caratteri\\
 \hline
@@ -186,30 +179,49 @@ Username & Semplice & Medio & Output &  Non più di 32 caratteri\\
 %--------
 
 \phantomsection
-\addcontentsline{toc}{subsubsection}{GestioneRichieste}
+\addcontentsline{toc}{subsubsection}{RegistrazioneUtente}
 
 \rowcolors{2}{white!0!}{white!0!}
 \begin{adjustwidth}{-2cm}{0cm}
 \resizebox{1.3\textwidth}{!}{
 \begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
 \hline
-\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{GestioneRichieste}} \\
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{RegistrazioneUtente}} \\
 \hline
 \rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
 protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
 \hline
-RichiestaUtente & Composto & Alto & Output &  \\
+RichiestaUtente & Composto & Medio & Output &  \\
 \hline
 \textbf{Composto da:} & & & & \\
 Username & Semplice & Medio & Output &  Non più di 32 caratteri\\
 Timestamp & Semplice & Basso & Output & Esattamente 23 caratteri\\
 \hline
+\end{tabular}
+}
+\end{adjustwidth}
+\vspace{0.6cm}
 
+
+%-------
+\phantomsection
+\addcontentsline{toc}{subsubsection}{CreazioneGruppo}
+
+\rowcolors{2}{white!0!}{white!0!}
+\begin{adjustwidth}{-2cm}{0cm}
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ |m{3cm}|c|m{2.7cm}|m{2.5cm}|m{2.5cm}|  }
+\hline
+\rowcolor{darkspringgreen!50}\multicolumn{5}{|c|}{\Large\textbf{CreazioneGruppo}} \\
+\hline
+\rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
+protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
 RichiestaGruppo & Composto & Medio & Output &  \\
 \hline
 \textbf{Composto da:} & & & & \\
 NomeGruppo & Semplice & Basso & Output &  Non più di 32 caratteri\\
-NomeProprietario & Semplice & Medio & Output &  Non più di 32 caratteri\\
+NomeProprietario & Semplice & Medio & Output & Non più di 32 caratteri\\
 Timestamp & Semplice & Basso & Output & Esattamente 23 caratteri\\
 \hline
 \end{tabular}
@@ -260,7 +272,7 @@ NumeroPartecipanti & Semplice & Medio & Output &  Non più di 16 partecipanti\\
 \rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
 protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
 \hline
-ResocontoLog & Composto & Alto & Output &  \\
+ResoContoLog & Composto & Alto & Output &  \\
 \hline
 \textbf{Composto da:} & & & & \\
 Timestamp & Semplice & Basso & Output & Esattamente 23 caratteri\\
@@ -290,8 +302,6 @@ Nickname & Semplice & Alto & Output &  Non più di 32 caratteri\\
 Username & Semplice & Alto & Output &  Non più di 32 caratteri\\
 \hline
 NuovoNickname & Semplice & Alto & Input &  Non più di 32 caratteri\\
-\hline
-NuovoUsername & Semplice & Alto & Input &  Non più di 32 caratteri\\
 \hline
 NuovaPassword & Semplice & Alto & Input &  Non meno di 6 caratteri, non più di 128 caratteri\\
 \hline
@@ -339,6 +349,9 @@ protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
 \hline
 Nickname & Semplice & Basso & Output &  Non più di 32 caratteri\\
 Username & Semplice & Basso & Output &  Non più di 32 caratteri\\
+\begin{tabular}{@{}l@{}}
+Memoria rimanente 
+\end{tabular}& Semplice & Basso & Output &  \\
 \hline
 \end{tabular}
 }
@@ -362,7 +375,6 @@ Username & Semplice & Basso & Output &  Non più di 32 caratteri\\
 protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
 \hline
 NomeVista & Semplice & Basso & Input & Non più di 32 caratteri\\
-StileVista & Semplice & Basso & Input & \\
 \hline
 \end{tabular}
 }
@@ -404,7 +416,8 @@ NomeVista & Semplice & Basso & Input & Non più di 32 caratteri\\
 protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
 \hline
 NomeVista & Semplice & Basso & Input & Non più di 32 caratteri\\
-StileVista & Semplice & Basso & Input & \\
+\hline
+Contenuto & Semplice & Basso & Input & \\
 \hline
 \end{tabular}
 }
@@ -425,12 +438,32 @@ StileVista & Semplice & Basso & Input & \\
 \rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
 protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
 \hline
+caricaFile & Composto & Alto & Input &\\
+\textbf{Composto da:} & & & & \\
+File & Composto & Molto Alto & Input &\\
+\hline
+\textbf{Composto da:} & & & & \\
+NomeFile & Semplice & Basso & Input & Non più di 32 caratteri\\
+DimensioneFile & Semplice & Basso & Input & Non più di 1 GB\\
+ContenutoFile & Semplice & Molto Alto & Input &\\
+\hline
+eliminaFile & Composto & Alto & Input &\\
+\textbf{Composto da:} & & & & \\
 File & Composto & Molto Alto & Input &\\
 \hline
 \textbf{Composto da:} & & & & \\
 NomeFile & Semplice & Basso & Input/Output & Non più di 32 caratteri\\
 DimensioneFile & Semplice & Basso & Input/Output & Non più di 1 GB\\
 ContenutoFile & Semplice & Molto Alto & Input/Output &\\
+\hline
+scaricaFile & Composto & Alto & Output &\\
+\textbf{Composto da:} & & & & \\
+File & Composto & Molto Alto & Output &\\
+\hline
+\textbf{Composto da:} & & & & \\
+NomeFile & Semplice & Basso & Output & Non più di 32 caratteri\\
+DimensioneFile & Semplice & Basso & Output & Non più di 1 GB\\
+ContenutoFile & Semplice & Molto Alto & Output &\\
 \hline
 \end{tabular}
 }
@@ -517,6 +550,7 @@ NomeGruppo & Semplice & Basso & Input &  Non più di 32 caratteri\\
 \hline
 \rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
 protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
+\hline
 ListaUtenti & Semplice & Basso & Output &\\
 \hline
 \textbf{Composto da:} & & & & \\
@@ -545,7 +579,7 @@ Username & Semplice & Medio & Output &  Non più di 32 caratteri\\
 \rowcolor{emerald!50}\Large\textbf{Informazione} & \Large\textbf{Tipo}& \Large\textbf{Livello   
 protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
 \hline
-AggiungiFileGruppo & Composto & Alto & Input &\\
+caricaFile & Composto & Alto & Input &\\
 \textbf{Composto da:} & & & & \\
 File & Composto & Molto Alto & Input &\\
 \hline
@@ -554,7 +588,7 @@ NomeFile & Semplice & Basso & Input & Non più di 32 caratteri\\
 DimensioneFile & Semplice & Basso & Input & Non più di 1 GB\\
 ContenutoFile & Semplice & Molto Alto & Input &\\
 \hline
-RimuoviFileGruppo & Composto & Alto & Input &\\
+eliminaFile & Composto & Alto & Input &\\
 \textbf{Composto da:} & & & & \\
 File & Composto & Molto Alto & Input &\\
 \hline
@@ -562,6 +596,15 @@ File & Composto & Molto Alto & Input &\\
 NomeFile & Semplice & Basso & Input/Output & Non più di 32 caratteri\\
 DimensioneFile & Semplice & Basso & Input/Output & Non più di 1 GB\\
 ContenutoFile & Semplice & Molto Alto & Input/Output &\\
+\hline
+scaricaFile & Composto & Alto & Output &\\
+\textbf{Composto da:} & & & & \\
+File & Composto & Molto Alto & Input &\\
+\hline
+\textbf{Composto da:} & & & & \\
+NomeFile & Semplice & Basso & Output & Non più di 32 caratteri\\
+DimensioneFile & Semplice & Basso & Output & Non più di 1 GB\\
+ContenutoFile & Semplice & Molto Alto & Output &\\
 \hline
 \end{tabular}
 }
@@ -604,17 +647,13 @@ NomeGruppo & Semplice & Basso & Input &  Non più di 32 caratteri\\
 protezione   /privacy} & \Large\textbf{Input /Output}& \Large\textbf{Vincoli}\\
 \hline
 AggiungiUtenteGruppo & Composto & Alto & Input &\\
-\textbf{Composto da:} & & & & \\
 \hline
 \textbf{Composto da:} & & & & \\
-Nickname & Semplice & Basso & Output &  Non più di 32 caratteri\\
 Username & Semplice & Medio & Output &  Non più di 32 caratteri\\
 \hline
 RimuoviUtenteGruppo & Composto & Alto & Input &\\
-\textbf{Composto da:} & & & & \\
 \hline
 \textbf{Composto da:} & & & & \\
-Nickname & Semplice & Basso & Output &  Non più di 32 caratteri\\
 Username & Semplice & Medio & Output &  Non più di 32 caratteri\\
 \hline
 \end{tabular}
@@ -650,9 +689,9 @@ Velocità caricamento file & Tempo di risposta & Cercare di migliorare & Gestion
 \hline
 Pannello di amministrazione intuitivo & Usabilità & Cercare di migliorare & GestioneUtenti, GestioneRichieste, GestioneGruppi, VisualizzaLog \\
 \hline
-Utilizzo efficace del servizio anche in assenza di una connessione veloce. & Usabilità. Tempo di risposta & Cercare di migliorare & Registrazione, Autenticazione, GestioneFile, GestioneAccount \\
+Utilizzo efficace del servizio anche in assenza di una connessione veloce. & Usabilità Tempo di risposta & Cercare di migliorare & Registrazione, Autenticazione, GestioneFile, GestioneAccount \\
 \hline
-Il sistema deve essere in grado di effettuare un ripristino veloce in caso di attacco. & Sicurezza & Peggiorano tempo di risposta, migliora la privacy dei dati & CreazioneBackup \\
+Il sistema deve essere in grado di effettuare un ripristino veloce in caso di attacco & Sicurezza & Peggiorano tempo di risposta, migliora la privacy dei dati & CreazioneBackup \\
 \hline
 \end{tabular}
 }
@@ -674,7 +713,7 @@ Il sistema deve essere in grado di effettuare un ripristino veloce in caso di at
 \rowcolor{ferrarired!45}\Large\textbf{Maschera} & \Large\textbf{Informazioni} & \Large\textbf{Funzionalità} \\
 \hline
 
-View Registrazione & Nickname, Username, Password & Registrazione \\
+View Registrazione & Username, Password & Registrazione \\
 
 View Login & Username, Password & Autenticazione \\
 
@@ -682,11 +721,11 @@ View Login & Username, Password & Autenticazione \\
 
 %----- AMMINISTRAZIONE
 
-View Gestione Utenti & Lista Utenti registrati, pulsante per rimuovere l'Utente & GestioneUtenti \\
+View Gestione Utenti & Lista utenti registrati, pulsante per rimuovere l'Utente & GestioneUtenti \\
 
 View Gestione Gruppi & Lista dei Gruppi registrati, pulsante per rimuovere il Gruppo & GestioneGruppi \\
 
-View Gestione Richieste & Lista richieste di registrazione di Utenti, lista di richieste di creazione gruppi, pulsanti per accettare/rifiutare la richiesta & GestioneRichieste \\
+View Gestione Richieste & Lista richieste di registrazione di utenti, lista di richieste di creazione gruppi, pulsanti per accettare/rifiutare la richiesta & GestioneRichieste \\
 
 View Visualizza Log & Lista dei file di Log & VisualizzaLog \\
 
@@ -718,9 +757,9 @@ View Gestione Account & Visualizza Nickname, Username, spazio di archiviazione r
 
 View Lista Gruppi & Lista dei gruppi registrati nel sistema, pulsante per esplorare il gruppo, pulsante per creare un nuovo gruppo & AreaGruppo, CreaGruppo \\
 
-View Gruppo & Se non iscritto mostra un pulsante per iscriversi al gruppo, se iscritto mostra un riferimento al gestore file di gruppo ed alla lista degli utenti ed un pulsante per abbandonare. & IscrizioneGruppo, VisualizzaUtenti, GestioneFileGruppo, UscitaGruppo \\
+View Gruppo & Se non iscritto mostra un pulsante per iscriversi al gruppo, se iscritto mostra un riferimento al gestore file di gruppo ed alla lista degli utenti ed un pulsante per abbandonare & IscrizioneGruppo, VisualizzaUtenti, GestioneFileGruppo, UscitaGruppo \\
 
-View Lista Utenti Gruppo & Lista degli utenti iscritti al gruppo, se l'utente è amministratore del gruppo mostra un pulsante per rimuovere un utente dal gruppo & VisualizzaUtenti, GestioneUtentiGruppo \\
+View Lista Utenti Gruppo & Lista degli utenti iscritti al gruppo, se l'utente è Amministratore del gruppo mostra un pulsante per rimuovere un utente dal gruppo & VisualizzaUtenti, GestioneUtentiGruppo \\
 
 \hline
 \end{tabular}
@@ -742,7 +781,7 @@ View Lista Utenti Gruppo & Lista degli utenti iscritti al gruppo, se l'utente è
 \hline
 \rowcolor{chromeyellow!50}\Large\textbf{Sistema} & \Large\textbf{Descrizione} & \Large\textbf{Protocollo di Interazione} & \Large\textbf{Livello di Sicurezza} \\
 \hline
-Storage & Sistema di memoria & L'amministratore fornisce lo spazio di archiviazione sul Server & Alto livello, i dischi contengono le informazioni dei file \\
+Storage & Sistema di memoria & L'Amministratore fornisce lo spazio di archiviazione sul Server & Alto livello, i dischi contengono le informazioni dei file \\
 \hline
 
 \end{tabular}
@@ -763,11 +802,11 @@ Storage & Sistema di memoria & L'amministratore fornisce lo spazio di archiviazi
 \hline
 \rowcolor{cerise!75}\multicolumn{5}{|c|}{\Large\textbf{Tabella Ruoli}} \\
 \hline
-\rowcolor{cerise!50}\Large\textbf{Ruolo} & \Large\textbf{Responsabilità} & \Large\textbf{Maschere} & \Large\textbf{Riservatezza}  & \Large\textbf{Numerosità} \\
+\rowcolor{cerise!50}\Large\textbf{Ruolo} & \large\textbf{Responsabilità} & \Large\textbf{Maschere} & \Large\textbf{Riservatezza}  & \Large\textbf{Numerosità} \\
 \hline
-Utente & Garantire la privacy della propria password & View Registrazione, View Login, Home Utente, View Gestione File, View Gestione Viste, View Editor Viste, View Gestione Account, View Lista Gruppi, View Lista Utenti , View Gruppo & Richiesto grado di riservatezza medio/basso & Numero gestito dall' amministratore di sistema, limitato nella configurazione del sistema \\
+Utente & Garantire la privacy della propria password & View Registrazione, View Login, Home Utente, View Gestione File, View Gestione Viste, View Editor Viste, View Gestione Account, View Lista Gruppi, View Lista Utenti , View Gruppo & Richiesto grado di riservatezza medio/basso & Numero gestito dall' Amministratore di sistema, limitato nella configurazione del sistema \\
 
-Amministratore Gruppo & Gestione del proprio gruppo e delle informazioni relative ad esso &  View Registrazione, View Login, Home Utente, View Gestione File, View Gestione Viste, View Editor Viste, View Gestione Account, View Lista Gruppi, View Lista Utenti , View Gruppo & Richiesto grado di riservatezza medio & Numero gestito dall' amministratore di sistema\\
+Amministratore Gruppo & Gestione del proprio gruppo e delle informazioni relative ad esso &  View Registrazione, View Login, Home Utente, View Gestione File, View Gestione Viste, View Editor Viste, View Gestione Account, View Lista Gruppi, View Lista Utenti , View Gruppo & Richiesto grado di riservatezza medio & Numero gestito dall' Amministratore di sistema\\
 
 Amministratore & Gestione delle informazioni relative agli utenti e ai gruppi e lettura dei log di sistema & View Login, Home Amministrazione, View Gestione Utenti, View Gestione Gruppi, View Gestione Richieste, View Visualizza Log, View Lista Gruppi, View Lista Utenti Gruppo & Richiesto grado di riservatezza molto alto  & Unica persona \\
 
@@ -928,7 +967,9 @@ CreazioneVista & PersonalizzaVista & Non è possibile personalizzare una vista s
 \hline
 \rowcolor{chromeyellow!50}\Large\textbf{Sotto-funzionalità} & \Large\textbf{Sotto-funzionalità} & \Large\textbf{Legame} & \Large\textbf{Informazioni} \\
 \hline
-EliminaFile & ScaricaFile & I File devono esistere per essere scaricati o eliminati & NomeFile\\
+CaricaFile & ScaricaFile & Non è possibile scaricare un File se prima non è stato caricato  & NomeFile\\
+\hline
+Caricafile & EliminaFile & Non è possibile eliminare un File se prima non è stato caricato & NomeFile\\
 \hline
 
 \end{tabular}
@@ -951,7 +992,7 @@ EliminaFile & ScaricaFile & I File devono esistere per essere scaricati o elimin
 \hline
 CreaGruppo & IscrizioneGruppo & Non è possibile iscriversi ad un gruppo se prima non è stato creato & NomeGruppo\\
 \hline
-EsploraGruppo & IscrizioneGruppo & Non è possibile esplorare un gruppo se prima non ci si è iscritti al gruppo & NomeGruppo\\
+IscrizioneGruppo & EsploraGruppo & Non è possibile esplorare un gruppo se prima non ci si è iscritti al gruppo & NomeGruppo\\
 \hline
 
 \end{tabular}

@@ -1,5 +1,8 @@
 @page "/"
 @inject NavigationManager NavigationManager
+@namespace Singleton.DatabaseUsers
+@using System.Collections;
+@using System.Collections.Generic;
 
     <div class="col-lg-6 col-xl-4 offset-lg-3 offset-xl-4" style="">
         <RadzenCard class="m-3" Style="border-radius: 1rem">
@@ -43,18 +46,12 @@
             
         </RadzenCard>
     </div>
-<p>
-Default username e password:
-<div>
-<b>@(u.ToString())</b>
-</div>
-</p>
+
+
 @code {
-    DatabaseUsers users = new DatabaseUsers();
+    DatabaseUsers users = DatabaseUsers.Instance();
     String email;
     String password;
-    User u=new User("admin","admin");
-    
     void OnLogin(){
         Console.WriteLine("Login");
     }
@@ -63,12 +60,21 @@ Default username e password:
         Console.WriteLine("Registration");
     }
     void OnClick()
-    {   if(email == "admin" && password == "admin"){
+    {   
+        User u = new User(email,password);
+
+        foreach (User user in users.getListaUtenti()){
+        if(u.getusername()==user.getusername() && u.getpassword()==user.getpassword()){
+            Console.WriteLine("Utente: "+user.getusername());
+            Console.WriteLine("Login con utente: "+ u.getusername() + " password: " + u.getpassword());
             NavigationManager.NavigateTo("account");
+            return;
         }
-        else{
-            Console.WriteLine("Login failed");
         }
+        Console.WriteLine("Login errato");     
+        NavigationManager.NavigateTo("error"); 
+
+
     }
 }   
     

@@ -1,0 +1,5 @@
+admin,admin
+goblino,goblino
+daniele,nanoculo
+lore09,lore09
+rebus,rebus

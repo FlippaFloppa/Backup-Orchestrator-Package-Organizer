@@ -1,19 +1,19 @@
     using System;
-    namespace Singleton.DatabaseUsers;
-    public class DatabaseUsers
+    namespace Singleton.Database;
+    public class Database
     {
-        static DatabaseUsers instance;
-        static List<User> listaUtenti;
-        protected DatabaseUsers()
+        static Database instance;
+        static List<Utente> listaUtenti;
+        protected Database()
         {   
             initialize();
         }
-        public static DatabaseUsers Instance()
+        public static Database Instance()
         {
 
             if (instance == null)
             {
-                instance = new DatabaseUsers();
+                instance = new Database();
                 Console.WriteLine("Created");
             }
             else {
@@ -27,15 +27,15 @@
     private static void initialize(){
     //bovino ma no voglia 
     string[] lines = System.IO.File.ReadAllLines("Files/database.txt");
-    listaUtenti=new List<User>();
+    listaUtenti=new List<Utente>();
     foreach (string line in lines)
     {   
         string[] credentials=line.Split(",");
-        listaUtenti.Add(new User(credentials[0],credentials[1]));
+        listaUtenti.Add(new Utente(credentials[0],credentials[1]));
     }   
     }
 
-    public List<User> getListaUtenti(){
+    public List<Utente> getListaUtenti(){
     return listaUtenti;
     }
     }

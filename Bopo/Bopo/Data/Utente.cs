@@ -1,19 +1,19 @@
 using System;
 
-public class User {
+public class Utente {
 
 private String username;
 private String password;
 
-public User(String username, String password) {
+public Utente(String username, String password) {
     this.username = username;
     this.password = password;
 }
 
-    public String getusername() {
+    public String getUsername() {
         return username;
     }
-    public String getpassword() {
+    public String getPassword() {
         return password;
     }
     //equals 

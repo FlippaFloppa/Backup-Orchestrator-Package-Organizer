@@ -1,6 +1,6 @@
 @page "/"
 @inject NavigationManager NavigationManager
-@namespace Singleton.DatabaseUsers
+@namespace Singleton.Database
 @using System.Collections;
 @using System.Collections.Generic;
 
@@ -49,7 +49,7 @@
 
 
 @code {
-    DatabaseUsers users = DatabaseUsers.Instance();
+    Database utenti = Database.Instance();
     String email;
     String password;
     void OnLogin(){
@@ -61,12 +61,12 @@
     }
     void OnClick()
     {   
-        User u = new User(email,password);
+        Utente u = new Utente(email,password);
 
-        foreach (User user in users.getListaUtenti()){
-        if(u.getusername()==user.getusername() && u.getpassword()==user.getpassword()){
-            Console.WriteLine("Utente: "+user.getusername());
-            Console.WriteLine("Login con utente: "+ u.getusername() + " password: " + u.getpassword());
+        foreach (Utente utente in utenti.getListaUtenti()){
+        if(u.getUsername()==utente.getUsername() && u.getPassword()==utente.getPassword()){
+            Console.WriteLine("Utente: "+utente.getUsername());
+            Console.WriteLine("Login con utente: "+ u.getUsername() + " password: " + u.getPassword());
             NavigationManager.NavigateTo("account");
             return;
         }

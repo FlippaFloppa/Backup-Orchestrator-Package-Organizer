@@ -1,6 +1,5 @@
 @page "/"
 @inject NavigationManager NavigationManager
-
     <div class="col-lg-6 col-xl-4 offset-lg-3 offset-xl-4" style="">
         <RadzenCard class="m-3" Style="border-radius: 1rem">
             
@@ -11,20 +10,20 @@
             <RadzenCard class="m-3" Style="border-radius: 1rem">
                     <div class="row mb-3">
                         <div class="col-md-3" style="align-self: center;">
-                            <RadzenLabel Text="Email" />
+                            <RadzenLabel Text="Email"/>
                         </div>
                         <div class="col">
-                            <RadzenTextBox style="display: block" Name="Email"  Class="w-100"  Placeholder="goblino@example.com"/>
+                            <RadzenTextBox style="display: block" Name="Email" @bind-Value="email" Class="w-100"  Placeholder="goblino@example.com"/>
                             <RadzenRequiredValidator Component="Email" Text="Email is required"  Style="position: absolute" />
                             <RadzenEmailValidator Component="Email" Text="Provide a valid email address"  Style="position: absolute" />
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-3" style="align-self: center;">
-                            <RadzenLabel Text="Password" />
+                            <RadzenLabel Text="Password"/>
                         </div>
                         <div class="col">
-                            <RadzenPassword Placeholder="************" Class="w-100" />
+                            <RadzenPassword Placeholder="************" Class="w-100" @bind-Value="password" />
                         </div>
                     </div>
                     <div class="row mb-4">
@@ -43,10 +42,17 @@
             
         </RadzenCard>
     </div>
-
-
+<p>
+Default username e password:
+<div>
+<b>@(u.ToString())</b>
+</div>
+</p>
 @code {
-
+    String email;
+    String password;
+    User u=new User("admin","admin");
+    
     void OnLogin(){
         Console.WriteLine("Login");
     }
@@ -55,8 +61,12 @@
         Console.WriteLine("Registration");
     }
     void OnClick()
-    {
-        NavigationManager.NavigateTo("account");
+    {   if(email == "admin" && password == "admin"){
+            NavigationManager.NavigateTo("account");
+        }
+        else{
+            Console.WriteLine("Login failed");
+        }
     }
 }   
     

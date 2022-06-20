@@ -1,9 +1,10 @@
 ﻿@page "/gruppi"
 
 @using Radzen
-@namespace Singleton.Database
 @using System.Collections;
 @using System.Collections.Generic;
+@using Bopo.Data
+@inject Database database
 
 <Menu></Menu>
 
@@ -60,6 +61,5 @@
 </style>
 
 @code {
-    Database database = Database.Instance();
 
 }

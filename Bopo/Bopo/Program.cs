@@ -1,6 +1,9 @@
+using Bopo.Autenticazione;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
-using Singleton.Database;
+using Bopo.Data;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,12 +11,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromSeconds(10);
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-});
+builder.Services.AddAuthenticationCore();
+
+builder.Services.AddSingleton<Database>();
+builder.Services.AddScoped<AuthenticationStateProvider,Authentication>();
+
 
 var app = builder.Build();
 
@@ -25,6 +27,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
@@ -34,7 +37,5 @@ app.UseRouting();
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
-
-Database utenti = Database.Instance();
 
 app.Run();

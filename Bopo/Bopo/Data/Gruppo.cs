@@ -1,10 +1,14 @@
-public class Gruppo : IEquatable<Gruppo>{
+
+namespace Bopo.Data
+{
+    public class Gruppo : IEquatable<Gruppo>
+    {
 
         public String nome { get; set; }
 
         public int partecipanti { get; set; }
 
-        public Gruppo(String nome,int part)
+        public Gruppo(String nome, int part)
         {
             this.nome = nome;
             this.partecipanti = part;
@@ -31,3 +35,4 @@ public class Gruppo : IEquatable<Gruppo>{
             return (this.nome.Equals(other.nome));
         }
     }
+}

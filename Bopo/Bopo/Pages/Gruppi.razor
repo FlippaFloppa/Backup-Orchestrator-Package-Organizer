@@ -1,6 +1,8 @@
 ﻿@page "/gruppi"
 
 @using Radzen
+@namespace Singleton.Database
+@using System.Collections;
 @using System.Collections.Generic;
 
 <Menu></Menu>
@@ -19,7 +21,7 @@
         <div class="col">
             <RadzenCard Style="border-radius:1.2rem;">
 
-                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@listaGruppi" TItem="Gruppo" PageSize="5" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaGruppi()" TItem="Gruppo" PageSize="5" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
                     <Template Context="gruppo">
                         <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;border-radius:1.2rem;">
                             <div class="container">
@@ -58,52 +60,6 @@
 </style>
 
 @code {
+    Database database = Database.Instance();
 
-    class Gruppo : IEquatable<Gruppo>{
-
-        public String nome { get; set; }
-
-        public int partecipanti { get; set; }
-
-        public Gruppo(String nome,int part)
-        {
-            this.nome = nome;
-            this.partecipanti = part;
-        }
-
-        public override string ToString()
-        {
-            return "nome: " + nome + "   num: " + partecipanti;
-        }
-        public override bool Equals(object obj)
-        {
-            if (obj == null) return false;
-            Gruppo objAsPart = obj as Gruppo;
-            if (objAsPart == null) return false;
-            else return Equals(objAsPart);
-        }
-        public override int GetHashCode()
-        {
-            return nome.GetHashCode();
-        }
-        public bool Equals(Gruppo other)
-        {
-            if (other == null) return false;
-            return (this.nome.Equals(other.nome));
-        }
-    }
-
-    List<Gruppo> listaGruppi = new List<Gruppo>();
-
-    protected override void OnInitialized()
-    {
-        listaGruppi.Add(new Gruppo("Ingegneria del Software", 112));
-        listaGruppi.Add(new Gruppo("Laboratorio di Sicurezza", 80));
-        listaGruppi.Add(new Gruppo("Affidabilità e Controllo", 2));
-        listaGruppi.Add(new Gruppo("Reti Logiche", 360));
-        listaGruppi.Add(new Gruppo("Gruppo Balotta", 92));
-        listaGruppi.Add(new Gruppo("pale", 10));
-        listaGruppi.Add(new Gruppo("gang", 106));
-        listaGruppi.Add(new Gruppo("bang", 150));
-    }
 }

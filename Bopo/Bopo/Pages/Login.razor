@@ -49,7 +49,7 @@
 
 
 @code {
-    Database utenti = Database.Instance();
+    Database database = Database.Instance();
     String email;
     String password;
     void OnLogin(){
@@ -63,7 +63,7 @@
     {   
         Utente u = new Utente(email,password);
 
-        foreach (Utente utente in utenti.getListaUtenti()){
+        foreach (Utente utente in database.getListaUtenti()){
         if(u.getUsername()==utente.getUsername() && u.getPassword()==utente.getPassword()){
             Console.WriteLine("Utente: "+utente.getUsername());
             Console.WriteLine("Login con utente: "+ u.getUsername() + " password: " + u.getPassword());
@@ -72,9 +72,10 @@
         }
         }
         Console.WriteLine("Login errato");     
-        NavigationManager.NavigateTo("error"); 
+        NavigationManager.NavigateTo("error?type=login",true); 
 
 
     }
+    
 }   
     

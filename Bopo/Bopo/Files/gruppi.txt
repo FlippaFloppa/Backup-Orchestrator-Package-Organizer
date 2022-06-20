@@ -1,0 +1,10 @@
+Ingegneria del Software,112
+Laboratorio di Sicurezza,80
+Affidabilità e Controllo,2
+Reti Logiche,360
+Gruppo Balotta,92
+pale,10
+gang,106
+bang,150
+asgara,111
+ciaociao,10

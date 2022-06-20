@@ -9,8 +9,9 @@ namespace Bopo.Pages
     public class ErrorModel : PageModel
     {
         public string? RequestId { get; set; }
+        public string? Param { get; set; }
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        public bool ShowRequestId => !string.IsNullOrEmpty(Param);
 
         private readonly ILogger<ErrorModel> _logger;
 
@@ -19,9 +20,11 @@ namespace Bopo.Pages
             _logger = logger;
         }
 
-        public void OnGet()
-        {
+        public void OnGet(string type)
+        {   Console.WriteLine("Ricevuto parametro di errore: " + type);
+            Param=type;
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+            
         }
     }
 }

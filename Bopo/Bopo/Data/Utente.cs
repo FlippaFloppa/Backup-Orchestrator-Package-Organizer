@@ -16,7 +16,6 @@ public Utente(String username, String password) {
     public String getPassword() {
         return password;
     }
-    //equals 
     
     public override String ToString() {
         return username + " " + password;

@@ -1,6 +1,8 @@
 @page "/file"
 @using System.IO
+@using Bopo.Autenticazione
 @inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment HostEnvironment
+@attribute [Authorize(Roles = "Utente")]
 
 <Menu></Menu>
 
@@ -21,34 +23,78 @@
         <RadzenCard Style="width: 100%; height: 500px;border-radius: 1.4rem;">
             <RadzenTree Data=@entries Expand=@LoadFiles >
                 <RadzenTreeLevel Text=@GetTextForNode Template=@FileOrFolderTemplate />
+                
             </RadzenTree>
 
         </RadzenCard>
+        
                 </div>
                 <div class="col">
         <RadzenCard Style="width: 100%; height: 500px;border-radius: 1.4rem;">
                     <h4 class="mb-4" >Carica un file</h4>
-                    <RadzenButton  Style="margin-bottom: 20px" Text="Upload" Click=@(args => upload.Upload()) class="d-block mt-7" ButtonStyle="ButtonStyle.Success" Icon="file_upload"/>
-                    <RadzenUpload Style="margin-bottom: 20px" @ref="upload" Auto="false" Multiple="true" Url="upload/multiple" Change=@(args => OnChange(args, "Manual Upload"))
-                            Progress=@(args => OnProgress(args, "Manual Upload")) class="w-300" />
+        <InputFile class="btn" OnChange="@LoadFiles" multiple />
+        <p>
+    <label>
+    </label>
+</p>
+
+@if (isLoading)
+{
+    <p>Uploading...</p>
+}
+else
+{
+    <ul>
+        @foreach (var file in loadedFiles)
+        {
+            <li>
+                <ul>
+                    <li>Name: @file.Name</li>
+                    <li>Last modified: @file.LastModified.ToString()</li>
+                    <li>Size (bytes): @file.Size</li>
+                    <li>Content type: @file.ContentType</li>
+                </ul>
+            </li>
+        }
+    </ul>
+}
         </RadzenCard>
                 </div>
             </div>
     </div>
 </div>
+<style>
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
 
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+</style>
 
 @code {
     IEnumerable<string> entries;
     protected override void OnInitialized()
     {   
-        entries = Directory.GetDirectories(HostEnvironment.WebRootPath+"/storage")
-                           .Where(entry =>
-                           {
-                               var name = Path.GetFileName(entry);
-
-                               return !name.StartsWith(".") && name != "bin" && name != "obj";
-                           });
+        entries = Directory.GetFiles(HostEnvironment.WebRootPath+"/storage");
+                           
 
     }
 
@@ -126,4 +172,30 @@
     {
         console.Log($"Server response: {args.RawResponse}");
     }
-}
+     private List<IBrowserFile> loadedFiles = new();
+    private long maxFileSize = 1024 * 10000;
+    private int maxAllowedFiles = 3;
+    private bool isLoading;
+
+    private async Task LoadFiles(InputFileChangeEventArgs e)
+    {
+        isLoading = true;
+        loadedFiles.Clear();
+
+        foreach (var file in e.GetMultipleFiles(maxAllowedFiles))
+        {
+
+                loadedFiles.Add(file);
+
+                var path = Path.Combine("wwwroot/storage",
+                        file.Name);
+
+                await using FileStream fs = new(path, FileMode.Create);
+                await file.OpenReadStream(maxFileSize).CopyToAsync(fs);
+            
+
+        }
+
+        isLoading = false;
+    }
+    }

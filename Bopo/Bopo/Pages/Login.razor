@@ -1,11 +1,12 @@
 @page "/"
+@page "/login"
 @using System.Collections;
 @using System.Collections.Generic;
 @using Bopo.Data
 @using Bopo.Autenticazione
 @inject Database database
 @inject IJSRuntime js
-@inject AuthenticationStateProvider authStateProvider
+@inject AuthenticationStateProvider authenticationStateProvider
 @inject NavigationManager NavigationManager
 
 
@@ -63,29 +64,44 @@
 
     private Model model = new Model();
 
+
     private async Task Authenticate()
     {
 
-        var utente = database.getUtenteByUsername(model.username);
+        var utente = database.getUserByUsername(model.username);
 
         if(utente == null)
         {
             // Utente non esiste
+            await js.InvokeVoidAsync("alert", "Utente non registrato");
             return;
         }
         else if(utente != null && utente.password != model.password)
         {
             // Utente esiste pass errata
+            await js.InvokeVoidAsync("alert", "Password errata");
             return;
         }
         else
         {
             // Utente login
 
-            var authStateProvider = (Authentication)authStateProvider;
+            var authStateProvider = (Authentication)authenticationStateProvider;
+
+            await authStateProvider.UpdateAuthenticationState(
+                new UserSession
+                    {
+                        UserName = utente.username,
+                        Role = utente.role
+                    }
+            );
         }
 
-        NavigationManager.NavigateTo("error?type=login",true); 
+        if(utente.role == "Amministratore")
+            NavigationManager.NavigateTo("/gestionerichieste",true);
+
+        else
+            NavigationManager.NavigateTo("/account",true); 
 
     }
     

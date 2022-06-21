@@ -7,7 +7,7 @@ namespace Bopo.Autenticazione
     public class Authentication : AuthenticationStateProvider
     {
         private readonly ProtectedSessionStorage _sessionStorage;
-        private ClaimsPrincipal _anonymous;
+        private ClaimsPrincipal _anonymous = new ClaimsPrincipal(new ClaimsIdentity());
 
         public Authentication(ProtectedSessionStorage sessionStorage)
         {
@@ -20,6 +20,7 @@ namespace Bopo.Autenticazione
             try
             {
                 var userSessionStorageResult = await _sessionStorage.GetAsync<UserSession>("UserSession");
+
                 var userSession = userSessionStorageResult.Success ? userSessionStorageResult.Value : null;
 
                 if (userSession == null)
@@ -47,7 +48,7 @@ namespace Bopo.Autenticazione
         {
             ClaimsPrincipal claimsPrincipal;
 
-            if(userSession == null)
+            if(userSession != null)
             {
                 await _sessionStorage.SetAsync("UserSession", userSession);
                 claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(new List<Claim>

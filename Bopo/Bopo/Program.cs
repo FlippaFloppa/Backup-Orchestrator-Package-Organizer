@@ -8,13 +8,16 @@ using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSession();
+builder.Services.AddOptions();
+builder.Services.AddAuthorizationCore();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddDistributedMemoryCache();
-builder.Services.AddAuthenticationCore();
 
+builder.Services.AddScoped<ProtectedSessionStorage>();
+builder.Services.AddScoped<AuthenticationStateProvider, Authentication>();
 builder.Services.AddSingleton<Database>();
-builder.Services.AddScoped<AuthenticationStateProvider,Authentication>();
+
 
 
 var app = builder.Build();
@@ -27,15 +30,18 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
-app.UseSession();
 
 app.UseRouting();
 
 app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
+
 
 app.Run();

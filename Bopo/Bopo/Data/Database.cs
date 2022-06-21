@@ -40,6 +40,10 @@ namespace Bopo.Data
             listaGruppi = new List<Gruppo>();
 
 
+            // ADMIN
+            listaUtenti.Add(new User("admin","admin",true));
+
+
             foreach (string line in linesUtenti)
             {
                 Console.WriteLine(line);
@@ -66,7 +70,7 @@ namespace Bopo.Data
         }
 
 
-        public User? getUtenteByUsername(String username)
+        public User? getUserByUsername(String username)
         {
             return listaUtenti.FirstOrDefault(x => x.username == username);
         }

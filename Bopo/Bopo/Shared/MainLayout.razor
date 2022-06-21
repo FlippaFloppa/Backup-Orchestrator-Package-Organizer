@@ -1,12 +1,27 @@
 ﻿@inherits LayoutComponentBase
 
+@using Bopo.Data
+@using Bopo.Autenticazione
+@inject Database database
+@inject AuthenticationStateProvider authenticationStateProvider
+@inject NavigationManager NavigationManager
+
 <PageTitle>Bopo</PageTitle>
 
 <div class="page">
 
     <main>
         <div class="top-row px-4">
-            <a href="/">Logout</a>
+            <AuthorizeView>
+                <Authorized>
+                    <a @onclick="Logout" href="/">Logout</a>
+                </Authorized>
+                    
+                <NotAuthorized>
+                    <a href="/">RickRoll</a>
+                </NotAuthorized>
+            </AuthorizeView>
+            
             <a href="https://github.com/FlippaFloppa/Ingegneria-del-Software" target="_blank">Github</a>
             <RadzenImage Path="images/github_icon.png" Style="width: 20px; height: 20px; margin-left: 8px;" />
         </div>
@@ -16,3 +31,13 @@
         </article>
     </main>
 </div>
+
+@code{
+    private async Task Logout()
+    {
+        var authStateProvider = (Authentication)authenticationStateProvider;
+        await authStateProvider.UpdateAuthenticationState(null);
+
+        NavigationManager.NavigateTo("/",true); 
+    }
+}

@@ -1,6 +1,8 @@
 ﻿@page "/account"
+@inject IJSRuntime js
+@attribute [Authorize(Roles = "Utente")]
 
-    <Menu/>
+<Menu/>
 
 <div class=" col-xl-4 offset-lg-3 offset-xl-4">
 <RadzenCard Style="border-radius:1.4rem;margin-bottom: 40px">
@@ -80,6 +82,10 @@
 
 </div>
 @code {
+
+    [CascadingParameter]
+    private Task<AuthenticationState>  authenticationState { get; set; }
+
     bool busy;
     void OnLogin(){
         Console.WriteLine("Login");
@@ -88,9 +94,13 @@
     {
         Console.WriteLine("Registration");
     }
-    void OnClick()
+    async void OnClick()
     {
-        
+
+        var authstate = await authenticationState;
+        var message = $"AAAAAAAAA {authstate.User.Identity.Name}";
+
+        await js.InvokeVoidAsync("alert", message);
     }
       async Task OnBusyClick()
     {

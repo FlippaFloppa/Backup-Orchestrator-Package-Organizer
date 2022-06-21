@@ -13,6 +13,14 @@
         {
             this.username = username;
             this.password = password;
+            this.role = "Utente";
+        }
+        public User(String username, String password, Boolean admin)
+        {
+            this.username = username;
+            this.password = password;
+            if (admin) role = "Amministratore";
+            else role = "Utente";
         }
 
         public override String ToString()

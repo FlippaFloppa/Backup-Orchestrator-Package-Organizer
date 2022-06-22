@@ -276,35 +276,35 @@
         }
       },
       {
-        "HashCode": 1172181819,
+        "HashCode": 25791090,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Account",
+        "Name": "Bopo.Pages.Registration",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Account"
+            "TagName": "Registration"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Account"
+          "Common.TypeName": "Bopo.Pages.Registration"
         }
       },
       {
-        "HashCode": -768882676,
+        "HashCode": 1823220286,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Account",
+        "Name": "Bopo.Pages.Registration",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Bopo.Pages.Account"
+            "TagName": "Bopo.Pages.Registration"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Account",
+          "Common.TypeName": "Bopo.Pages.Registration",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -342,35 +342,35 @@
         }
       },
       {
-        "HashCode": 25791090,
+        "HashCode": 1172181819,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Registration",
+        "Name": "Bopo.Pages.Account",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Registration"
+            "TagName": "Account"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Registration"
+          "Common.TypeName": "Bopo.Pages.Account"
         }
       },
       {
-        "HashCode": 1823220286,
+        "HashCode": -768882676,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Registration",
+        "Name": "Bopo.Pages.Account",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Bopo.Pages.Registration"
+            "TagName": "Bopo.Pages.Account"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Registration",
+          "Common.TypeName": "Bopo.Pages.Account",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

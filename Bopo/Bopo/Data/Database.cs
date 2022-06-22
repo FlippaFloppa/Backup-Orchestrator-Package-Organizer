@@ -47,8 +47,8 @@ namespace Bopo.Data
             foreach (string line in linesUtenti)
             {
                 Console.WriteLine(line);
-                string[] credentials = line.Split(",");
-                listaUtenti.Add(new User(credentials[0], credentials[1]));
+                string[] split = line.Split(",");
+                listaUtenti.Add(new User(split[0], split[1], DateTime.Parse(split[2]),split[3],int.Parse(split[4])));
             }
 
             foreach (string line in linesGruppi)

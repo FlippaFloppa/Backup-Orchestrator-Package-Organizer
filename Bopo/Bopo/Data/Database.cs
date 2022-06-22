@@ -31,24 +31,6 @@ namespace Bopo.Data
             
             richiesteGruppi = new List<RichiestaGruppo>();
 
-            // ADMIN
-            listaUtenti.Add(new User("admin","admin",true));
-
-
-            foreach (string line in linesUtenti)
-            {
-                Console.WriteLine(line);
-                string[] split = line.Split(",");
-                listaUtenti.Add(new User(split[0], split[1], DateTime.Parse(split[2]),split[3],int.Parse(split[4])));
-            }
-
-            foreach (string line in linesGruppi)
-            {
-                Console.WriteLine(line);
-                string[] groups = line.Split(",");
-                listaGruppi.Add(new Gruppo(groups[0], Int32.Parse(groups[1])));
-            }
-
         }
 
         public List<User> getListaUtenti()
@@ -77,6 +59,11 @@ namespace Bopo.Data
 
         public void updateUtenti()
         {
+            listaUtenti.Clear();
+
+            // ADMIN
+            listaUtenti.Add(new User("admin", "admin", true));
+
             string[] linesUtenti = System.IO.File.ReadAllLines("Files/utenti.txt");
 
             foreach (string line in linesUtenti)
@@ -89,6 +76,7 @@ namespace Bopo.Data
 
         public void updateGruppi()
         {
+            listaGruppi.Clear();
 
             string[] linesGruppi = System.IO.File.ReadAllLines("Files/gruppi.txt");
 
@@ -102,6 +90,8 @@ namespace Bopo.Data
 
         public void updateRichiestaUtente()
         {
+            richiesteUtente.Clear();
+
             string[] linesRichiestaUtente = System.IO.File.ReadAllLines("Files/richiestautente.txt");
 
             foreach (string line in linesRichiestaUtente)
@@ -115,6 +105,8 @@ namespace Bopo.Data
 
         public void updateRichiestaGruppo()
         {
+            richiesteGruppi.Clear();
+
             string[] linesRichiestaGruppo = System.IO.File.ReadAllLines("Files/richiestagruppo.txt");
 
             foreach (string line in linesRichiestaGruppo)

@@ -65,7 +65,12 @@
                         <div>Gruppi</div>
                         <b>0</b>
                         <div class="mt-3">Nickname</div>
-                        <b>Goblino</b>
+                        <AuthorizeView>
+                        <Authorized>
+                        <b>@context.User.Identity.Name</b>
+                        </Authorized>
+                        </AuthorizeView>
+
                     </div>
                 </div>
             </RadzenCard>   
@@ -82,10 +87,9 @@
 
 </div>
 @code {
-
     [CascadingParameter]
-    private Task<AuthenticationState>  authenticationState { get; set; }
-
+    private Task<AuthenticationState>  authenticationState { get; set; }   
+    
     bool busy;
     void OnLogin(){
         Console.WriteLine("Login");
@@ -99,7 +103,7 @@
 
         var authstate = await authenticationState;
         var message = $"AAAAAAAAA {authstate.User.Identity.Name}";
-
+        
         await js.InvokeVoidAsync("alert", message);
     }
       async Task OnBusyClick()

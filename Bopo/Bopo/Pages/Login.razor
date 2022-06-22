@@ -1,7 +1,5 @@
 @page "/"
 @page "/login"
-@using System.Collections;
-@using System.Collections.Generic;
 @using Bopo.Data
 @using Bopo.Autenticazione
 @inject Database database
@@ -49,7 +47,9 @@
                     </div>
                     </div>
              </RadzenCard>
-            
+             <p>
+             <b style="color:red">@model.Err</b>
+             </p>
         </RadzenCard>
     </div>
 
@@ -60,6 +60,7 @@
     {
         public string username { get; set; }
         public string password { get; set; }
+        public string Err { get; set; }
     }
 
     private Model model = new Model();
@@ -73,13 +74,13 @@
         if(utente == null)
         {
             // Utente non esiste
-            await js.InvokeVoidAsync("alert", "Utente non registrato");
+            model.Err="Errore, Username errato";
             return;
         }
         else if(utente != null && utente.password != model.password)
         {
             // Utente esiste pass errata
-            await js.InvokeVoidAsync("alert", "Password errata");
+            model.Err="Errore, Password errata";
             return;
         }
         else

@@ -69,6 +69,9 @@ namespace Bopo.Data
             return listaGruppi;
         }
 
+        public void insertUser(User u){
+        listaUtenti.Add(u);
+        }
 
         public User? getUserByUsername(String username)
         {

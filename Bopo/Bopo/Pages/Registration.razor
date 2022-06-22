@@ -1,7 +1,11 @@
 @page "/registration"
 @using Radzen
-@using System.Text.Json
 @inject NavigationManager NavigationManager
+@using Bopo.Data
+@inject Database database
+@using System
+@inject IJSRuntime js
+
 
 <div class="col-lg-6 col-xl-4 offset-lg-3 offset-xl-4" style="">
     <RadzenCard class="m-3" Style="border-radius: 1rem">
@@ -11,14 +15,14 @@
         <h1 class="mb-4" style="text-align: center;">Registrazione</h1>
 
         <RadzenCard class="m-3" Style="border-radius: 1rem">
+            <RadzenTemplateForm TItem="Model" Data=@model>
             <div class="row mb-5">
                 <div class="col-md-4" style="align-self: center;">
                     <RadzenLabel Text="Email" />
                 </div>
                 <div class="col">
-                    <RadzenTextBox style="display: block;" Name="Email" Class="w-100" Placeholder="goblino@example.com" />
-                    <RadzenRequiredValidator Component="Email" Text="Email is required" Style="position: absolute" />
-                    <RadzenEmailValidator Component="Email" Text="Provide a valid email address" Style="position: absolute" />
+                    <RadzenTextBox style="display: block;" Name="Email" @bind-Value="@model.Username" Class="w-100" Placeholder="goblino@example.com" />
+                    <RadzenRequiredValidator Component="Email" Text="Email is required" @bind-Value="@model.Username" Style="position: absolute" />
                 </div>
                 
             </div>
@@ -35,42 +39,63 @@
                             <div class="col-md-4" style="align-self: center;">
                                 <RadzenLabel Text="Repeat Password" />
                             </div>
+
                             <div class="col">
                                 <RadzenPassword Placeholder="**************" style="display: block;" Name="RepeatPassword" @bind-Value="@model.RepeatPassword" Class="w-100" />
                                 <RadzenRequiredValidator Component="RepeatPassword" Text="Repeat your password" Popup="@popup" Style="position: absolute" />
-                                <RadzenCompareValidator
-                                    Visible="@(!string.IsNullOrEmpty(model.RepeatPassword))"
-                                    Value="@model.Password"
-                                    Component="RepeatPassword"
-                                    Text="Passwords should be the same"
-                                    Popup="@popup"
-                                    Style="position: absolute"
-                                />
+                            <RadzenCompareValidator Visible=@(!string.IsNullOrEmpty(model.RepeatPassword)) Value=@model.Password Component="RepeatPassword" Text="Passwords should be the same" Popup=@popup Style="position: absolute" />
                             </div>
                         </div>
                         <RadzenButton ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" Click=@(OnClick) style="align-self: center; display: block; width: 100%;">
                             <span class="rz-button-text">Register</span>
                             <RadzenImage Path="images/login_icon.png" Style="width: 20px; height: 20px; margin-left: 8px;" />
                         </RadzenButton>
-
+        </RadzenTemplateForm>
         </RadzenCard>
+        <p>
+        <b style="color:red">@model.Err</b>
+        </p>
     </RadzenCard>
 </div>
-
-@code { 
-    class Model {
+@code {
+    private class Model {
         public string Password { get; set; } 
-        public double Value { get; set; } 
+        public string Username { get; set; } 
+        public string Err { get; set; }
         public string RepeatPassword { get; set; } 
-    } 
-    bool popup; 
-    double targetValue = 1; 
-    CompareOperator compareOperator = CompareOperator.Equal; 
-    Model model = new Model(); 
 
-    void OnClick()
-    {
-        NavigationManager.NavigateTo("/");
     }
 
-}
+    bool popup; 
+    Model model = new Model(); 
+    public void insertUser(User u){
+    System.IO.File.AppendAllText(@"Files/utenti.txt", Environment.NewLine+u.ToString());
+    database.insertUser(u);
+    return;
+    }
+    public bool checkUser(){
+    Console.WriteLine("Registrazione username: " + model.Username + " password: " + model.Password);
+    if(string.IsNullOrEmpty(model.Username) || string.IsNullOrEmpty(model.Username)){
+    model.Err="Inserisci Username e Password";
+    return false;
+    }
+    if(model.Password == model.RepeatPassword){
+    if(database.getUserByUsername(model.Username)==null)
+    return true;
+    }
+
+    model.Err="Utente già registrato";
+    return false;
+    }
+    void OnClick()
+    {   
+        if(checkUser()){
+            User u = new User(model.Username,model.Password);
+            insertUser(u);
+            NavigationManager.NavigateTo("/"); 
+
+        }
+
+        }
+    }
+

@@ -25,7 +25,7 @@
 
         public override String ToString()
         {
-            return username + " " + password;
+            return username + "," + password;
         }
 
         

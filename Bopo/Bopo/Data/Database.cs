@@ -34,6 +34,21 @@ namespace Bopo.Data
             // ADMIN
             listaUtenti.Add(new User("admin","admin",true));
 
+
+            foreach (string line in linesUtenti)
+            {
+                Console.WriteLine(line);
+                string[] split = line.Split(",");
+                listaUtenti.Add(new User(split[0], split[1], DateTime.Parse(split[2]),split[3],int.Parse(split[4])));
+            }
+
+            foreach (string line in linesGruppi)
+            {
+                Console.WriteLine(line);
+                string[] groups = line.Split(",");
+                listaGruppi.Add(new Gruppo(groups[0], Int32.Parse(groups[1])));
+            }
+
         }
 
         public List<User> getListaUtenti()

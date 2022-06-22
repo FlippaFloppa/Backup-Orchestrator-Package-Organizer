@@ -12,600 +12,68 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 2119681047,
+        "HashCode": 1723529367,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.File",
+        "Name": "__GeneratedComponent.AspNetCore_c5a6ae1a3ffdfd156a35ab9043805679ed603e56",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "File"
+            "TagName": "AspNetCore_c5a6ae1a3ffdfd156a35ab9043805679ed603e56"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.File"
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_c5a6ae1a3ffdfd156a35ab9043805679ed603e56"
         }
       },
       {
-        "HashCode": 545927904,
+        "HashCode": 1505527335,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.File",
+        "Name": "__GeneratedComponent.AspNetCore_c5a6ae1a3ffdfd156a35ab9043805679ed603e56",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Bopo.Pages.File"
+            "TagName": "__GeneratedComponent.AspNetCore_c5a6ae1a3ffdfd156a35ab9043805679ed603e56"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.File",
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_c5a6ae1a3ffdfd156a35ab9043805679ed603e56",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1296298585,
+        "HashCode": -950998690,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.GestioneRichieste",
+        "Name": "__GeneratedComponent.AspNetCore_efb558526a7f0b40263f8e8d9cb6596fc4d4fc2d",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GestioneRichieste"
+            "TagName": "AspNetCore_efb558526a7f0b40263f8e8d9cb6596fc4d4fc2d"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.GestioneRichieste"
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_efb558526a7f0b40263f8e8d9cb6596fc4d4fc2d"
         }
       },
       {
-        "HashCode": -1589111150,
+        "HashCode": 79135062,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.GestioneRichieste",
+        "Name": "__GeneratedComponent.AspNetCore_efb558526a7f0b40263f8e8d9cb6596fc4d4fc2d",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Bopo.Pages.GestioneRichieste"
+            "TagName": "__GeneratedComponent.AspNetCore_efb558526a7f0b40263f8e8d9cb6596fc4d4fc2d"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.GestioneRichieste",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1346515720,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.GestioneUtenti",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GestioneUtenti"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.GestioneUtenti"
-        }
-      },
-      {
-        "HashCode": -318530074,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.GestioneUtenti",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.GestioneUtenti"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.GestioneUtenti",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 250288140,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Menu",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Menu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Menu"
-        }
-      },
-      {
-        "HashCode": -1403775012,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Menu",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.Menu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Menu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1237393337,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.MenuAdmin",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MenuAdmin"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.MenuAdmin"
-        }
-      },
-      {
-        "HashCode": 1032994976,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.MenuAdmin",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.MenuAdmin"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.MenuAdmin",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1720000574,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Viste",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Viste"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Viste"
-        }
-      },
-      {
-        "HashCode": 907946899,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Viste",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.Viste"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Viste",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 582018482,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Gruppi",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Gruppi"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Gruppi"
-        }
-      },
-      {
-        "HashCode": 1271736560,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Gruppi",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.Gruppi"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Gruppi",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 570531159,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.GestioneGruppi",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "GestioneGruppi"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.GestioneGruppi"
-        }
-      },
-      {
-        "HashCode": -1219147290,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.GestioneGruppi",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.GestioneGruppi"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.GestioneGruppi",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 25791090,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Registration",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Registration"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Registration"
-        }
-      },
-      {
-        "HashCode": 1823220286,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Registration",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.Registration"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Registration",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1787828293,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Login",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Login"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Login"
-        }
-      },
-      {
-        "HashCode": -444015784,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Login",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.Login"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Login",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1172181819,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Account",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Account"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Account"
-        }
-      },
-      {
-        "HashCode": -768882676,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Account",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.Account"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Account",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 533674090,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Shared.EventConsole",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EventConsole"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Attributes",
-            "TypeName": "System.Collections.Generic.IDictionary<System.String, System.Object>",
-            "Metadata": {
-              "Common.PropertyName": "Attributes"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Shared.EventConsole"
-        }
-      },
-      {
-        "HashCode": 1500634467,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Shared.EventConsole",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Shared.EventConsole"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Attributes",
-            "TypeName": "System.Collections.Generic.IDictionary<System.String, System.Object>",
-            "Metadata": {
-              "Common.PropertyName": "Attributes"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Shared.EventConsole",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1406077837,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Shared.SurveyPrompt",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": -28446864,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Shared.SurveyPrompt",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1056164171,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Shared.MainLayout",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Shared.MainLayout"
-        }
-      },
-      {
-        "HashCode": -896083508,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Shared.MainLayout",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Shared.MainLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1471181542,
-        "Kind": "Components.ChildContent",
-        "Name": "Bopo.Shared.MainLayout.Body",
-        "AssemblyName": "Bopo",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "Bopo.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 1558837173,
-        "Kind": "Components.ChildContent",
-        "Name": "Bopo.Shared.MainLayout.Body",
-        "AssemblyName": "Bopo",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "Bopo.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "Bopo.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1544881430,
-        "Kind": "Components.Component",
-        "Name": "Bopo.App",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.App"
-        }
-      },
-      {
-        "HashCode": 472213993,
-        "Kind": "Components.Component",
-        "Name": "Bopo.App",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.App",
+          "Common.TypeName": "__GeneratedComponent.AspNetCore_efb558526a7f0b40263f8e8d9cb6596fc4d4fc2d",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -75262,102 +74730,6 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "Bopo",
-  "Documents": [
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\Login.razor",
-      "TargetPath": "Pages\\Login.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\Gruppi.razor",
-      "TargetPath": "Pages\\Gruppi.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\File.razor",
-      "TargetPath": "Pages\\File.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\GestioneGruppi.razor",
-      "TargetPath": "Pages\\GestioneGruppi.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\_Layout.cshtml",
-      "TargetPath": "Pages\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\MenuAdmin.razor",
-      "TargetPath": "Pages\\MenuAdmin.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Shared\\EventConsole.razor",
-      "TargetPath": "Shared\\EventConsole.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\Registration.razor",
-      "TargetPath": "Pages\\Registration.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\Account.razor",
-      "TargetPath": "Pages\\Account.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\GestioneRichieste.razor",
-      "TargetPath": "Pages\\GestioneRichieste.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\GestioneUtenti.razor",
-      "TargetPath": "Pages\\GestioneUtenti.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\Menu.razor",
-      "TargetPath": "Pages\\Menu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Pages\\Viste.razor",
-      "TargetPath": "Pages\\Viste.razor",
-      "FileKind": "component"
-    }
-  ],
+  "Documents": [],
   "SerializationFormat": "0.2"
 }

@@ -1,8 +1,10 @@
 ﻿@page "/account"
 @inject IJSRuntime js
+@inject NavigationManager NavigationManager
 @attribute [Authorize(Roles = "Utente")]
 
 <Menu/>
+
 
 <div class=" col-xl-4 offset-lg-3 offset-xl-4">
 <RadzenCard Style="border-radius:1.4rem;margin-bottom: 40px">

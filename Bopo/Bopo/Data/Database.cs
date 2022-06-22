@@ -13,25 +13,12 @@ namespace Bopo.Data
         public Database()
         {
             initialize();
+
+            updateUtenti();
+            updateGruppi();
+            updateRichiestaUtente();
+            updateRichiestaGruppo();
         }
-
-        /*
-        public static Database Instance()
-        {
-
-            if (instance == null)
-            {
-                instance = new Database();
-                Console.WriteLine("Created");
-            }
-            else
-            {
-                Console.WriteLine("Already Created");
-            }
-            return instance;
-        }
-        */
-
 
         private static void initialize()
         {
@@ -105,8 +92,8 @@ namespace Bopo.Data
             foreach (string line in linesRichiestaUtente)
             {
                 Console.WriteLine(line);
-                string[] groups = line.Split(",");
-                richiesteUtente.Add(new Gruppo(groups[0], Int32.Parse(groups[1])));
+                string[] str = line.Split(",");
+                richiesteUtente.Add(new RichiestaUtente(str[0],str[1], DateTime.Parse(str[2])));
             }
         }
 
@@ -118,8 +105,8 @@ namespace Bopo.Data
             foreach (string line in linesRichiestaGruppo)
             {
                 Console.WriteLine(line);
-                string[] groups = line.Split(",");
-                richiesteGruppi.Add(new Gruppo(groups[0], Int32.Parse(groups[1])));
+                string[] str = line.Split(",");
+                richiesteGruppi.Add(new RichiestaGruppo(str[0], str[1], str[2], DateTime.Parse(str[3])));
             }
         }
 

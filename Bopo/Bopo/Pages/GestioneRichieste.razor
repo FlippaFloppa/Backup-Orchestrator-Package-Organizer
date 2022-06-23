@@ -19,20 +19,21 @@
         <div class="col">
             <RadzenCard Style="border-radius:1.2rem;">
 
-                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaGruppi()" TItem="Gruppo" PageSize="5" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
-                    <Template Context="gruppo">
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaRichiesteUtente()" TItem="RichiestaUtente" PageSize="3" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
+                    <Template Context="richiesta">
                         <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;border-radius:1.2rem;">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-3 p-3 group-name">
-                                            @(gruppo.nome)
+                                    <b>Amministratore del gruppo: @(richiesta.username)</b>
                                     </div>
-                                    <div class="col-lg-7 p-3">
-                                        <h5 class="mb-0">Partecipanti</h5>
-                                         <p class="mb-sm-2 mb-lg-0">@(gruppo.partecipanti)</p>
+                                    <div class="col-lg-7 p-4">
+                                        <h5 class="mb-0">Data di Richiesta:</h5>
+                                    <p class="mb-sm-4 mb-lg-0"> <b>@(richiesta.dateTime)</b></p>
                                     </div>
-                                    <div class="col-lg-2 p-3">
-                                        <RadzenButton Text="Esplora" ButtonStyle="ButtonStyle.Success"/>
+                                    <div class="col-lg-2 p-4">
+                                        <RadzenButton Icon="check_circle" ButtonStyle="ButtonStyle.Success" Click="@((args) => { accept(richiesta); })"/>
+                                        <RadzenButton Icon="report" ButtonStyle="ButtonStyle.Danger" Click="@((args) => { decline(richiesta); })"/>
                                     </div>
                                 </div>
                             </div>
@@ -46,8 +47,19 @@
 </div>
 
 
-@code{
+@code{    
 
+   public void accept(RichiestaUtente r)
+    {
+    Console.WriteLine("Richiesta Accettata: "+ r.ToString());
+    database.deleteUserRequest(r);
+    database.insertUser(new User(r.username,r.password));
+    }
 
+   public void decline(RichiestaUtente r)
+    {
+    Console.WriteLine("Richiesta Rifiutata: "+ r.ToString());
+    database.deleteUserRequest(r);
+    }
 
 }

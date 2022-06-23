@@ -6,8 +6,7 @@ namespace Bopo.Data
         //static Database instance;
         static List<User> listaUtenti;
         static List<Gruppo> listaGruppi;
-
-        static List<RichiestaUtente> richiesteUtente;
+        static public List<RichiestaUtente> richiesteUtente;
         static List<RichiestaGruppo> richiesteGruppi;
 
         public Database()
@@ -41,7 +40,10 @@ namespace Bopo.Data
         {
             return listaGruppi;
         }
-
+        public List<RichiestaUtente> getListaRichiesteUtente()
+        {
+            return richiesteUtente;
+        }
         public void insertUser(User u){
         listaUtenti.Add(u);
         System.IO.File.AppendAllText(@"Files/utenti.txt", u.ToString()+Environment.NewLine);
@@ -70,7 +72,17 @@ namespace Bopo.Data
         }
         return false;
         }
-        
+        public void insertUserRequest(RichiestaUtente r){
+        richiesteUtente.Add(r);
+        System.IO.File.AppendAllText(@"Files/richiesteutenti.txt", r.ToString()+Environment.NewLine);
+        }
+        public void deleteUserRequest(RichiestaUtente r){
+        richiesteUtente.Remove(r);
+        File.WriteAllText(@"Files/richiesteutenti.txt", string.Empty);
+        foreach (RichiestaUtente richiesta in richiesteUtente){
+        System.IO.File.AppendAllText(@"Files/richiesteutenti.txt", richiesta.ToString()+Environment.NewLine);
+        }
+        }
         public User? getUserByUsername(String username)
         {
             return listaUtenti.FirstOrDefault(x => x.username == username);
@@ -117,7 +129,7 @@ namespace Bopo.Data
         {
             richiesteUtente.Clear();
 
-            string[] linesRichiestaUtente = System.IO.File.ReadAllLines("Files/richiestautente.txt");
+            string[] linesRichiestaUtente = System.IO.File.ReadAllLines("Files/richiesteutenti.txt");
 
             foreach (string line in linesRichiestaUtente)
             {
@@ -132,7 +144,7 @@ namespace Bopo.Data
         {
             richiesteGruppi.Clear();
 
-            string[] linesRichiestaGruppo = System.IO.File.ReadAllLines("Files/richiestagruppo.txt");
+            string[] linesRichiestaGruppo = System.IO.File.ReadAllLines("Files/richiestegruppi.txt");
 
             foreach (string line in linesRichiestaGruppo)
             {

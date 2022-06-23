@@ -86,8 +86,7 @@
     void OnClick()
     {   
         if(checkUser()){
-            User u = new User(model.Username,model.Password);
-            database.insertUser(u);
+            database.insertUserRequest(new RichiestaUtente(model.Username,model.Password,DateTime.Now));
             NavigationManager.NavigateTo("/"); 
 
         }

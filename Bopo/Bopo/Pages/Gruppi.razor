@@ -20,7 +20,7 @@
 
 <div class="container">
     <div class="row py-5">
-        <div class="col">
+        <div class="col-md-8">
             <RadzenCard Style="border-radius:1.2rem;">
 
                 <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaGruppi()" TItem="Gruppo" PageSize="5" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
@@ -28,10 +28,10 @@
                         <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;border-radius:1.2rem;">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-3 p-3 group-name">
+                                    <div class="col-lg-4 p-3 group-name">
                                             @(gruppo.nome)
                                     </div>
-                                    <div class="col-lg-7 p-3">
+                                    <div class="col-lg-5 p-3">
                                         <h5 class="mb-0">Partecipanti</h5>
                                          <p class="mb-sm-2 mb-lg-0">@(gruppo.partecipanti)</p>
                                     </div>
@@ -46,10 +46,33 @@
 
             </RadzenCard>
         </div>
+        <div class="col-md-4">
+                <RadzenCard Style="border-radius:1.2rem;width:100%">
+                    <h2 class="mb-4">Crea nuovo gruppo</h2>
+                    <RadzenTemplateForm Data="@model" Submit="@((Model args) => { creaGruppo(args); })">
+                    <RadzenFieldset Style="border-radius:1rem">
+
+                    <h4 class="mb-2">Nome gruppo</h4>
+                    <RadzenTextBox Placeholder="balotta" @bind-Value=model.nome Class="w-100 mb-4" />
+
+                    <h4 class="mb-2">Password del gruppo</h4>
+                    <RadzenPassword Placeholder="********" @bind-Value=model.password Class="w-100 mb-4" />
+
+
+                    <h4 class="mb-3">Numero massimo di partecipanti: @model.maxPartecipanti</h4>
+                    <RadzenSlider @bind-Value=model.maxPartecipanti Step="5" TValue="int" Min="10" Max="100" Class="w-100 mb-3" />
+                    </RadzenFieldset>
+
+                   <RadzenButton  ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary"  Icon="add_circle" BusyText="Invio richiesta ..." IsBusy=@busy Click=@OnBusyClick Text="Crea" style="align-self:center;display: block;width: 100%;"/>
+        
+                </RadzenTemplateForm>
+                </RadzenCard>
+        </div>
     </div>
 </div>
 
 <style>
+
 .group-name {
     min-height: 72px;
     color: #EEEEEE;
@@ -62,5 +85,34 @@
 </style>
 
 @code {
+
+    private class Model{
+
+        public String nome { get; set; }
+        public int maxPartecipanti { get; set; }
+        public String? password { get; set; }
+
+        public Model()
+        {
+            maxPartecipanti = 10;
+        }
+
+    }
+
+    private bool busy;
+    private Model model = new Model();
+
+    private void creaGruppo(Model arg)
+    {
+        
+    }
+
+    async Task OnBusyClick()
+    {   
+        busy = true;
+        await Task.Delay(1000);
+        busy = false;
+         
+    }  
 
 }

@@ -16,81 +16,86 @@
 
         <RadzenCard class="m-3" Style="border-radius: 1rem">
             <RadzenTemplateForm TItem="Model" Data=@model>
-            <div class="row mb-5">
-                <div class="col-md-4" style="align-self: center;">
-                    <RadzenLabel Text="Email" />
-                </div>
-                <div class="col">
-                    <RadzenTextBox style="display: block;" Name="Email" @bind-Value="@model.Username" Class="w-100" Placeholder="goblino@example.com" />
-                    <RadzenRequiredValidator Component="Email" Text="Email is required" @bind-Value="@model.Username" Style="position: absolute" />
-                </div>
-                
-            </div>
-            <div class="row mb-3">
-                            <div class="col-md-4" style="align-self: center;">
-                                <RadzenLabel Text="Password" />
-                            </div>
-                            <div class="col">
-                                <RadzenPassword Placeholder="**************" style="display: block;" Name="Password" @bind-Value="@model.Password" Class="w-100" />
-                                <RadzenRequiredValidator Component="Password" Text="Enter password" Popup="@popup" Style="position: absolute" />
-                            </div>
-            </div>
-                        <div class="row mb-4">
-                            <div class="col-md-4" style="align-self: center;">
-                                <RadzenLabel Text="Repeat Password" />
-                            </div>
+                <div class="row mb-5">
+                    <div class="col-md-4" style="align-self: center;">
+                        <RadzenLabel Text="Email" />
+                    </div>
+                    <div class="col">
+                        <RadzenTextBox style="display: block;" Name="Email" @bind-Value="@model.Username" Class="w-100" Placeholder="goblino@example.com" />
+                        <RadzenRequiredValidator Component="Email" Text="Email is required" @bind-Value="@model.Username" Style="position: absolute" />
+                    </div>
 
-                            <div class="col">
-                                <RadzenPassword Placeholder="**************" style="display: block;" Name="RepeatPassword" @bind-Value="@model.RepeatPassword" Class="w-100" />
-                                <RadzenRequiredValidator Component="RepeatPassword" Text="Repeat your password" Popup="@popup" Style="position: absolute" />
-                            <RadzenCompareValidator Visible=@(!string.IsNullOrEmpty(model.RepeatPassword)) Value=@model.Password Component="RepeatPassword" Text="Passwords should be the same" Popup=@popup Style="position: absolute" />
-                            </div>
-                        </div>
-                        <RadzenButton ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" Click=@(OnClick) style="align-self: center; display: block; width: 100%;">
-                            <span class="rz-button-text">Register</span>
-                            <RadzenImage Path="images/login_icon.png" Style="width: 20px; height: 20px; margin-left: 8px;" />
-                        </RadzenButton>
-        </RadzenTemplateForm>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-4" style="align-self: center;">
+                        <RadzenLabel Text="Password" />
+                    </div>
+                    <div class="col">
+                        <RadzenPassword Placeholder="**************" style="display: block;" Name="Password" @bind-Value="@model.Password" Class="w-100" />
+                        <RadzenRequiredValidator Component="Password" Text="Enter password" Popup="@popup" Style="position: absolute" />
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-4" style="align-self: center;">
+                        <RadzenLabel Text="Repeat Password" />
+                    </div>
+
+                    <div class="col">
+                        <RadzenPassword Placeholder="**************" style="display: block;" Name="RepeatPassword" @bind-Value="@model.RepeatPassword" Class="w-100" />
+                        <RadzenRequiredValidator Component="RepeatPassword" Text="Repeat your password" Popup="@popup" Style="position: absolute" />
+                        <RadzenCompareValidator Visible=@(!string.IsNullOrEmpty(model.RepeatPassword)) Value=@model.Password Component="RepeatPassword" Text="Passwords should be the same" Popup=@popup Style="position: absolute" />
+                    </div>
+                </div>
+                <RadzenButton ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" Click=@(OnClick) style="align-self: center; display: block; width: 100%;">
+                    <span class="rz-button-text">Register</span>
+                    <RadzenImage Path="images/login_icon.png" Style="width: 20px; height: 20px; margin-left: 8px;" />
+                </RadzenButton>
+            </RadzenTemplateForm>
         </RadzenCard>
         <p>
-        <b style="color:red">@model.Err</b>
+            <b style="color:red">@model.Err</b>
         </p>
     </RadzenCard>
 </div>
 @code {
-    private class Model {
-        public string Password { get; set; } 
-        public string Username { get; set; } 
+    private class Model
+    {
+        public string Password { get; set; }
+        public string Username { get; set; }
         public string Err { get; set; }
-        public string RepeatPassword { get; set; } 
+        public string RepeatPassword { get; set; }
 
     }
 
-    bool popup; 
-    Model model = new Model(); 
+    bool popup;
+    Model model = new Model();
 
-    public bool checkUser(){
-    Console.WriteLine("Registrazione username: " + model.Username + " password: " + model.Password);
-    if(string.IsNullOrEmpty(model.Username) || string.IsNullOrEmpty(model.Username)){
-    model.Err="Inserisci Username e Password";
-    return false;
-    }
-    if(model.Password == model.RepeatPassword){
-    if(database.getUserByUsername(model.Username)==null)
-    return true;
-    }
+    public bool checkUser()
+    {
+        Console.WriteLine("Registrazione username: " + model.Username + " password: " + model.Password);
+        if (string.IsNullOrEmpty(model.Username) || string.IsNullOrEmpty(model.Username))
+        {
+            model.Err = "Inserisci Username e Password";
+            return false;
+        }
+        if (model.Password == model.RepeatPassword)
+        {
+            if (database.getUserByUsername(model.Username) == null)
+                return true;
+        }
 
-    model.Err="Utente già registrato";
-    return false;
+        model.Err = "Utente già registrato";
+        return false;
     }
     void OnClick()
-    {   
-        if(checkUser()){
-            database.insertUserRequest(new RichiestaUtente(model.Username,model.Password,DateTime.Now));
-            NavigationManager.NavigateTo("/"); 
+    {
+        if (checkUser())
+        {
+            database.insertUserRequest(new RichiestaUtente(model.Username, model.Password, DateTime.Now));
+            NavigationManager.NavigateTo("/");
 
         }
 
-        }
+    }
     }
 

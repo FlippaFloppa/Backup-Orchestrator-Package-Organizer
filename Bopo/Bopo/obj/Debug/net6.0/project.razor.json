@@ -144,39 +144,6 @@
         }
       },
       {
-        "HashCode": -1838505794,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Gruppi",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Gruppi"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Gruppi"
-        }
-      },
-      {
-        "HashCode": -301709837,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Gruppi",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.Gruppi"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Gruppi",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1261397364,
         "Kind": "Components.Component",
         "Name": "Bopo.Pages.Login",
@@ -342,6 +309,39 @@
         }
       },
       {
+        "HashCode": -1838505794,
+        "Kind": "Components.Component",
+        "Name": "Bopo.Pages.Gruppi",
+        "AssemblyName": "Bopo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Gruppi"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Bopo.Pages.Gruppi"
+        }
+      },
+      {
+        "HashCode": -301709837,
+        "Kind": "Components.Component",
+        "Name": "Bopo.Pages.Gruppi",
+        "AssemblyName": "Bopo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Bopo.Pages.Gruppi"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Bopo.Pages.Gruppi",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -153591334,
         "Kind": "Components.Component",
         "Name": "Bopo.Pages.GestioneRichieste",
@@ -371,39 +371,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Bopo.Pages.GestioneRichieste",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 776439963,
-        "Kind": "Components.Component",
-        "Name": "Bopo.App",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.App"
-        }
-      },
-      {
-        "HashCode": -48411959,
-        "Kind": "Components.Component",
-        "Name": "Bopo.App",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -606,6 +573,39 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "Bopo.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 776439963,
+        "Kind": "Components.Component",
+        "Name": "Bopo.App",
+        "AssemblyName": "Bopo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Bopo.App"
+        }
+      },
+      {
+        "HashCode": -48411959,
+        "Kind": "Components.Component",
+        "Name": "Bopo.App",
+        "AssemblyName": "Bopo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Bopo.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Bopo.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

@@ -8,50 +8,50 @@
 @inject NavigationManager NavigationManager
 
 
-    <div class="col-lg-6 col-xl-4 offset-lg-3 offset-xl-4" style="">
+<div class="col-lg-6 col-xl-4 offset-lg-3 offset-xl-4" style="">
+    <RadzenCard class="m-3" Style="border-radius: 1rem">
+
+        <RadzenImage Path="images/bopo.svg" Style="width: 65%; align-self:center " />
+
+        <h1 class="mb-4" style="text-align:center">Login</h1>
+
         <RadzenCard class="m-3" Style="border-radius: 1rem">
-            
-                <RadzenImage Path="images/bopo.svg" Style="width: 65%; align-self:center "/>
-            
-            <h1 class="mb-4" style="text-align:center">Login</h1>
-   
-            <RadzenCard class="m-3" Style="border-radius: 1rem">
-                    <div class="row mb-3">
-                        <div class="col-md-3" style="align-self: center;">
-                            <RadzenLabel Text="Email"/>
-                        </div>
-                        <div class="col">
-                            <RadzenTextBox style="display: block" Name="Email" @bind-Value="model.username" Class="w-100"  Placeholder="goblino@example.com"/>
-                            <RadzenRequiredValidator Component="Email" Text="Email is required"  Style="position: absolute" />
-                            <RadzenEmailValidator Component="Email" Text="Provide a valid email address"  Style="position: absolute" />
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-3" style="align-self: center;">
-                            <RadzenLabel Text="Password"/>
-                        </div>
-                        <div class="col">
-                            <RadzenPassword Placeholder="************" Class="w-100" @bind-Value="model.password" />
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        
-                  <RadzenButton  ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" Click=@(Authenticate)  style="align-self:center;display: block;width: 100%;">
+            <div class="row mb-3">
+                <div class="col-md-3" style="align-self: center;">
+                    <RadzenLabel Text="Email" />
+                </div>
+                <div class="col">
+                    <RadzenTextBox style="display: block" Name="Email" @bind-Value="model.username" Class="w-100" Placeholder="goblino@example.com" />
+                    <RadzenRequiredValidator Component="Email" Text="Email is required" Style="position: absolute" />
+                    <RadzenEmailValidator Component="Email" Text="Provide a valid email address" Style="position: absolute" />
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-3" style="align-self: center;">
+                    <RadzenLabel Text="Password" />
+                </div>
+                <div class="col">
+                    <RadzenPassword Placeholder="************" Class="w-100" @bind-Value="model.password" />
+                </div>
+            </div>
+            <div class="row mb-4">
+
+                <RadzenButton ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" Click=@(Authenticate) style="align-self:center;display: block;width: 100%;">
                     <span class="rz-button-text">Log in</span>
                     <RadzenImage Path="images/login_icon.png" Style="width: 20px; height: 20px; margin-left: 8px;" />
-                  </RadzenButton>
-                    </div>
-                    <div class="row mb-1">
-                    <div class="col-md-8">
+                </RadzenButton>
+            </div>
+            <div class="row mb-1">
+                <div class="col-md-8">
                     Non sei ancora registrato? <a href="/registration">Clicca qui!</a>
-                    </div>
-                    </div>
-             </RadzenCard>
-             <p>
-             <b style="color:red">@model.Err</b>
-             </p>
+                </div>
+            </div>
         </RadzenCard>
-    </div>
+        <p>
+            <b style="color:red">@model.Err</b>
+        </p>
+    </RadzenCard>
+</div>
 
 
 @code {
@@ -71,16 +71,16 @@
 
         var utente = database.getUserByUsername(model.username);
 
-        if(utente == null)
+        if (utente == null)
         {
             // Utente non esiste
-            model.Err="Errore, Username errato";
+            model.Err = "Errore, Username errato";
             return;
         }
-        else if(utente != null && utente.password != model.password)
+        else if (utente != null && utente.password != model.password)
         {
             // Utente esiste pass errata
-            model.Err="Errore, Password errata";
+            model.Err = "Errore, Password errata";
             return;
         }
         else
@@ -98,13 +98,13 @@
             );
         }
 
-        if(utente.role == "Amministratore")
-            NavigationManager.NavigateTo("/gestionerichieste",true);
+        if (utente.role == "Amministratore")
+            NavigationManager.NavigateTo("/gestionerichieste", true);
 
         else
-            NavigationManager.NavigateTo("/account",true); 
+            NavigationManager.NavigateTo("/account", true);
 
     }
-    
-}   
-    
+
+}
+

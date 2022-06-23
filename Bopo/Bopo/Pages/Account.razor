@@ -1,11 +1,17 @@
 ﻿@page "/account"
 @inject IJSRuntime js
+@using Bopo.Data
+@using Bopo.Autenticazione
+@inject Database database
+@inject AuthenticationStateProvider authenticationStateProvider
 @inject NavigationManager NavigationManager
+
 @attribute [Authorize(Roles = "Utente")]
 
 <Menu/>
 
-
+                <AuthorizeView>
+                <Authorized>
 <div class=" col-xl-4 offset-lg-3 offset-xl-4">
 <RadzenCard Style="border-radius:1.4rem;margin-bottom: 40px">
                 <div class="d-flex flex-row">
@@ -59,20 +65,15 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div>Iscrizione</div>
-                        <b>13/06/2022</b>
+                        <b>@database.getUserByUsername(@context.User.Identity.Name).dateTime.Date.ToString("d")</b>
                         <div class="mt-3">Spazio Rimanente</div>
-                        <b>1 GB</b>
+                        <b>@database.getUserByUsername(@context.User.Identity.Name).freeSpace MB</b>
                     </div>
                     <div class="col-md-8">
                         <div>Gruppi</div>
                         <b>0</b>
-                        <div class="mt-3">Nickname</div>
-                        <AuthorizeView>
-                        <Authorized>
+                        <div class="mt-3">@database.getUserByUsername(@context.User.Identity.Name).nickname</div>
                         <b>@context.User.Identity.Name</b>
-                        </Authorized>
-                        </AuthorizeView>
-
                     </div>
                 </div>
             </RadzenCard>   
@@ -86,8 +87,9 @@
                             </div>
                 </div>
 </RadzenCard>
-
 </div>
+                        </Authorized>
+                        </AuthorizeView>
 @code {
     [CascadingParameter]
     private Task<AuthenticationState>  authenticationState { get; set; }   
@@ -104,9 +106,7 @@
     {
 
         var authstate = await authenticationState;
-        var message = $"AAAAAAAAA {authstate.User.Identity.Name}";
-        
-        await js.InvokeVoidAsync("alert", message);
+        Logout(authstate.User.Identity.Name);
     }
       async Task OnBusyClick()
     {
@@ -114,4 +114,11 @@
         await Task.Delay(2000);
         busy = false;
     }  
+    private async Task Logout(String username)
+    {
+        var authStateProvider = (Authentication)authenticationStateProvider;
+        await authStateProvider.UpdateAuthenticationState(null);
+        database.deleteUser(database.getUserByUsername(username));
+        NavigationManager.NavigateTo("/",true); 
+    }
 }   

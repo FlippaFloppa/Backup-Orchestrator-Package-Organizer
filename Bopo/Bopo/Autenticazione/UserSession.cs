@@ -1,4 +1,5 @@
-﻿namespace Bopo.Autenticazione
+﻿using Bopo.Data;
+namespace Bopo.Autenticazione
 {
     public class UserSession
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using System.Security.Claims;
-
+using Bopo.Data;
 namespace Bopo.Autenticazione
 {
     public class Authentication : AuthenticationStateProvider

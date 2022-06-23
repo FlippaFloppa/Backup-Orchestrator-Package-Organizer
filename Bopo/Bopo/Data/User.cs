@@ -14,6 +14,7 @@
         public User(String username, String password)
         {   this.dateTime = DateTime.Now;
             this.nickname = "nickname";
+            this.freeSpace = 1000;
             this.username = username;
             this.password = password;
             this.role = "Utente";
@@ -31,14 +32,13 @@
         {
             this.username = username;
             this.password = password;
-            this.freeSpace = 1;
             if (admin) role = "Amministratore";
             else role = "Utente";
         }
 
         public override String ToString()
         {
-            return username + "," + password;
+            return username + "," + password+","+dateTime+","+nickname+","+freeSpace;
         }
 
         

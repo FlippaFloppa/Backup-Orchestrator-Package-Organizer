@@ -44,6 +44,18 @@ namespace Bopo.Data
 
         public void insertUser(User u){
         listaUtenti.Add(u);
+        System.IO.File.AppendAllText(@"Files/utenti.txt", Environment.NewLine+u.ToString());
+        return;
+        }
+
+        public void deleteUser(User u){
+        listaUtenti.Remove(u);
+        File.WriteAllText(@"Files/utenti.txt", string.Empty);
+        foreach (User user in listaUtenti){
+        if(user.username!="admin")
+        System.IO.File.AppendAllText(@"Files/utenti.txt", Environment.NewLine+user.ToString());
+        }
+
         }
 
         public User? getUserByUsername(String username)

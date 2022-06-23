@@ -68,11 +68,7 @@
 
     bool popup; 
     Model model = new Model(); 
-    public void insertUser(User u){
-    System.IO.File.AppendAllText(@"Files/utenti.txt", Environment.NewLine+u.ToString());
-    database.insertUser(u);
-    return;
-    }
+
     public bool checkUser(){
     Console.WriteLine("Registrazione username: " + model.Username + " password: " + model.Password);
     if(string.IsNullOrEmpty(model.Username) || string.IsNullOrEmpty(model.Username)){
@@ -91,7 +87,7 @@
     {   
         if(checkUser()){
             User u = new User(model.Username,model.Password);
-            insertUser(u);
+            database.insertUser(u);
             NavigationManager.NavigateTo("/"); 
 
         }

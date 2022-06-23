@@ -1,8 +1,6 @@
 ﻿@page "/gruppi"
 
 @using Radzen
-@using System.Collections;
-@using System.Collections.Generic;
 @using Bopo.Data
 @inject Database database
 @attribute [Authorize(Roles = "Utente")]
@@ -85,6 +83,8 @@
 </style>
 
 @code {
+    [CascadingParameter]
+    private Task<AuthenticationState>  authenticationState { get; set; }   
 
     private class Model{
 
@@ -102,9 +102,10 @@
     private bool busy;
     private Model model = new Model();
 
-    private void creaGruppo(Model arg)
+    private async void creaGruppo(Model model)
     {
-        
+    var authstate = await authenticationState;
+    database.insertGroupRequest(new RichiestaGruppo(authstate.User.Identity.Name,model.nome,model.password,model.maxPartecipanti,DateTime.Now));
     }
 
     async Task OnBusyClick()

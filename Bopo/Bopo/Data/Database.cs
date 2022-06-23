@@ -44,6 +44,10 @@ namespace Bopo.Data
         {
             return richiesteUtente;
         }
+        public List<RichiestaGruppo> getListaRichiesteGruppo()
+        {
+            return richiesteGruppi;
+        }
         public void insertUser(User u){
         listaUtenti.Add(u);
         System.IO.File.AppendAllText(@"Files/utenti.txt", u.ToString()+Environment.NewLine);
@@ -57,7 +61,6 @@ namespace Bopo.Data
         if(user.username!="admin")
         System.IO.File.AppendAllText(@"Files/utenti.txt", user.ToString()+Environment.NewLine);
         }
-
         }
 
         public bool UpdateCredentials(String user,String oldPassword, String newPassword, String? nickname){
@@ -81,6 +84,29 @@ namespace Bopo.Data
         File.WriteAllText(@"Files/richiesteutenti.txt", string.Empty);
         foreach (RichiestaUtente richiesta in richiesteUtente){
         System.IO.File.AppendAllText(@"Files/richiesteutenti.txt", richiesta.ToString()+Environment.NewLine);
+        }
+        }
+        public void insertGroup(Gruppo g){
+        listaGruppi.Add(g);
+        System.IO.File.AppendAllText(@"Files/gruppi.txt", g.ToString()+Environment.NewLine);
+        return;
+        }
+        public void deleteGroup(Gruppo g){
+        listaGruppi.Remove(g);
+        File.WriteAllText(@"Files/gruppi.txt", string.Empty);
+        foreach (Gruppo group in listaGruppi){
+        System.IO.File.AppendAllText(@"Files/gruppi.txt", group.ToString()+Environment.NewLine);
+        }
+        }
+        public void insertGroupRequest(RichiestaGruppo r){
+        richiesteGruppi.Add(r);
+        System.IO.File.AppendAllText(@"Files/richiestegruppi.txt", r.ToString()+Environment.NewLine);
+        }
+        public void deleteGroupRequest(RichiestaGruppo r){
+        richiesteGruppi.Remove(r);
+        File.WriteAllText(@"Files/richiestegruppi.txt", string.Empty);
+        foreach (RichiestaGruppo richiesta in richiesteGruppi){
+        System.IO.File.AppendAllText(@"Files/richiestegruppi.txt", richiesta.ToString()+Environment.NewLine);
         }
         }
         public User? getUserByUsername(String username)
@@ -150,7 +176,7 @@ namespace Bopo.Data
             {
                 Console.WriteLine(line);
                 string[] str = line.Split(",");
-                richiesteGruppi.Add(new RichiestaGruppo(str[0], str[1], str[2], DateTime.Parse(str[3])));
+                richiesteGruppi.Add(new RichiestaGruppo(str[0], str[1], str[2], int.Parse(str[3]), DateTime.Parse(str[4])));
             }
         }
 

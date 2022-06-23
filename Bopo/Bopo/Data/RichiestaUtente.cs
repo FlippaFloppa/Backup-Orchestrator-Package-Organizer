@@ -11,7 +11,11 @@
 
         public String username { get; set; }
         public String password { get; set; }
-
         public DateTime dateTime { get; set; }
+        
+        public override string ToString()
+        {
+            return username + "," + password + "," + dateTime;
+        }
     }
 }

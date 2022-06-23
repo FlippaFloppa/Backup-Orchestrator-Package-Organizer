@@ -13,10 +13,9 @@ namespace Bopo.Data
             this.nome = nome;
             this.partecipanti = part;
         }
-
         public override string ToString()
         {
-            return "nome: " + nome + "   num: " + partecipanti;
+            return nome + "," + partecipanti;
         }
         public override bool Equals(object obj)
         {

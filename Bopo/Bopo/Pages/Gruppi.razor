@@ -8,12 +8,12 @@
 <Menu></Menu>
 
 <div class=" col-xl-4 offset-lg-3 offset-xl-4">
-<RadzenCard Style="border-radius:1.4rem;">
-                <div class="d-flex flex-row">
-                    <RadzenImage Path="/images/bopo.svg" Style="width: 150px; height: 150px;" />
-                    <h1 style="align-self:safe center;margin-left: 40px;font-size:50px">Area Gruppi</h1>
-                </div>
-</RadzenCard>
+    <RadzenCard Style="border-radius:1.4rem;">
+        <div class="d-flex flex-row">
+            <RadzenImage Path="/images/bopo.svg" Style="width: 150px; height: 150px;" />
+            <h1 style="align-self:safe center;margin-left: 40px;font-size:50px">Area Gruppi</h1>
+        </div>
+    </RadzenCard>
 </div>
 
 <div class="container">
@@ -21,20 +21,21 @@
         <div class="col-md-8">
             <RadzenCard Style="border-radius:1.2rem;">
 
-                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaGruppi()" TItem="Gruppo" PageSize="5" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaGruppi()" TItem="Gruppo"
+                    PageSize="5" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
                     <Template Context="gruppo">
                         <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;border-radius:1.2rem;">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-4 p-3 group-name">
-                                            @(gruppo.nome)
+                                        @(gruppo.nome)
                                     </div>
                                     <div class="col-lg-5 p-3">
                                         <h5 class="mb-0">Partecipanti</h5>
-                                         <p class="mb-sm-2 mb-lg-0">@(gruppo.partecipanti)</p>
+                                        <p class="mb-sm-2 mb-lg-0">@(gruppo.maxPartecipanti)</p>
                                     </div>
                                     <div class="col-lg-2 p-3">
-                                        <RadzenButton Text="Esplora" ButtonStyle="ButtonStyle.Success"/>
+                                        <RadzenButton Text="Esplora" ButtonStyle="ButtonStyle.Success" />
                                     </div>
                                 </div>
                             </div>
@@ -45,48 +46,51 @@
             </RadzenCard>
         </div>
         <div class="col-md-4">
-                <RadzenCard Style="border-radius:1.2rem;width:100%">
-                    <h2 class="mb-4">Crea nuovo gruppo</h2>
-                    <RadzenTemplateForm Data="@model" Submit="@((Model args) => { creaGruppo(args); })">
+            <RadzenCard Style="border-radius:1.2rem;width:100%">
+                <h2 class="mb-4">Crea nuovo gruppo</h2>
+                <RadzenTemplateForm Data="@model" Submit="@((Model args) => { creaGruppo(args); })">
                     <RadzenFieldset Style="border-radius:1rem">
 
-                    <h4 class="mb-2">Nome gruppo</h4>
-                    <RadzenTextBox Placeholder="balotta" @bind-Value=model.nome Class="w-100 mb-4" />
+                        <h4 class="mb-2">Nome gruppo</h4>
+                        <RadzenTextBox Placeholder="balotta" @bind-Value=model.nome Class="w-100 mb-4" />
 
-                    <h4 class="mb-2">Password del gruppo</h4>
-                    <RadzenPassword Placeholder="********" @bind-Value=model.password Class="w-100 mb-4" />
+                        <h4 class="mb-2">Password del gruppo</h4>
+                        <RadzenPassword Placeholder="********" @bind-Value=model.password Class="w-100 mb-4" />
 
 
-                    <h4 class="mb-3">Numero massimo di partecipanti: @model.maxPartecipanti</h4>
-                    <RadzenSlider @bind-Value=model.maxPartecipanti Step="5" TValue="int" Min="10" Max="100" Class="w-100 mb-3" />
+                        <h4 class="mb-3">Numero massimo di partecipanti: @model.maxPartecipanti</h4>
+                        <RadzenSlider @bind-Value=model.maxPartecipanti Step="5" TValue="int" Min="10" Max="100"
+                            Class="w-100 mb-3" />
                     </RadzenFieldset>
 
-                   <RadzenButton  ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary"  Icon="add_circle" BusyText="Invio richiesta ..." IsBusy=@busy Click=@OnBusyClick Text="Crea" style="align-self:center;display: block;width: 100%;"/>
-        
+                    <RadzenButton ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" Icon="add_circle"
+                        BusyText="Invio richiesta ..." IsBusy=@busy Click=@OnBusyClick Text="Crea"
+                        style="align-self:center;display: block;width: 100%;" />
+
                 </RadzenTemplateForm>
-                </RadzenCard>
+            </RadzenCard>
         </div>
     </div>
 </div>
 
 <style>
-
-.group-name {
-    min-height: 72px;
-    color: #EEEEEE;
-    background-color: #646FD4;
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-}
+    .group-name {
+        min-height: 72px;
+        color: #EEEEEE;
+        background-color: #646FD4;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+    }
 </style>
 
 @code {
     [CascadingParameter]
-    private Task<AuthenticationState>  authenticationState { get; set; }   
+    private Task<AuthenticationState> authenticationState { get; set; }
 
-    private class Model{
+    private class Model
+    {
 
         public String nome { get; set; }
         public int maxPartecipanti { get; set; }
@@ -104,16 +108,17 @@
 
     private async void creaGruppo(Model model)
     {
-    var authstate = await authenticationState;
-    database.insertGroupRequest(new RichiestaGruppo(authstate.User.Identity.Name,model.nome,model.password,model.maxPartecipanti,DateTime.Now));
+        var authstate = await authenticationState;
+        database.insertGroupRequest(new
+        RichiestaGruppo(authstate.User.Identity.Name, model.nome, model.password, model.maxPartecipanti, DateTime.Now));
     }
 
     async Task OnBusyClick()
-    {   
+    {
         busy = true;
         await Task.Delay(1000);
         busy = false;
-         
-    }  
+
+    }
 
 }

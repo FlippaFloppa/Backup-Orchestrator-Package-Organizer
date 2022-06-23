@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+9grmw5nifWhnMyQvzTdMPM1RIJo42l+IH+hJ2mj0+c=",
+  "Hash": "NHRIMxPU7owfLMjStYJIMKXhABcZ87FzcMgQKPn6OnY=",
   "Source": "Bopo",
   "BasePath": "_content/Bopo",
   "Mode": "Default",
@@ -882,6 +882,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\login_icon.png"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\asgara.txt",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/asgara.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\asgara.txt"
     },
     {
       "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\Documenti\\notes.txt",

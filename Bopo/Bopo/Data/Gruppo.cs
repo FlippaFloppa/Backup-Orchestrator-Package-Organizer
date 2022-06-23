@@ -4,18 +4,23 @@ namespace Bopo.Data
     public class Gruppo : IEquatable<Gruppo>
     {
 
+        public String usernameAdmin { get; set; }
         public String nome { get; set; }
+        public String password { get; set; }
+        public int maxPartecipanti { get; set; }
+        public DateTime dateTime { get; set; }
 
-        public int partecipanti { get; set; }
-
-        public Gruppo(String nome, int part)
+        public Gruppo(string usernameAdmin, string nome, string password, int maxPartecipanti, DateTime dateTime)
         {
+            this.usernameAdmin = usernameAdmin;
             this.nome = nome;
-            this.partecipanti = part;
+            this.password = password;
+            this.maxPartecipanti = maxPartecipanti;
+            this.dateTime = dateTime;
         }
         public override string ToString()
         {
-            return nome + "," + partecipanti;
+            return usernameAdmin + "," + nome + "," + password + "," + maxPartecipanti + "," + dateTime;
         }
         public override bool Equals(object obj)
         {
@@ -26,12 +31,12 @@ namespace Bopo.Data
         }
         public override int GetHashCode()
         {
-            return nome.GetHashCode();
+            return usernameAdmin.GetHashCode();
         }
         public bool Equals(Gruppo other)
         {
             if (other == null) return false;
-            return (this.nome.Equals(other.nome));
+            return (this.usernameAdmin.Equals(other.usernameAdmin));
         }
     }
 }

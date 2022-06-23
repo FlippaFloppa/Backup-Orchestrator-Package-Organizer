@@ -1,5 +1,5 @@
-Ingegneria del Software,112
-Laboratorio di Sicurezza,80
-Affidabilità e Controllo,2
-Reti Logiche,360
-Gruppo Balotta,92leonardo,10
+rebus,Ingegneria del Software,rebus,112,23/06/2022 13:20:35
+dnac,ciaociao,ciaociao,10,24/06/2022 00:36:48
+leonardo,testgruppo2,testgruppo1,15,24/06/2022 00:37:51
+leonardo,testgruppo3,testgruppo1,15,24/06/2022 00:38:01
+asdasd,asdasdasd,1,30,24/06/2022 00:52:49

@@ -2,7 +2,7 @@
 {
     public class RichiestaGruppo
     {
-        public RichiestaGruppo(string usernameAdmin, string nome, string password,int maxPartecipanti, DateTime dateTime)
+        public RichiestaGruppo(string usernameAdmin, string nome, string password, int maxPartecipanti, DateTime dateTime)
         {
             this.usernameAdmin = usernameAdmin;
             this.nome = nome;

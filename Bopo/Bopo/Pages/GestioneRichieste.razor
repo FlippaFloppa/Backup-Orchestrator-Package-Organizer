@@ -6,38 +6,41 @@
 <MenuAdmin></MenuAdmin>
 
 <div class=" col-xl-4 offset-lg-3 offset-xl-4">
-<RadzenCard Style="border-radius:1.4rem;">
-                <div class="d-flex flex-row">
-                    <RadzenImage Path="/images/bopo.svg" Style="width: 150px; height: 150px;" />
-                    <h1 style="align-self:safe center;margin-left: 40px;font-size:50px">Gestione Richieste</h1>
-                </div>
-</RadzenCard>
+    <RadzenCard Style="border-radius:1.4rem;">
+        <div class="d-flex flex-row">
+            <RadzenImage Path="/images/bopo.svg" Style="width: 150px; height: 150px;" />
+            <h1 style="align-self:safe center;margin-left: 40px;font-size:50px">Gestione Richieste</h1>
+        </div>
+    </RadzenCard>
 </div>
 
 
 <div class="row my-5">
-<div class="col-md-6">
+    <div class="col-md-6">
 
 
-<div class="container">
+        <div class="container">
 
             <RadzenCard Style="border-radius:1.2rem;">
-            <h1 class="mb-4" style="align-self:center;color:#a6c711;">Richieste Utenti</h1>
-                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaRichiesteUtente()" TItem="RichiestaUtente" PageSize="3" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
+                <h1 class="mb-4" style="align-self:center;color:#a6c711;">Richieste Utenti</h1>
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaRichiesteUtente()"
+                    TItem="RichiestaUtente" PageSize="3" PagerHorizontalAlign="HorizontalAlign.Left"
+                    ShowPagingSummary="true">
                     <Template Context="richiestautente">
                         <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;border-radius:1.2rem;">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-3 p-3 group-name">
-                                    <b>Utente: <p style="color:#a6c711;">@(richiestautente.username)</p></b>
+                                        <b>Utente: <p style="color:#a6c711;">@(richiestautente.username)</p></b>
                                     </div>
-                                    <div class="col-lg-7 p-4">
-                                        <h5 class="mb-0">Data di Richiesta:</h5>
-                                    <p class="mb-sm-4 mb-lg-0"> <b>@(richiestautente.dateTime)</b></p>
+                                    <div class="col-lg-7 p-3 group-name">
+                                        <b>Data di Richiesta: <p style="color:#a6c711;">@(richiestautente.dateTime)</p></b>
                                     </div>
                                     <div class="col-lg-2 p-4">
-                                        <RadzenButton Icon="check_circle" ButtonStyle="ButtonStyle.Success" Click="@((args) => { acceptuser(richiestautente); })"/>
-                                        <RadzenButton Icon="report" ButtonStyle="ButtonStyle.Danger" Click="@((args) => { declineuser(richiestautente); })"/>
+                                        <RadzenButton Icon="check_circle" ButtonStyle="ButtonStyle.Success"
+                                            Click="@((args) => { acceptuser(richiestautente); })" />
+                                        <RadzenButton Icon="report" ButtonStyle="ButtonStyle.Danger"
+                                            Click="@((args) => { declineuser(richiestautente); })" />
                                     </div>
                                 </div>
                             </div>
@@ -47,29 +50,42 @@
 
             </RadzenCard>
         </div>
-</div>
+    </div>
 
-<div class="col-md-6">
+    <div class="col-md-6">
 
-<div class="container">
+        <div class="container">
 
             <RadzenCard Style="border-radius:1.2rem;">
-            <h1 class="mb-4" style="align-self:center;color:#53a2c5">Richieste Gruppi</h1>
-                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaRichiesteGruppo()" TItem="RichiestaGruppo" PageSize="3" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
+                <h1 class="mb-4" style="align-self:center;color:#53a2c5">Richieste Gruppi</h1>
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaRichiesteGruppo()"
+                    TItem="RichiestaGruppo" PageSize="3" PagerHorizontalAlign="HorizontalAlign.Left"
+                    ShowPagingSummary="true">
                     <Template Context="richiestagruppo">
                         <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;border-radius:1.2rem;">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-3 p-3 group-name">
-                                    <b>Amministratore del gruppo: <p style="color:#53a2c5">@(richiestagruppo.usernameAdmin)</p></b>
+                                    <div class="col-lg-4 p-3 group-name">
+                                        <b>Amministratore del gruppo <p style="color:#53a2c5">
+                                                @(richiestagruppo.usernameAdmin)</p></b>
                                     </div>
-                                    <div class="col-lg-7 p-4">
-                                        <h5 class="mb-0">Data di Richiesta:</h5>
-                                    <p class="mb-sm-4 mb-lg-0"> <b>@(richiestagruppo.dateTime)</b></p>
+                                    <div class="col-lg-3 p-3 group-name">
+                                        <b>Nome del gruppo <p style="color:#53a2c5">
+                                                @(richiestagruppo.nome)</p></b>
+                                    </div>
+                                    <div class="col-lg-3 p-3 group-name">
+                                        <b>Massimi Partecipanti <p style="color:#53a2c5">
+                                                @(richiestagruppo.maxPartecipanti)</p></b>
+                                    </div>
+                                    <div class="col-lg-10 p-3 group-name">
+                                        <b>Data di Richiesta <p style="color:#53a2c5">
+                                                @(richiestagruppo.dateTime)</p></b>
                                     </div>
                                     <div class="col-lg-2 p-4">
-                                        <RadzenButton Icon="check_circle" ButtonStyle="ButtonStyle.Success" Click="@((args) => { acceptgroup(richiestagruppo); })"/>
-                                        <RadzenButton Icon="report" ButtonStyle="ButtonStyle.Danger" Click="@((args) => { declinegroup(richiestagruppo); })"/>
+                                        <RadzenButton Icon="check_circle" ButtonStyle="ButtonStyle.Success"
+                                            Click="@((args) => { acceptgroup(richiestagruppo); })" />
+                                        <RadzenButton Icon="report" ButtonStyle="ButtonStyle.Danger"
+                                            Click="@((args) => { declinegroup(richiestagruppo); })" />
                                     </div>
                                 </div>
                             </div>
@@ -85,29 +101,30 @@
 
 
 
-@code{    
+@code {
 
-   public void acceptuser(RichiestaUtente r)
+    public void acceptuser(RichiestaUtente r)
     {
-    Console.WriteLine("Richiesta Utente Accettata: "+ r.ToString());
-    database.deleteUserRequest(r);
-    database.insertUser(new User(r.username,r.password));
+        Console.WriteLine("Richiesta Utente Accettata: " + r.ToString());
+        database.deleteUserRequest(r);
+        database.insertUser(new User(r.username, r.password));
     }
 
-   public void declineuser(RichiestaUtente r)
+    public void declineuser(RichiestaUtente r)
     {
-    Console.WriteLine("Richiesta Utente Rifiutata: "+ r.ToString());
-    database.deleteUserRequest(r);
+        Console.WriteLine("Richiesta Utente Rifiutata: " + r.ToString());
+        database.deleteUserRequest(r);
     }
 
     public void acceptgroup(RichiestaGruppo r)
     {
-    Console.WriteLine("Richiesta Gruppo Accettata: "+ r.ToString());
-    database.deleteGroupRequest(r);
-    database.insertGroup(new Gruppo(r.usernameAdmin,r.maxPartecipanti));
+        Console.WriteLine("Richiesta Gruppo Accettata: " + r.ToString());
+        database.deleteGroupRequest(r);
+        database.insertGroup(new Gruppo(r.usernameAdmin, r.nome, r.password, r.maxPartecipanti, DateTime.Now));
     }
-    public void declinegroup(RichiestaGruppo r){
-    Console.WriteLine("Richiesta Gruppo Rifiutata: "+ r.ToString());
-    database.deleteGroupRequest(r);   
+    public void declinegroup(RichiestaGruppo r)
+    {
+        Console.WriteLine("Richiesta Gruppo Rifiutata: " + r.ToString());
+        database.deleteGroupRequest(r);
     }
 }

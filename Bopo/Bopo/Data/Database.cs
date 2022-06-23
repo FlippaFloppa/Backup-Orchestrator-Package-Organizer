@@ -147,7 +147,7 @@ namespace Bopo.Data
             {
                 Console.WriteLine(line);
                 string[] groups = line.Split(",");
-                listaGruppi.Add(new Gruppo(groups[0], Int32.Parse(groups[1])));
+                listaGruppi.Add(new Gruppo(groups[0], groups[1], groups[2], Int32.Parse(groups[3]),DateTime.Parse(groups[4])));
             }
         }
 

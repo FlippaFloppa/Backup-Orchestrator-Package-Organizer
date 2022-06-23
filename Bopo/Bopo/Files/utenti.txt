@@ -1,7 +1,4 @@
-goblino,goblino,23/06/2022 02:42:18,nickname,1000
-daniele,nanoculo,23/06/2022 02:42:18,nickname,1000
-lore09,lore09,23/06/2022 02:42:18,nickname,1000
-rebus,rebus,23/06/2022 02:42:18,nickname,1000
-qwe,qwe,23/06/2022 02:42:18,nickname,1000
-123123,123123,23/06/2022 02:42:18,nickname,1000
-112,112,23/06/2022 02:42:18,nickname,1000
+dnac,dnac,23/06/2022 13:20:35,nickname,1000
+asdasd,asdasd,23/06/2022 13:20:35,nickname,1000
+asd,123,23/06/2022 13:20:35,nickname,1000
+zxczxc,zxczxc,23/06/2022 13:20:35,nickname,1000

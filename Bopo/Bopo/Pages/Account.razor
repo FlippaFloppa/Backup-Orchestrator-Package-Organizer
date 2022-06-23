@@ -18,16 +18,18 @@
                     <RadzenImage Path="/images/bopo.svg" Style="width: 150px; height: 150px;" />
                     <h1 style="align-self:safe center;margin-left: 0px;font-size:50px">Gestione Account</h1>
                 </div>
+
 </RadzenCard>
+                <h2 class=" col-xl-10 offset-lg-6 offset-xl-4" Style="border-radius: 1.4rem;margin-bottom: 20px">Benvenuto @context.User.Identity.Name</h2>
 
 </div>
             <RadzenCard class=" col-xl-4 offset-lg-6 offset-xl-4" Style="border-radius: 1.4rem;margin-bottom: 20px">
                     <div class="row mb-3">
                         <div class="col-md-3" style="align-self: center;">
-                            <RadzenLabel Text="Inserisci Vecchia Password" />
+                            <RadzenLabel Text="Inserisci Vecchia Password"/>
                         </div>
                         <div class="col">
-                            <RadzenPassword Placeholder="*************" Class="w-100" />
+                            <RadzenPassword Placeholder="*************" Class="w-100"  @bind-Value=@oldPassword/>
                         </div>
                     </div>
                     <div class="row mb-3">
@@ -35,15 +37,15 @@
                             <RadzenLabel Text="Inserisci Nuova Password" />
                         </div>
                         <div class="col">
-                            <RadzenPassword Placeholder="*************" Class="w-100" />
+                            <RadzenPassword Placeholder="*************" Class="w-100" @bind-Value="newPassword"/>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-3" style="align-self: center;">
-                            <RadzenLabel Text="Ripeti Nuova Password" />
+                            <RadzenLabel Text="Ripeti Nuova Password"  />
                         </div>
                         <div class="col">
-                            <RadzenPassword Placeholder="*************" Class="w-100" />
+                            <RadzenPassword Placeholder="*************" Class="w-100" @bind-Value="repeatNewPassword"/>
                         </div>
                     </div>
                     <div class="row mb-3">
@@ -51,17 +53,20 @@
                             <RadzenLabel Text="Inserisci Nickname*" /> 
                         </div>
                         <div class="col">
-                            <RadzenTextBox style="display: block" Name="Nickname"  Class="w-100"  Placeholder="ElGoblino_00"/>
+                            <RadzenTextBox style="display: block" Name="Nickname"  Class="w-100"  @bind-Value="nickname" Placeholder=@context.User.Identity.Name/>
                         </div>
                     </div>
                     <div class="row mb-4">
                   <RadzenButton  ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary"  Icon="save" BusyText="Saving ..." IsBusy=@busy Click=@OnBusyClick Text="Salva" style="align-self:center;display: block;width: 100%;">
                   </RadzenButton>
                     </div>
+                  <p>
+                  <b style="color:@color">@message</b>
+                  </p>
              </RadzenCard>
             <div class=" col-xl-4 offset-lg-3 offset-xl-4">
              <RadzenCard class="m-7"  Style="border-radius:1.4rem;margin-bottom: 20px">
-                <h3 class="h5">Visualizza Informazioni Utente</h3>
+                <h3 class="h5">Visualizza Informazioni Utente: @context.User.Identity.Name</h3>
                 <div class="row">
                     <div class="col-md-4">
                         <div>Iscrizione</div>
@@ -72,8 +77,8 @@
                     <div class="col-md-8">
                         <div>Gruppi</div>
                         <b>0</b>
-                        <div class="mt-3">@database.getUserByUsername(@context.User.Identity.Name).nickname</div>
-                        <b>@context.User.Identity.Name</b>
+                        <div class="mt-3">Nickname</div>
+                        <b>@database.getUserByUsername(@context.User.Identity.Name).nickname</b>
                     </div>
                 </div>
             </RadzenCard>   
@@ -93,7 +98,12 @@
 @code {
     [CascadingParameter]
     private Task<AuthenticationState>  authenticationState { get; set; }   
-    
+    String oldPassword;
+    String newPassword;
+    String repeatNewPassword;
+    String nickname;
+    String message;
+    String color;
     bool busy;
     void OnLogin(){
         Console.WriteLine("Login");
@@ -109,10 +119,25 @@
         Logout(authstate.User.Identity.Name);
     }
       async Task OnBusyClick()
-    {
+    {   
         busy = true;
-        await Task.Delay(2000);
+        await Task.Delay(1000);
         busy = false;
+        var authstate = await authenticationState;
+        if(repeatNewPassword!=newPassword){
+            message = "Le password non corrispondono";
+            color = "red";
+        }
+        else if(database.getUserByUsername(authstate.User.Identity.Name).password!=oldPassword){
+            message = "La vecchia password non corrisponde";
+            color = "red";
+        }
+        else{
+            database.UpdateCredentials(authstate.User.Identity.Name,oldPassword,newPassword,nickname);
+            message = "Modifiche salvate";
+            color = "green";
+        }
+        
     }  
     private async Task Logout(String username)
     {

@@ -44,7 +44,7 @@ namespace Bopo.Data
 
         public void insertUser(User u){
         listaUtenti.Add(u);
-        System.IO.File.AppendAllText(@"Files/utenti.txt", Environment.NewLine+u.ToString());
+        System.IO.File.AppendAllText(@"Files/utenti.txt", u.ToString()+Environment.NewLine);
         return;
         }
 
@@ -53,11 +53,24 @@ namespace Bopo.Data
         File.WriteAllText(@"Files/utenti.txt", string.Empty);
         foreach (User user in listaUtenti){
         if(user.username!="admin")
-        System.IO.File.AppendAllText(@"Files/utenti.txt", Environment.NewLine+user.ToString());
+        System.IO.File.AppendAllText(@"Files/utenti.txt", user.ToString()+Environment.NewLine);
         }
 
         }
 
+        public bool UpdateCredentials(String user,String oldPassword, String newPassword, String? nickname){
+        Console.WriteLine("Ricevuto update utente: "+user+" oldpass "+oldPassword+" newpass "+newPassword+" nick "+nickname);
+        User u = getUserByUsername(user);
+        if(u.password==oldPassword){
+        u.password=newPassword;
+        if(nickname!=null) u.nickname=nickname;
+        deleteUser(u);
+        insertUser(u);
+        return true;
+        }
+        return false;
+        }
+        
         public User? getUserByUsername(String username)
         {
             return listaUtenti.FirstOrDefault(x => x.username == username);

@@ -722,19 +722,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/patrickdifazio/.nuget/packages/": {}
+    "C:\\Users\\patri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/patrickdifazio/Github/Ingegneria-del-Software/Bopo/Bopo/Bopo.csproj",
+      "projectUniqueName": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj",
       "projectName": "Bopo",
-      "projectPath": "/Users/patrickdifazio/Github/Ingegneria-del-Software/Bopo/Bopo/Bopo.csproj",
-      "packagesPath": "/Users/patrickdifazio/.nuget/packages/",
-      "outputPath": "/Users/patrickdifazio/Github/Ingegneria-del-Software/Bopo/Bopo/obj/",
+      "projectPath": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\Bopo.csproj",
+      "packagesPath": "C:\\Users\\patri\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/patrickdifazio/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\patri\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -785,7 +785,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

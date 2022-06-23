@@ -1,4 +1,6 @@
 @page "/gestionerichieste"
+@using Bopo.Data
+@inject Database database
 @attribute [Authorize(Roles = "Amministratore")]
 
 <MenuAdmin></MenuAdmin>
@@ -11,3 +13,41 @@
                 </div>
 </RadzenCard>
 </div>
+
+<div class="container">
+    <div class="row py-5">
+        <div class="col">
+            <RadzenCard Style="border-radius:1.2rem;">
+
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaGruppi()" TItem="Gruppo" PageSize="5" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true">
+                    <Template Context="gruppo">
+                        <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;border-radius:1.2rem;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3 p-3 group-name">
+                                            @(gruppo.nome)
+                                    </div>
+                                    <div class="col-lg-7 p-3">
+                                        <h5 class="mb-0">Partecipanti</h5>
+                                         <p class="mb-sm-2 mb-lg-0">@(gruppo.partecipanti)</p>
+                                    </div>
+                                    <div class="col-lg-2 p-3">
+                                        <RadzenButton Text="Esplora" ButtonStyle="ButtonStyle.Success"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </RadzenCard>
+                    </Template>
+                </RadzenDataList>
+
+            </RadzenCard>
+        </div>
+    </div>
+</div>
+
+
+@code{
+
+
+
+}

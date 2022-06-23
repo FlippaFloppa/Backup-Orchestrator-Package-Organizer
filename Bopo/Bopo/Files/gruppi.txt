@@ -2,4 +2,6 @@ Ingegneria del Software,112
 Laboratorio di Sicurezza,80
 Affidabilità e Controllo,2
 Reti Logiche,360
-Gruppo Balotta,92leonardo,10
+Gruppo Balotta,92
+leonardo,10
+luca,60

@@ -8,85 +8,85 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Bopo
 build_property.RootNamespace = Bopo
-build_property.ProjectDir = d:\Github\Ingegneria-del-Software\Bopo\Bopo\
+build_property.ProjectDir = C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\Github\Ingegneria-del-Software\Bopo\Bopo
+build_property.MSBuildProjectDirectory = C:\Users\lollo\Documents\GitHub\Ingegneria-del-Software\Bopo\Bopo
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/App.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/Account.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/Account.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/File.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/File.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/GestioneGruppi.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/GestioneGruppi.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvbmVHcnVwcGkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/GestioneRichieste.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/GestioneRichieste.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvbmVSaWNoaWVzdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/GestioneUtenti.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/GestioneUtenti.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VzdGlvbmVVdGVudGkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/Gruppi.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/Gruppi.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3J1cHBpLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/Login.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/Menu.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/Menu.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/MenuAdmin.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/MenuAdmin.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudUFkbWluLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/Registration.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/Registration.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cmF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/Viste.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/Viste.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Shared/EventConsole.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Shared/EventConsole.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEV2ZW50Q29uc29sZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Shared/SurveyPrompt.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/_Imports.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Shared/MainLayout.razor]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-a5eaetfdh3
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/Error.cshtml]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/_Host.cshtml]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/Github/Ingegneria-del-Software/Bopo/Bopo/Pages/_Layout.cshtml]
+[C:/Users/lollo/Documents/GitHub/Ingegneria-del-Software/Bopo/Bopo/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

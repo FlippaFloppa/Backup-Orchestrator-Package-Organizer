@@ -3,3 +3,9 @@ dnac,ciaociao,ciaociao,10,24/06/2022 00:36:48
 leonardo,testgruppo2,testgruppo1,15,24/06/2022 00:37:51
 leonardo,testgruppo3,testgruppo1,15,24/06/2022 00:38:01
 asdasd,asdasdasd,1,30,24/06/2022 00:52:49
+dnac,zzz,zzz,10,24/06/2022 02:05:57
+dnac,cio,cio,10,24/06/2022 02:09:40
+dnac,Reti Logiche 2,asd,10,24/06/2022 02:11:20
+dnac,ciaociao,ciaociao,10,24/06/2022 02:13:51
+dnac,1,1,10,24/06/2022 02:28:27
+dnac,ioioio,1,10,24/06/2022 02:32:06

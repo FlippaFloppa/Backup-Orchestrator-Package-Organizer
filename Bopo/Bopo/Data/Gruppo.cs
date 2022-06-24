@@ -8,6 +8,7 @@ namespace Bopo.Data
         public String nome { get; set; }
         public String password { get; set; }
         public int maxPartecipanti { get; set; }
+        public int postiDisponibili { get; set; }
         public DateTime dateTime { get; set; }
 
         public Gruppo(string usernameAdmin, string nome, string password, int maxPartecipanti, DateTime dateTime)
@@ -17,6 +18,7 @@ namespace Bopo.Data
             this.password = password;
             this.maxPartecipanti = maxPartecipanti;
             this.dateTime = dateTime;
+            this.postiDisponibili = maxPartecipanti;
         }
         public override string ToString()
         {

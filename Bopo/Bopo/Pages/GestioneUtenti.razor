@@ -19,7 +19,7 @@
 <div class="row my-5">
 
         <div class="container">
-
+            <b style="color:red">@message</b>
             <RadzenCard Style="border-radius:1.2rem;">
                 <h1 class="mb-4" style="align-self:center;color:#a6c711;">Account attivi</h1>
                 <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaUtenti()"
@@ -38,10 +38,10 @@
                                     <div class="col-lg-2 p-3 group-name">
                                         <b>Spazio Rimanente: <p style="color:#a6c711;">@(utente.freeSpace)</p></b>
                                     </div>
-                                    <div class="col-lg-1 p-3 group-name">
+                                    <div class="col-lg-2 p-3 group-name">
                                         <b>Nickname: <p style="color:#a6c711;">@(utente.nickname)</p></b>
                                     </div>
-                                    <div class="col-lg-4 p-3">
+                                    <div class="col-lg-3 p-4">
                                         <RadzenButton Text="Elimina Utente" Icon="error" ButtonStyle="ButtonStyle.Danger"
                                             Click="@((args) => { deleteuser(utente); })" />
                                     </div>
@@ -60,8 +60,19 @@
 
 @code {
 
+public String message = "";
 public void deleteuser(User utente){
-Console.WriteLine("Cancello "+utente.username);
-database.deleteUser(utente);
+
+message = "err";
+
+if(utente.username=="admin"){
+    message = "Impossibile eliminare l'utente admin";
+    return;
+}
+else{
+message = "";
+    Console.WriteLine("Cancello "+utente.username);
+    database.deleteUser(utente);
+}
 }
 }

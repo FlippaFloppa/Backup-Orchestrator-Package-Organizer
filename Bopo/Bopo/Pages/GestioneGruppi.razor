@@ -22,7 +22,7 @@
         <div class="container">
 
             <RadzenCard Style="border-radius:1.2rem;">
-                <h1 class="mb-4" style="align-self:center;color:#a6c711;">Gruppi attivi</h1>
+                <h1 class="mb-4" style="align-self:center;color:#53a2c5;">Gruppi attivi</h1>
                 <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaGruppi()"
                     TItem="Gruppo" PageSize="10" PagerHorizontalAlign="HorizontalAlign.Left"
                     ShowPagingSummary="true">
@@ -31,19 +31,19 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-2 p-3 group-name">
-                                        <b>Gruppo: <p style="color:#a6c711;">@(gruppo.nome)</p></b>
+                                        <b>Gruppo: <p style="color:#53a2c5;">@(gruppo.nome)</p></b>
                                     </div>
                                     <div class="col-lg-3 p-3 group-name">
-                                        <b>Data Creazione Gruppo: <p style="color:#a6c711;">@(gruppo.dateTime)</p></b>
+                                        <b>Data Creazione Gruppo: <p style="color:#53a2c5;">@(gruppo.dateTime)</p></b>
                                     </div>
                                     <div class="col-lg-2 p-3 group-name">
-                                        <b>Amministratore Gruppo: <p style="color:#a6c711;">@(gruppo.usernameAdmin)</p></b>
+                                        <b>Amministratore Gruppo: <p style="color:#53a2c5;">@(gruppo.usernameAdmin)</p></b>
                                     </div>
-                                    <div class="col-lg-1 p-3 group-name">
-                                        <b>Posti Rimanenti: <p style="color:#a6c711;">@(gruppo.maxPartecipanti)</p></b>
+                                    <div class="col-lg-2 p-3 group-name">
+                                        <b>Posti: <p style="color:#53a2c5;">@(gruppo.postiDisponibili)</p></b>
                                     </div>
-                                    <div class="col-lg-4 p-3">
-                                        <RadzenButton Text="Elimina Utente" Icon="error" ButtonStyle="ButtonStyle.Danger"
+                                    <div class="col-lg-3 p-3">
+                                        <RadzenButton Text="Elimina Gruppo" Icon="error" ButtonStyle="ButtonStyle.Danger"
                                             Click="@((args) => { deletegroup(gruppo); })" />
                                     </div>
                                 </div>

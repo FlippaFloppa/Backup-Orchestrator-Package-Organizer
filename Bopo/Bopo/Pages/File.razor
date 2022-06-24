@@ -1,7 +1,9 @@
 @page "/file"
 @using System.IO
 @using Bopo.Autenticazione
+@using Microsoft.JSInterop;
 @inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment HostEnvironment
+@inject IJSRuntime js
 @attribute [Authorize(Roles = "Utente")]
 
 <Menu></Menu>
@@ -19,15 +21,30 @@
 <div class="row my-5">
     <div class="col-lg-6 offset-lg-3">
         <div class="row mb-3">
-            <div class="col-md-6" style="align-self: center;">
-                <RadzenCard Style="width: 100%; height: 500px;border-radius: 1.4rem;">
-                    <RadzenTree Data=@entries Expand=@LoadFiles>
-                        <RadzenTreeLevel Text=@GetTextForNode Template=@FileOrFolderTemplate />
-                    </RadzenTree>
 
+
+            <div class="col-md-6" style="align-self: center;">
+
+                <RadzenCard Style="width: 100%; height: 500px;border-radius: 1.4rem;">
+
+                    <div class="row mb-4">
+                        <div class="col m-4">
+                            <RadzenButton Disabled=@disabled Click=@(() => DownloadFileFromURL()) Text="Download" ButtonStyle="ButtonStyle.Info" id="download_button"  />
+                            <RadzenButton Disabled=@disabled Click=@(() => Delete(null)) Icon="delete" Text="Delete" ButtonStyle="ButtonStyle.Danger" id="delete_button" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+
+                        <RadzenTree Change=@OnSelect Data=@entries Expand=@LoadFiles @bind-Value=@selection>
+                            <RadzenTreeLevel Text=@GetTextForNode Template=@FileOrFolderTemplate />
+                        </RadzenTree>
+
+                    </div>
                 </RadzenCard>
 
             </div>
+
             <div class="col">
                 <RadzenCard Style="width: 100%; height: 500px;border-radius: 1.4rem;">
                     <h4 class="mb-4">Carica un file</h4>
@@ -96,11 +113,15 @@
     private IEnumerable<string> entries;
     private List<String> tmp = new List<String>();
 
+    private object selection;
+    private bool disabled = true;
+
+
     protected async override void OnInitialized()
     {
         var authstate = await authenticationState;
-        tmp.AddRange(Directory.GetDirectories(HostEnvironment.WebRootPath + "/storage/"+authstate.User.Identity.Name));
-        tmp.AddRange(Directory.GetFiles(HostEnvironment.WebRootPath + "/storage/"+authstate.User.Identity.Name));
+        tmp.AddRange(Directory.GetDirectories(HostEnvironment.WebRootPath + "/storage/" + authstate.User.Identity.Name));
+        tmp.AddRange(Directory.GetFiles(HostEnvironment.WebRootPath + "/storage/" + authstate.User.Identity.Name));
 
         entries = tmp.ToArray();
     }
@@ -132,6 +153,7 @@
         builder.CloseComponent();
         builder.AddContent(3, context.Text);
     };
+
     EventConsole console;
     RadzenUpload upload;
 
@@ -154,15 +176,6 @@
 
     int customParameter = 1;
 
-    void OnChange(UploadChangeEventArgs args, string name)
-    {
-        foreach (var file in args.Files)
-        {
-            console.Log($"File: {file.Name} / {file.Size} bytes");
-        }
-
-        console.Log($"{name} changed");
-    }
 
     void OnProgress(UploadProgressArgs args, string name)
     {
@@ -197,7 +210,7 @@
 
             loadedFiles.Add(file);
 
-            var path = Path.Combine("wwwroot/storage/"+authstate.User.Identity.Name,
+            var path = Path.Combine("wwwroot/storage/" + authstate.User.Identity.Name,
                     file.Name);
 
             await using FileStream fs = new(path, FileMode.Create);
@@ -208,5 +221,33 @@
 
         isLoading = false;
     }
+
+
+
+
+
+    private async Task DownloadFileFromURL()
+    {
+        var lines = selection.ToString().Replace("\\","/").Split("/");
+        var fileName =  lines[lines.Count()];
+        var fileURL = selection.ToString();
+        await js.InvokeVoidAsync("triggerFileDownload", fileName, fileURL);
+    }
+
+
+    private void Delete(String? directory)
+    {
+        if (selection != null)
+        {
+            System.IO.File.Delete(selection.ToString());
+        }
+
+    }
+
+    private void OnSelect()
+    {
+        disabled = false;
+    }
+
 
 }

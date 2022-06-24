@@ -54,7 +54,7 @@ namespace Bopo.Data
             System.IO.File.AppendAllText(@"Files/utenti.txt", u.ToString() + Environment.NewLine);
 
             //Creazione storage
-            System.IO.Directory.CreateDirectory(@"wwwroot/storage/"+u.username);
+            System.IO.Directory.CreateDirectory(@"wwwroot/storage/" + u.username);
 
             return;
         }
@@ -152,9 +152,12 @@ namespace Bopo.Data
 
             foreach (string line in linesUtenti)
             {
-                Console.WriteLine(line);
-                string[] credentials = line.Split(",");
-                listaUtenti.Add(new User(credentials[0], credentials[1]));
+                if (line.Length > 0)
+                {
+                    Console.WriteLine(line);
+                    string[] credentials = line.Split(",");
+                    listaUtenti.Add(new User(credentials[0], credentials[1]));
+                }
             }
         }
 
@@ -168,7 +171,7 @@ namespace Bopo.Data
             {
                 Console.WriteLine(line);
                 string[] groups = line.Split(",");
-                listaGruppi.Add(new Gruppo(groups[0], groups[1], groups[2], Int32.Parse(groups[3]),DateTime.Parse(groups[4])));
+                listaGruppi.Add(new Gruppo(groups[0], groups[1], groups[2], Int32.Parse(groups[3]), DateTime.Parse(groups[4])));
             }
         }
 

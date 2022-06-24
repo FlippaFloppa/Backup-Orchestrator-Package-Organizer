@@ -74,7 +74,7 @@
                                                 @(richiestagruppo.nome)</p></b>
                                     </div>
                                     <div class="col-lg-3 p-3 group-name">
-                                        <b>Massimi Partecipanti <p style="color:#53a2c5">
+                                        <b>Posti Disponibili <p style="color:#53a2c5">
                                                 @(richiestagruppo.maxPartecipanti)</p></b>
                                     </div>
                                     <div class="col-lg-10 p-3 group-name">
@@ -120,7 +120,10 @@
     {
         Console.WriteLine("Richiesta Gruppo Accettata: " + r.ToString());
         database.deleteGroupRequest(r);
-        database.insertGroup(new Gruppo(r.usernameAdmin, r.nome, r.password, r.maxPartecipanti, DateTime.Now));
+        Gruppo g = new Gruppo(r.usernameAdmin, r.nome, r.password, r.maxPartecipanti, DateTime.Now);
+        database.getUserByUsername(r.usernameAdmin).getListaGruppiUtente().Add(g);
+        database.insertGroup(g);
+        database.getGruppoByName(r.nome).postiDisponibili--;
     }
     public void declinegroup(RichiestaGruppo r)
     {

@@ -11,6 +11,8 @@
         public DateTime dateTime { get; set; }
         public int freeSpace { get; set; }
         public String nickname { get; set; }
+        public List<Gruppo> listaGruppiUtente;
+
         public User(String username, String password)
         {   this.dateTime = DateTime.Now;
             this.nickname = "";
@@ -18,6 +20,7 @@
             this.username = username;
             this.password = password;
             this.role = "Utente";
+            listaGruppiUtente=new List<Gruppo>();
         }
         public User(String username, String password,DateTime dateTime, String nickname,int freeSpace)
         {   
@@ -27,6 +30,8 @@
             this.nickname = nickname;
             this.freeSpace = freeSpace;
             this.role = "Utente";
+            listaGruppiUtente=new List<Gruppo>();
+
         }
         public User(String username, String password, Boolean admin)
         {
@@ -34,6 +39,10 @@
             this.password = password;
             if (admin) role = "Amministratore";
             else role = "Utente";
+        }
+        public List<Gruppo> getListaGruppiUtente()
+        {
+            return listaGruppiUtente;
         }
 
         public override String ToString()

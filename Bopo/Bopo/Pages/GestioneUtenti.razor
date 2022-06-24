@@ -1,4 +1,6 @@
 @page "/gestioneutenti"
+@using Bopo.Data
+@inject Database database
 @attribute [Authorize(Roles = "Amministratore")]
 
 
@@ -12,3 +14,54 @@
         </div>
     </RadzenCard>
 </div>
+
+
+<div class="row my-5">
+
+        <div class="container">
+
+            <RadzenCard Style="border-radius:1.2rem;">
+                <h1 class="mb-4" style="align-self:center;color:#a6c711;">Account attivi</h1>
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaUtenti()"
+                    TItem="User" PageSize="10" PagerHorizontalAlign="HorizontalAlign.Left"
+                    ShowPagingSummary="true">
+                    <Template Context="utente">
+                        <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;border-radius:1.2rem;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-2 p-3 group-name">
+                                        <b>Utente: <p style="color:#a6c711;">@(utente.username)</p></b>
+                                    </div>
+                                    <div class="col-lg-3 p-3 group-name">
+                                        <b>Data Creazione Account: <p style="color:#a6c711;">@(utente.dateTime)</p></b>
+                                    </div>
+                                    <div class="col-lg-2 p-3 group-name">
+                                        <b>Spazio Rimanente: <p style="color:#a6c711;">@(utente.freeSpace)</p></b>
+                                    </div>
+                                    <div class="col-lg-1 p-3 group-name">
+                                        <b>Nickname: <p style="color:#a6c711;">@(utente.nickname)</p></b>
+                                    </div>
+                                    <div class="col-lg-4 p-3">
+                                        <RadzenButton Text="Elimina Utente" Icon="error" ButtonStyle="ButtonStyle.Danger"
+                                            Click="@((args) => { deleteuser(utente); })" />
+                                    </div>
+                                </div>
+                            </div>
+                        </RadzenCard>
+                    </Template>
+                </RadzenDataList>
+
+            </RadzenCard>
+        </div>
+    </div>
+
+
+
+
+@code {
+
+public void deleteuser(User utente){
+Console.WriteLine("Cancello "+utente.username);
+database.deleteUser(utente);
+}
+}

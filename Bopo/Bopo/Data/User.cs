@@ -15,7 +15,7 @@
 
         public User(String username, String password)
         {   this.dateTime = DateTime.Now;
-            this.nickname = "nickname";
+            this.nickname = "";
             this.freeSpace = 1000;
             this.username = username;
             this.password = password;

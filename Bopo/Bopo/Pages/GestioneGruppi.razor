@@ -1,4 +1,6 @@
 @page "/gestionegruppi"
+@using Bopo.Data
+@inject Database database
 @attribute [Authorize(Roles = "Amministratore")]
 
 
@@ -12,3 +14,55 @@
         </div>
     </RadzenCard>
 </div>
+
+
+
+<div class="row my-5">
+
+        <div class="container">
+
+            <RadzenCard Style="border-radius:1.2rem;">
+                <h1 class="mb-4" style="align-self:center;color:#53a2c5;">Gruppi attivi</h1>
+                <RadzenDataList WrapItems="true" AllowPaging="true" Data="@database.getListaGruppi()"
+                    TItem="Gruppo" PageSize="10" PagerHorizontalAlign="HorizontalAlign.Left"
+                    ShowPagingSummary="true">
+                    <Template Context="gruppo">
+                        <RadzenCard Style="width: 100%; padding: 0; overflow: hidden;border-radius:1.2rem;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-2 p-3 group-name">
+                                        <b>Gruppo: <p style="color:#53a2c5;">@(gruppo.nome)</p></b>
+                                    </div>
+                                    <div class="col-lg-3 p-3 group-name">
+                                        <b>Data Creazione Gruppo: <p style="color:#53a2c5;">@(gruppo.dateTime)</p></b>
+                                    </div>
+                                    <div class="col-lg-2 p-3 group-name">
+                                        <b>Amministratore Gruppo: <p style="color:#53a2c5;">@(gruppo.usernameAdmin)</p></b>
+                                    </div>
+                                    <div class="col-lg-2 p-3 group-name">
+                                        <b>Posti: <p style="color:#53a2c5;">@(gruppo.postiDisponibili)</p></b>
+                                    </div>
+                                    <div class="col-lg-3 p-3">
+                                        <RadzenButton Text="Elimina Gruppo" Icon="error" ButtonStyle="ButtonStyle.Danger"
+                                            Click="@((args) => { deletegroup(gruppo); })" />
+                                    </div>
+                                </div>
+                            </div>
+                        </RadzenCard>
+                    </Template>
+                </RadzenDataList>
+
+            </RadzenCard>
+        </div>
+    </div>
+
+
+
+
+@code {
+
+public void deletegroup(Gruppo gruppo){
+Console.WriteLine("Cancello "+gruppo.nome);
+database.deleteGroup(gruppo);
+}
+}

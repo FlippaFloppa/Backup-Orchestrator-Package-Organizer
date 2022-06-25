@@ -1,3 +1,5 @@
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Bopo.Data
 {
@@ -60,7 +62,8 @@ namespace Bopo.Data
         }
 
         public void deleteUser(User u)
-        {
+        {   
+            try{
             listaUtenti.Remove(u);
             File.WriteAllText(@"Files/utenti.txt", string.Empty);
             foreach (User user in listaUtenti)
@@ -71,6 +74,12 @@ namespace Bopo.Data
 
             //Rimozione storage
             DeleteDirectory(@"wwwroot/storage/" + u.username);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
         }
 
         public bool UpdateCredentials(String user, String oldPassword, String newPassword, String? nickname)
@@ -130,7 +139,7 @@ namespace Bopo.Data
                 System.IO.File.AppendAllText(@"Files/richiestegruppi.txt", richiesta.ToString() + Environment.NewLine);
             }
         }
-        public User? getUserByUsername(String username)
+        public User getUserByUsername(String username)
         {
             return listaUtenti.FirstOrDefault(x => x.username == username);
         }

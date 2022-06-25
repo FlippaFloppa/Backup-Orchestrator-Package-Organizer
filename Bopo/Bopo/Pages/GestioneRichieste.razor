@@ -123,7 +123,6 @@
         Gruppo g = new Gruppo(r.usernameAdmin, r.nome, r.password, r.maxPartecipanti, DateTime.Now);
         database.getUserByUsername(r.usernameAdmin).getListaGruppiUtente().Add(g);
         database.insertGroup(g);
-        database.getGruppoByName(r.nome).postiDisponibili--;
     }
     public void declinegroup(RichiestaGruppo r)
     {

@@ -34,8 +34,10 @@
                                         <h5 class="mb-0">Posti Disponibili</h5>
                                         <p class="mb-sm-2 mb-lg-0">@(gruppo.postiDisponibili)</p>
                                     </div>
-                                    <div class="col-lg-2 p-3">
-                                        <RadzenButton Text="Esplora" ButtonStyle="ButtonStyle.Success" />
+                                    <div class="col-lg-3">
+                                        <RadzenPassword Disabled=@gruppo.disabled style="display: block" Name="passwordgruppo" @bind-Value="gruppo.insertPassword" Class="w-100"/>
+                                    
+                                        <RadzenButton Text="Esplora" ButtonStyle="ButtonStyle.Success" Click="@((args) => { entraGruppo(gruppo,gruppo.insertPassword); })"> </RadzenButton>
                                     </div>
                                 </div>
                             </div>
@@ -95,17 +97,31 @@
         public String nome { get; set; }
         public int maxPartecipanti { get; set; }
         public String? password { get; set; }
-
         public Model()
         {
             maxPartecipanti = 10;
         }
 
     }
-
     private bool busy;
     private Model model = new Model();
 
+    private async void entraGruppo(Gruppo gruppo,String password){
+    var authstate = await authenticationState;
+    if(gruppo.partecipanti.Contains(authstate.User.Identity.Name)){
+    gruppo.disabled=true;
+    }
+    if(password == gruppo.password){
+    if(!gruppo.partecipanti.Contains(authstate.User.Identity.Name)){
+    gruppo.partecipanti.Add(authenticationState.Result.User.Identity.Name);
+    if(gruppo.postiDisponibili>0){
+        gruppo.disabled=true;
+        gruppo.postiDisponibili--;
+    }
+    }
+
+    }
+    }
     private async void creaGruppo(Model model)
     {
         var authstate = await authenticationState;

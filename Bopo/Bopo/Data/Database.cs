@@ -1,3 +1,5 @@
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Bopo.Data
 {
@@ -54,13 +56,14 @@ namespace Bopo.Data
             System.IO.File.AppendAllText(@"Files/utenti.txt", u.ToString() + Environment.NewLine);
 
             //Creazione storage
-            System.IO.Directory.CreateDirectory(@"wwwroot/storage/"+u.username);
+            System.IO.Directory.CreateDirectory(@"wwwroot/storage/" + u.username);
 
             return;
         }
 
         public void deleteUser(User u)
-        {
+        {   
+            try{
             listaUtenti.Remove(u);
             File.WriteAllText(@"Files/utenti.txt", string.Empty);
             foreach (User user in listaUtenti)
@@ -71,6 +74,12 @@ namespace Bopo.Data
 
             //Rimozione storage
             DeleteDirectory(@"wwwroot/storage/" + u.username);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
         }
 
         public bool UpdateCredentials(String user, String oldPassword, String newPassword, String? nickname)
@@ -130,7 +139,7 @@ namespace Bopo.Data
                 System.IO.File.AppendAllText(@"Files/richiestegruppi.txt", richiesta.ToString() + Environment.NewLine);
             }
         }
-        public User? getUserByUsername(String username)
+        public User getUserByUsername(String username)
         {
             return listaUtenti.FirstOrDefault(x => x.username == username);
         }
@@ -152,9 +161,12 @@ namespace Bopo.Data
 
             foreach (string line in linesUtenti)
             {
-                Console.WriteLine(line);
-                string[] credentials = line.Split(",");
-                listaUtenti.Add(new User(credentials[0], credentials[1]));
+                if (line.Length > 0)
+                {
+                    Console.WriteLine(line);
+                    string[] credentials = line.Split(",");
+                    listaUtenti.Add(new User(credentials[0], credentials[1]));
+                }
             }
         }
 
@@ -168,7 +180,7 @@ namespace Bopo.Data
             {
                 Console.WriteLine(line);
                 string[] groups = line.Split(",");
-                listaGruppi.Add(new Gruppo(groups[0], groups[1], groups[2], Int32.Parse(groups[3]),DateTime.Parse(groups[4])));
+                listaGruppi.Add(new Gruppo(groups[0], groups[1], groups[2], Int32.Parse(groups[3]), DateTime.Parse(groups[4])));
             }
         }
 

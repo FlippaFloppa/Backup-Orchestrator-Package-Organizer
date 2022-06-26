@@ -12,39 +12,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -601701580,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Viste",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Viste"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Viste"
-        }
-      },
-      {
-        "HashCode": -283598302,
-        "Kind": "Components.Component",
-        "Name": "Bopo.Pages.Viste",
-        "AssemblyName": "Bopo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bopo.Pages.Viste"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.Viste",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1367146860,
         "Kind": "Components.Component",
         "Name": "Bopo.Pages.GestioneGruppi",
@@ -276,35 +243,35 @@
         }
       },
       {
-        "HashCode": -422718917,
+        "HashCode": 741793809,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.File",
+        "Name": "Bopo.Pages.GestioneRichieste",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "File"
+            "TagName": "GestioneRichieste"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.File"
+          "Common.TypeName": "Bopo.Pages.GestioneRichieste"
         }
       },
       {
-        "HashCode": -234692982,
+        "HashCode": -1396429930,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.File",
+        "Name": "Bopo.Pages.GestioneRichieste",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Bopo.Pages.File"
+            "TagName": "Bopo.Pages.GestioneRichieste"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.File",
+          "Common.TypeName": "Bopo.Pages.GestioneRichieste",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -342,35 +309,68 @@
         }
       },
       {
-        "HashCode": 741793809,
+        "HashCode": -601701580,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.GestioneRichieste",
+        "Name": "Bopo.Pages.Viste",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "GestioneRichieste"
+            "TagName": "Viste"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.GestioneRichieste"
+          "Common.TypeName": "Bopo.Pages.Viste"
         }
       },
       {
-        "HashCode": -1396429930,
+        "HashCode": -283598302,
         "Kind": "Components.Component",
-        "Name": "Bopo.Pages.GestioneRichieste",
+        "Name": "Bopo.Pages.Viste",
         "AssemblyName": "Bopo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Bopo.Pages.GestioneRichieste"
+            "TagName": "Bopo.Pages.Viste"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Bopo.Pages.GestioneRichieste",
+          "Common.TypeName": "Bopo.Pages.Viste",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -422718917,
+        "Kind": "Components.Component",
+        "Name": "Bopo.Pages.File",
+        "AssemblyName": "Bopo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "File"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Bopo.Pages.File"
+        }
+      },
+      {
+        "HashCode": -234692982,
+        "Kind": "Components.Component",
+        "Name": "Bopo.Pages.File",
+        "AssemblyName": "Bopo",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Bopo.Pages.File"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Bopo.Pages.File",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

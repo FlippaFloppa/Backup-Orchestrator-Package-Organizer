@@ -34,9 +34,7 @@
                                         <h5 class="mb-0">Posti Disponibili</h5>
                                         <p class="mb-sm-2 mb-lg-0">@(gruppo.postiDisponibili)</p>
                                     </div>
-                                    <div class="col-lg-3">
-                                        <RadzenPassword Disabled=@gruppo.disabled style="display: block" Name="passwordgruppo" @bind-Value="gruppo.insertPassword" Class="w-100"/>
-                                    
+                                    <div class="col-lg-2 p-3">                                    
                                         <RadzenButton Text="Esplora" ButtonStyle="ButtonStyle.Success" Click="@((args) => { entraGruppo(gruppo,gruppo.insertPassword); })"> </RadzenButton>
                                     </div>
                                 </div>

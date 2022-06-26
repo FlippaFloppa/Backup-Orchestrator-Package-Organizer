@@ -9,7 +9,7 @@
         public String password { get; set; }
         public String role { get; set; }
         public DateTime dateTime { get; set; }
-        public int freeSpace { get; set; }
+        public float freeSpace { get; set; }
         public String nickname { get; set; }
         public List<Gruppo> listaGruppiUtente;
 

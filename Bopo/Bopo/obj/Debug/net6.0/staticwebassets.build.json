@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MiJu9IAqx0c6YT+K7XwBDsKKhJBpYi1kmPzetYV+cIM=",
+  "Hash": "wKEGmcHZqhyBY8rNSxR8B7DT3+25mJm6o1otDFTu70c=",
   "Source": "Bopo",
   "BasePath": "_content/Bopo",
   "Mode": "Default",
@@ -10,34 +10,17 @@
     {
       "Name": "Bopo\\wwwroot",
       "Source": "Bopo",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark.css",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
-      "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/dark.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark.css"
-    },
-    {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark-base.css",
-      "SourceId": "Radzen.Blazor",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark-base.css",
       "AssetKind": "All",
@@ -48,15 +31,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark-base.css"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark-base.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default.css",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/default.css",
+      "RelativePath": "css/dark.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,13 +48,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default.css"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\dark.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default-base.css",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default-base.css",
       "AssetKind": "All",
@@ -82,15 +65,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default-base.css"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default-base.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic.css",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/humanistic.css",
+      "RelativePath": "css/default.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,13 +82,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic.css"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\default.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic-base.css",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic-base.css",
       "AssetKind": "All",
@@ -116,15 +99,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic-base.css"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic-base.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software.css",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/software.css",
+      "RelativePath": "css/humanistic.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,13 +116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software.css"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\humanistic.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software-base.css",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software-base.css",
       "AssetKind": "All",
@@ -150,15 +133,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software-base.css"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software-base.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard.css",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
-      "RelativePath": "css/standard.css",
+      "RelativePath": "css/software.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,13 +150,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard.css"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\software.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard-base.css",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard-base.css",
       "AssetKind": "All",
@@ -184,13 +167,30 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard-base.css"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard-base.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\MaterialIcons-Regular.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/standard.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\css\\standard.css"
+    },
+    {
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\MaterialIcons-Regular.woff",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/MaterialIcons-Regular.woff",
       "AssetKind": "All",
@@ -201,13 +201,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\MaterialIcons-Regular.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\MaterialIcons-Regular.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-300.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-300.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-300.woff",
       "AssetKind": "All",
@@ -218,13 +218,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-300.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-300.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-700.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-700.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-700.woff",
       "AssetKind": "All",
@@ -235,13 +235,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-700.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-700.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-regular.woff",
       "AssetKind": "All",
@@ -252,13 +252,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Black.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Black.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Black.woff",
       "AssetKind": "All",
@@ -269,13 +269,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Black.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Black.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BlackIt.woff",
       "AssetKind": "All",
@@ -286,13 +286,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Bold.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Bold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Bold.woff",
       "AssetKind": "All",
@@ -303,13 +303,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Bold.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Bold.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BoldIt.woff",
       "AssetKind": "All",
@@ -320,13 +320,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLight.woff",
       "AssetKind": "All",
@@ -337,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLightIt.woff",
       "AssetKind": "All",
@@ -354,13 +354,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-It.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-It.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-It.woff",
       "AssetKind": "All",
@@ -371,13 +371,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-It.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-It.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Light.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Light.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Light.woff",
       "AssetKind": "All",
@@ -388,13 +388,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Light.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Light.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-LightIt.woff",
       "AssetKind": "All",
@@ -405,13 +405,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Regular.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Regular.woff",
       "AssetKind": "All",
@@ -422,13 +422,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Regular.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Regular.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Semibold.woff",
       "AssetKind": "All",
@@ -439,13 +439,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-SemiboldIt.woff",
       "AssetKind": "All",
@@ -456,13 +456,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\Radzen.Blazor.js",
+      "Identity": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\Radzen.Blazor.js",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "Radzen.Blazor.js",
       "AssetKind": "All",
@@ -473,13 +473,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\Radzen.Blazor.js"
+      "OriginalItemSpec": "C:\\Users\\patri\\.nuget\\packages\\radzen.blazor\\3.18.12\\staticwebassets\\Radzen.Blazor.js"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Bopo.styles.css",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Bopo.styles.css",
       "SourceId": "Bopo",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "Bopo.styles.css",
       "AssetKind": "All",
@@ -490,13 +490,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Bopo.styles.css"
+      "OriginalItemSpec": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Bopo.styles.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Bopo.bundle.scp.css",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Bopo.bundle.scp.css",
       "SourceId": "Bopo",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "Bopo.bundle.scp.css",
       "AssetKind": "All",
@@ -507,13 +507,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Bopo.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Bopo.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\.DS_Store",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\.DS_Store",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\.DS_Store"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -561,112 +561,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
-      "BasePath": "_content/Bopo",
-      "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
-      "SourceId": "Bopo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
-      "BasePath": "_content/Bopo",
-      "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
-    },
-    {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
-      "SourceId": "Bopo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
-      "BasePath": "_content/Bopo",
-      "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
-    },
-    {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
-      "SourceId": "Bopo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
-      "BasePath": "_content/Bopo",
-      "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
-    },
-    {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
-      "SourceId": "Bopo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
-      "BasePath": "_content/Bopo",
-      "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
-    },
-    {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
-      "SourceId": "Bopo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
-      "BasePath": "_content/Bopo",
-      "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
-    },
-    {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
-      "SourceId": "Bopo",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -680,10 +578,112 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\css\\site.css",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\favicon.ico",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\Bopo.ai",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\Bopo.ai",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "images/Bopo.ai",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Bopo.ai"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\Bopo.jpg",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\Bopo.jpg",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "images/Bopo.jpg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Bopo.jpg"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\Bopo.png",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\Bopo.png",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "images/Bopo.png",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Bopo.png"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\bopo.svg",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\bopo.svg",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "images/bopo.svg",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bopo.svg"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\Bopo.tiff",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\Bopo.tiff",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "images/Bopo.tiff",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Bopo.tiff"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\github_icon.png",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\github_icon.png",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "images/github_icon.png",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\images\\github_icon.png"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\join_icon.png",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\join_icon.png",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "images/join_icon.png",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\images\\join_icon.png"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\login_icon.png",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\images\\login_icon.png",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "images/login_icon.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\images\\login_icon.png"
     },
     {
-      "Identity": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\script.js",
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\script.js",
       "SourceId": "Bopo",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\lollo\\Documents\\GitHub\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
       "BasePath": "_content/Bopo",
       "RelativePath": "script.js",
       "AssetKind": "All",
@@ -899,6 +899,74 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\script.js"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\asd\\asgara.txt",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/asd/asgara.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\asd\\asgara.txt"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\asd\\bootstrap-4.0.0-dist.zip",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/asd/bootstrap-4.0.0-dist.zip",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\asd\\bootstrap-4.0.0-dist.zip"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\asd\\bopo.ico",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/asd/bopo.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\asd\\bopo.ico"
+    },
+    {
+      "Identity": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\storage\\asd\\Mod2-5.DiagrammiUML.pdf",
+      "SourceId": "Bopo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Github\\Ingegneria-del-Software\\Bopo\\Bopo\\wwwroot\\",
+      "BasePath": "_content/Bopo",
+      "RelativePath": "storage/asd/Mod2-5.DiagrammiUML.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\storage\\asd\\Mod2-5.DiagrammiUML.pdf"
     }
   ]
 }

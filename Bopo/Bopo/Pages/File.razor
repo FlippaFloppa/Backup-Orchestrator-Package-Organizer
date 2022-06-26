@@ -1,6 +1,7 @@
 @page "/file"
 @using System.IO
-@using Bopo.Autenticazione
+@using Bopo.Data
+@inject Database database
 @using Microsoft.JSInterop;
 @inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment HostEnvironment
 @inject IJSRuntime js
@@ -17,11 +18,12 @@
     </RadzenCard>
 </div>
 
-
 <div class="row my-5">
-    <div class="col-lg-6 offset-lg-3">
+    <div class="col-lg-6 offset-lg-3">                
+
         <div class="row mb-3">
 
+            <h2 class=" col-xl-4 offset-lg-3 offset-xl-4">@message</h2>
 
             <div class="col-md-6" style="align-self: center;">
 
@@ -198,7 +200,7 @@
     private long maxFileSize = 1024 * 10000;
     private int maxAllowedFiles = 3;
     private bool isLoading;
-
+    private String message="";
     private async Task LoadFiles(InputFileChangeEventArgs e)
     {
         isLoading = true;
@@ -212,13 +214,23 @@
 
             var path = Path.Combine("wwwroot/storage/" + authstate.User.Identity.Name,
                     file.Name);
-
+            float MB = 1024 * 1024;
+            float size = file.Size/MB;
+            if((database.getUserByUsername(authstate.User.Identity.Name).freeSpace-=size)>0){
+            Console.WriteLine("File: "+ size +" MB");
+            database.getUserByUsername(authstate.User.Identity.Name).freeSpace-=size;
             await using FileStream fs = new(path, FileMode.Create);
             await file.OpenReadStream(maxFileSize).CopyToAsync(fs);
+            isLoading = false;
+            message = "File caricato con successo";
+            }
+            else{
+                message = "Spazio insufficiente";
+                return;
+            }
 
         }
 
-        isLoading = false;
     }
 
 

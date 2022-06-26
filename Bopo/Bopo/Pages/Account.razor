@@ -72,7 +72,7 @@
                         <div>Iscrizione</div>
                         <b>@database.getUserByUsername(@context.User.Identity.Name).dateTime.Date.ToString("d")</b>
                         <div class="mt-3">Spazio Rimanente</div>
-                        <b>@database.getUserByUsername(@context.User.Identity.Name).freeSpace MB</b>
+                        <b>@Math.Round(database.getUserByUsername(@context.User.Identity.Name).freeSpace, 2) MB</b>
                     </div>
                     <div class="col-md-8">
                         <div>Gruppi</div>

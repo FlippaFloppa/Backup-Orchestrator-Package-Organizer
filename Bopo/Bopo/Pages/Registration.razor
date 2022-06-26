@@ -73,7 +73,7 @@
     public bool checkUser()
     {
         Console.WriteLine("Registrazione username: " + model.Username + " password: " + model.Password);
-        if (string.IsNullOrEmpty(model.Username) || string.IsNullOrEmpty(model.Username))
+        if (string.IsNullOrEmpty(model.Username.Replace("/","").Replace("\\","").Replace("~","")) || string.IsNullOrEmpty(model.Username))
         {
             model.Err = "Inserisci Username e Password";
             return false;
@@ -91,7 +91,8 @@
     {
         if (checkUser())
         {
-            database.insertUserRequest(new RichiestaUtente(model.Username, model.Password, DateTime.Now));
+            database.insertUserRequest(new RichiestaUtente(model.Username.Replace("/","").Replace("\\","").Replace("~",""), 
+                model.Password, DateTime.Now));
             NavigationManager.NavigateTo("/");
 
         }

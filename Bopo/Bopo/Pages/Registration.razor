@@ -73,6 +73,11 @@
     public bool checkUser()
     {
         Console.WriteLine("Registrazione username: " + model.Username + " password: " + model.Password);
+        if(string.IsNullOrEmpty(model.Username) || string.IsNullOrEmpty(model.Password))
+        {
+            model.Err = "Username e password sono obbligatori";
+            return false;
+        }
         if (string.IsNullOrEmpty(model.Username.Replace("/","").Replace("\\","").Replace("~","")) || string.IsNullOrEmpty(model.Username))
         {
             model.Err = "Inserisci Username e Password";

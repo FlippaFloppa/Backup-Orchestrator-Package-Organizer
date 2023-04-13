@@ -1,3 +1,1 @@
-# Ingegneria-del-Software
-
-EL BOPO
+# Progetto di Ingegneria del Software T - Unibo
